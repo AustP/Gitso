@@ -1,0 +1,67 @@
+gitso (0.6.3) rawr; urgency=super high
+
+  * Updated --listen command line to accept port (defaults to 5500)
+	* Minimizing now minimizes to tray
+	* If --listen is given at start, Gitso will start minimized
+	
+	-- AustP Thu, 22 May 2014 16:27:00 -0700
+
+gitso (0.6.2) precise; urgency=low
+
+  * Cleaned up .deb creation.
+  * Remove CHANGELOG.txt.
+  * Make gitso executable.
+  * Added homepage to .deb control file.
+  * Changed vncviewer dependency to xtightvncviewer.
+  * Fix package name in linux changelog.
+  * Added 8 bit color compression.
+
+ -- Markus Roth <markus.roth@herr-biber.de>  Thu, 27 Sep 2012 03:06:54 +0200
+
+gitso (0.6) karmic; urgency=low
+
+  * Complete rewrite of process management.
+  * Actually stop VNC Processes (Windows)
+  * Support loading remote hosts file.
+  * Command line switches
+  *     --dev
+  *     --listen
+  *     --connect IP
+  *     --list list_file
+  *     --version
+  *     --help
+  * manpage for (All UNIX sytems)
+  * Support for .rpms (Fedora, OpenSUSE)
+  * Implement Native VNC listener (OS X)
+  * Better process management, user gets notified if connection is broken.
+  * Licensing Updates (across the board).
+  * Improved documentation. 
+
+ -- Aaron D. Gerber <gerberad@gmail.com>  Sun, 21 Feb 2010 17:32:40 -0600
+
+gitso (0.5) hardy; urgency=low
+
+  * Complete rewrite of the interface
+  * Gitso no longer has Zombied VNC processes after it quits.
+  * Gitso stops the VNC process when it closes
+  * Updated Icon
+  * Updated License: GPL 3
+  * Added Support to be able to specify a list of hosts when you distribute it.
+  * Added History/Clear History of servers
+  * Added OS X 10.5 Support (need testing on 10.4 and 10.3)
+  *   OS X uses TightVNC 1.3.9
+  *   OS X uses OSXVNC 3.0
+
+ -- Aaron D. Gerber <gerberad@gmail.com>  Sat, 26 Jul 2008 16:32:40 -0600
+
+gitso (0.4) hardy; urgency=low
+
+  * Made Deb, updated with icons and much more.
+
+ -- Aaron D. Gerber <gerberad@gmail.com>  Sat, 10 May 2008 16:17:43 -0600
+
+gitso (0.3) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Aaron D. Gerber <gerberad@gmail.com>  Thu, 08 May 2008 22:35:52 -0600

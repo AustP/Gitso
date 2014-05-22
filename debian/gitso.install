@@ -1,0 +1,14 @@
+arch/linux/gitso            usr/bin
+Gitso.py                    usr/share/gitso
+ConnectionWindow.py         usr/share/gitso
+AboutWindow.py              usr/share/gitso
+GitsoThread.py              usr/share/gitso
+Processes.py                usr/share/gitso
+ArgsParser.py               usr/share/gitso
+__init__.py                 usr/share/gitso
+NATPMP.py                   usr/share/gitso
+hosts.txt                   usr/share/gitso
+icon.ico                    usr/share/gitso
+icon.png                    usr/share/gitso
+arch/linux/gitso.desktop    usr/share/applications
+arch/linux/README.txt       usr/share/doc/gitso

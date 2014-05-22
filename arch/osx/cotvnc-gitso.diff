@@ -1,0 +1,1547 @@
+Only in .: .DS_Store
+Only in ./Chicken of the VNC.xcodeproj: gerberad.mode1v3
+Only in ./Chicken of the VNC.xcodeproj: gerberad.pbxuser
+diff -aurr ./Chicken of the VNC.xcodeproj/project.pbxproj ../cotvnc/Chicken of the VNC.xcodeproj/project.pbxproj
+--- ./Chicken of the VNC.xcodeproj/project.pbxproj	2008-11-10 21:37:35.000000000 -0700
++++ ../cotvnc/Chicken of the VNC.xcodeproj/project.pbxproj	2007-03-28 18:52:50.000000000 -0600
+@@ -1209,7 +1209,6 @@
+ 		29B97313FDCFA39411CA2CEA /* Project object */ = {
+ 			isa = PBXProject;
+ 			buildConfigurationList = E20426EA087531990026AA26 /* Build configuration list for PBXProject "Chicken of the VNC" */;
+-			compatibilityVersion = "Xcode 2.4";
+ 			hasScannedForEncodings = 1;
+ 			knownRegions = (
+ 				English,
+@@ -1220,7 +1219,6 @@
+ 			);
+ 			mainGroup = 29B97314FDCFA39411CA2CEA /* Chicken of the VNC */;
+ 			projectDirPath = "";
+-			projectRoot = "";
+ 			targets = (
+ 				7F7A93E305E71B5C00E20416 /* Chicken of the VNC */,
+ 				7F916AA40BB6E98900E31F20 /* libjpeg */,
+diff -aurr ./Resources/English.lproj/OSX_RFBViewer.nib/classes.nib ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/classes.nib
+--- ./Resources/English.lproj/OSX_RFBViewer.nib/classes.nib	2008-11-07 22:54:10.000000000 -0700
++++ ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/classes.nib	2005-04-14 18:46:42.000000000 -0600
+@@ -1,90 +1,130 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+-<plist version="1.0">
+-<dict>
+-	<key>IBClasses</key>
+-	<array>
+-		<dict>
+-			<key>ACTIONS</key>
+-			<dict>
+-				<key>changeRendezvousUse</key>
+-				<string>id</string>
+-				<key>showConnectionDialog</key>
+-				<string>id</string>
+-				<key>showHelp</key>
+-				<string>id</string>
+-				<key>showListenerDialog</key>
+-				<string>id</string>
+-				<key>showNewConnectionDialog</key>
+-				<string>id</string>
+-				<key>showPreferences</key>
+-				<string>id</string>
+-				<key>showProfileManager</key>
+-				<string>id</string>
+-			</dict>
+-			<key>CLASS</key>
+-			<string>AppDelegate</string>
+-			<key>LANGUAGE</key>
+-			<string>ObjC</string>
+-			<key>OUTLETS</key>
+-			<dict>
+-				<key>mInfoVersionNumber</key>
+-				<string>NSTextField</string>
+-				<key>mRendezvousMenuItem</key>
+-				<string>NSMenuItem</string>
+-			</dict>
+-			<key>SUPERCLASS</key>
+-			<string>NSObject</string>
+-		</dict>
+-		<dict>
+-			<key>CLASS</key>
+-			<string>NSObject</string>
+-			<key>LANGUAGE</key>
+-			<string>ObjC</string>
+-		</dict>
+-		<dict>
+-			<key>ACTIONS</key>
+-			<dict>
+-				<key>makeConnectionFullscreen</key>
+-				<string>id</string>
+-				<key>makeConnectionWindowed</key>
+-				<string>id</string>
+-				<key>manuallyUpdateFrameBuffer</key>
+-				<string>id</string>
+-				<key>openNewTitlePanel</key>
+-				<string>id</string>
+-				<key>openOptions</key>
+-				<string>id</string>
+-				<key>pasteViaKeypress</key>
+-				<string>id</string>
+-				<key>sendBreakKeyCode</key>
+-				<string>id</string>
+-				<key>sendCmdOptEsc</key>
+-				<string>id</string>
+-				<key>sendCtrlAltDel</key>
+-				<string>id</string>
+-				<key>sendDeleteKeyCode</key>
+-				<string>id</string>
+-				<key>sendExecuteKeyCode</key>
+-				<string>id</string>
+-				<key>sendInsertKeyCode</key>
+-				<string>id</string>
+-				<key>sendPauseKeyCode</key>
+-				<string>id</string>
+-				<key>sendPrintKeyCode</key>
+-				<string>id</string>
+-				<key>toggleFullscreenMode</key>
+-				<string>id</string>
+-			</dict>
+-			<key>CLASS</key>
+-			<string>FirstResponder</string>
+-			<key>LANGUAGE</key>
+-			<string>ObjC</string>
+-			<key>SUPERCLASS</key>
+-			<string>NSObject</string>
+-		</dict>
+-	</array>
+-	<key>IBVersion</key>
+-	<string>1</string>
+-</dict>
+-</plist>
++{
++    IBClasses = (
++        {
++            ACTIONS = {
++                changeRendezvousUse = id; 
++                showConnectionDialog = id; 
++                showHelp = id; 
++                showListenerDialog = id; 
++                showNewConnectionDialog = id; 
++                showPreferences = id; 
++                showProfileManager = id; 
++            }; 
++            CLASS = AppDelegate; 
++            LANGUAGE = ObjC; 
++            OUTLETS = {mInfoVersionNumber = NSTextField; mRendezvousMenuItem = NSMenuItem; }; 
++            SUPERCLASS = NSObject; 
++        }, 
++        {
++            ACTIONS = {
++                makeConnectionFullscreen = id; 
++                makeConnectionWindowed = id; 
++                manuallyUpdateFrameBuffer = id; 
++                openNewTitlePanel = id; 
++                openOptions = id; 
++                pasteViaKeypress = id; 
++                sendBreakKeyCode = id; 
++                sendCmdOptEsc = id; 
++                sendCtrlAltDel = id; 
++                sendDeleteKeyCode = id; 
++                sendExecuteKeyCode = id; 
++                sendInsertKeyCode = id; 
++                sendPauseKeyCode = id; 
++                sendPrintKeyCode = id; 
++                toggleFullscreenMode = id; 
++            }; 
++            CLASS = FirstResponder; 
++            LANGUAGE = ObjC; 
++            SUPERCLASS = NSObject; 
++        }, 
++        {
++            ACTIONS = {changeSelectedScenario = id; restoreDefaults = id; }; 
++            CLASS = KeyEquivalentPrefsController; 
++            LANGUAGE = ObjC; 
++            OUTLETS = {mConnectionType = NSPopUpButton; mOutlineView = NSOutlineView; }; 
++            SUPERCLASS = NSObject; 
++        }, 
++        {CLASS = Profile; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
++        {
++            ACTIONS = {
++                addProfile = id; 
++                changeEncodingState = id; 
++                deleteProfile = id; 
++                profileChanged = id; 
++                profileSelected = id; 
++                reorderEncodings = id; 
++            }; 
++            CLASS = ProfileManager; 
++            LANGUAGE = ObjC; 
++            OUTLETS = {
++                altKey = id; 
++                commandKey = id; 
++                controlKey = id; 
++                deleteProfileButton = id; 
++                enableCopyRect = id; 
++                encodingTableView = id; 
++                m3bTimeout = id; 
++                mkbTimeout = id; 
++                mkdTimeout = id; 
++                newProfileButton = id; 
++                pixelFormatMatrix = id; 
++                profileBrowser = id; 
++                profileField = id; 
++                profilePanel = id; 
++                shiftKey = id; 
++                upDownButtonMatrix = id; 
++            }; 
++            SUPERCLASS = NSObject; 
++        }, 
++        {
++            ACTIONS = {
++                addServer = id; 
++                deleteSelectedServer = id; 
++                showConnectionDialog = id; 
++                showNewConnectionDialog = id; 
++            }; 
++            CLASS = RFBConnectionManager; 
++            LANGUAGE = ObjC; 
++            OUTLETS = {
++                groupList = NSTableView; 
++                serverDataBoxLocal = NSBox; 
++                serverDeleteBtn = NSButton; 
++                serverGroupBox = NSBox; 
++                serverList = NSTableView; 
++                serverListBox = NSBox; 
++                splitView = NSSplitView; 
++            }; 
++            SUPERCLASS = NSWindowController; 
++        }, 
++        {CLASS = ServerDataManager; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
++        {
++            ACTIONS = {
++                connectToServer = id; 
++                displayChanged = id; 
++                hostChanged = id; 
++                passwordChanged = id; 
++                profileSelectionChanged = id; 
++                rememberPwdChanged = id; 
++                sharedChanged = id; 
++            }; 
++            CLASS = ServerDataViewController; 
++            LANGUAGE = ObjC; 
++            OUTLETS = {
++                box = NSBox; 
++                connectBtn = NSButton; 
++                connectIndicator = NSProgressIndicator; 
++                connectIndicatorText = NSTextField; 
++                display = NSTextField; 
++                hostName = NSTextField; 
++                mDelegate = id; 
++                mServer = id; 
++                password = NSTextField; 
++                profilePopup = NSPopUpButton; 
++                rememberPwd = NSButton; 
++                shared = NSButton; 
++            }; 
++            SUPERCLASS = NSWindowController; 
++        }
++    ); 
++    IBVersion = 1; 
++}
+\ No newline at end of file
+diff -aurr ./Resources/English.lproj/OSX_RFBViewer.nib/info.nib ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/info.nib
+--- ./Resources/English.lproj/OSX_RFBViewer.nib/info.nib	2008-11-07 22:54:10.000000000 -0700
++++ ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/info.nib	2006-01-18 12:42:18.000000000 -0700
+@@ -1,20 +1,26 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
++<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
++	<key>IBDocumentLocation</key>
++	<string>3 4 356 240 0 0 1280 832 </string>
++	<key>IBEditorPositions</key>
++	<dict>
++		<key>29</key>
++		<string>270 514 419 44 0 0 1280 832 </string>
++	</dict>
+ 	<key>IBFramework Version</key>
+-	<string>629</string>
+-	<key>IBLastKnownRelativeProjectPath</key>
+-	<string>../../../Chicken of the VNC.xcodeproj</string>
+-	<key>IBOldestOS</key>
+-	<integer>5</integer>
++	<string>443.0</string>
++	<key>IBLockedObjects</key>
++	<array>
++		<integer>1191</integer>
++		<integer>1208</integer>
++	</array>
+ 	<key>IBOpenObjects</key>
+ 	<array>
+-		<integer>612</integer>
++		<integer>29</integer>
+ 	</array>
+ 	<key>IBSystem Version</key>
+-	<string>9F33</string>
+-	<key>targetFramework</key>
+-	<string>IBCocoaFramework</string>
++	<string>8F46</string>
+ </dict>
+ </plist>
+diff -aurr ./Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib
+--- ./Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib	2008-11-07 22:54:10.000000000 -0700
++++ ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib	2006-01-18 12:42:18.000000000 -0700
+@@ -1,65 +1,65 @@
+-bplist00Ô       	 
+-X$versionT$topY$archiverX$objects † Ñ  ]IB.objectdata€_NSKeyedArchiver¯Ù   1 5 6 < = A E e k { €  ‚ ‡ ˆ ‰ Œ  ‘ ” • ™ Ÿ ¢ £ ± ¸ ¹ É Ê Ò Ó Ö à á â ç é ì ğ ö ÷ ú ş	
+-#*/0126>?@DKLMNRYZ[_fghinosz{|ˆ‰¢£¤¥¦²¹ºÁÂÆÇÌÓÔÜİáäëìôõúûş	%)*-0>?@FGLMPSZ[bcelmtuw~†‡‰‘’“”—˜œ£¤¥¦ª±µ¶·¸¼ÄÅÆÊÑÒÓ×Şâãäèïğñõüışÿ
+-%&'+2348?@ABFMNOSZ[\]ahijnuvw{‚ƒ„ÊËĞÒÓÙäïğñı'09ğBENW`adğmnzƒŒ•–Ÿğ¤Dğ­ğ¶·¿ğÈÑğÒÖÙÚŞßá'nµ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷úıaÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷øùúûüışÿ Ê	
+- !"#$%(+.U$nullß                      ! " # $ % & ' ( ) * + , - . / 0VNSRootV$class]NSObjectsKeys_NSClassesValues_NSAccessibilityOidsValues]NSConnections[NSNamesKeys[NSFramework]NSClassesKeysZNSOidsKeys]NSNamesValues_NSAccessibilityConnectors]NSFontManager_NSVisibleWindows_NSObjectsValues_NSAccessibilityOidsKeysYNSNextOid\NSOidsValues€Ø€ïq×€,€pr-Õ€ €+ÖÈsÒ  2 3 4[NSClassName€€]NSApplicationÒ 7 8 9 :X$classesZ$classname¢ : ;^NSCustomObjectXNSObject_IBCocoaFrameworkÒ  > ? @ZNS.objects€ Ò 7 8 B C£ C D ;\NSMutableSetUNSSetÒ  > F G€š¯ H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d€	€€,€2€8€>€B€G€K€P€R€V€£€¨€®€²€¶€»€¿€Ä€È€Í€Ñ€Õ€Ú€Ş€ã€ç€ëÓ  f g h i jXNSSourceWNSLabel€€
+-€Ø  l m n o p q r s t u v w x y zWNSTitle_NSKeyEquivModMaskZNSKeyEquiv]NSMnemonicLocYNSOnImage\NSMixedImageVNSMenu€€   €ÿÿÿ€€€Ó  l | } ~ [NSMenuItems€ò€÷€ù\Send "Print"PÓ  2 ƒ „ … †^NSResourceName€€€WNSImage_NSMenuCheckmarkÒ 7 8 Š ‹¢ ‹ ;_NSCustomResourceÓ  2 ƒ „ … €€€_NSMenuMixedStateÒ 7 8 ’ “¢ “ ;ZNSMenuItem_sendPrintKeyCode:Ò 7 8 – —£ — ˜ ;_NSNibControlConnector^NSNibConnectorÔ  š f g › œ  ]NSDestination€+€€€*Ò  2 3 ¡€€[AppDelegate× ¤  ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ª_NSNextResponderWNSFrameVNSCellXNSvFlagsYNSEnabled[NSSuperview€€)€€ 	€Õ ¤  ² § ³ + µ ¶ ® ·ZNSSubviews[NSFrameSize€ €œ€^€›_{{59, 20}, {154, 10}}Ø º  » ¼ ½ ¾ ¿ À Á Â Ã Ä Å œ Ç È[NSCellFlags_NSBackgroundColorZNSContentsYNSSupport]NSControlView\NSCellFlags2[NSTextColorş €(€"€€€ €'S2.0Ô  Ë Ì Í Î Ï Ğ ÑVNSSizeVNSNameXNSfFlags€!#@$      € YHelveticaÒ 7 8 Ô Õ¢ Õ ;VNSFontÕ  × Ø Ù Ú Û Ü İ Ş ßWNSColor\NSColorSpace[NSColorName]NSCatalogName€&€%€$€#VSystem_textBackgroundColorÓ  Ø ã Û å æWNSWhite€&B1 Ò 7 8 è ×¢ × ;Ó  Ø ã Û å ë€&K0.33333299 Ò 7 8 í î¤ î ï ¦ ;_NSTextFieldCell\NSActionCellÒ 7 8 ñ ò¥ ò ó ô õ ;[NSTextFieldYNSControlVNSView[NSResponder_mInfoVersionNumberÒ 7 8 ø ù£ ù ˜ ;_NSNibOutletConnectorÓ  f g h ü ı€€-€1Ø  l m n o p q r s  u w x y€€/€0€€€.Ó  l | }€ò TUndoQzUundo:Ó  f g h€€3€7Ø  l m n o p q r s u w x y€€5€6€€€4Ô  l Ì | }€ò_Hide Chicken of the VNCQhUhide:Ó  f g h!"€€9€=Ø  l m n o p q r s% u& w x y)€€;€<€€€:Ô  l Ì | },-.€ò
+-XMinimizeQm_performMiniaturize:Ó  f g h45€€?€AØ  l m n o p q r s89 v w x y z€€@   €€€€_Send "Cmd-Option-Escape"^sendCmdOptEsc:Ó  f g hBC€€C€FØ  l m n o p q r sF uG w x y€€D€E€€€.UPasteQvVpaste:Ó  f g hPQ€€H€JØ  l m n o p q r sT9 v w x y z€€I€€€€_Send "Ctrl-Alt-Del"_sendCtrlAltDel:Ó  f g h]^€€L€OØ  l m n o p q r sa ub w x y€€M€N€€€.ZSelect AllQaZselectAll:Ô  š f g ›  m€+€€€QXdelegateÓ  f g hqr€€S€UØ  l m n o p q r su u v w x y z€€T€€€€\Send "Break"_sendBreakKeyCode:Ô  š f g h~€€€Y€W€¢×  l n o p q r sƒ v w x y€€X€€€€4o A b o u t   C h i c k e n   o f   t h e   V N C &İŠ ‹Œ‘’“”• ª—˜™š›œŸ å ¡\NSWindowView\NSScreenRect_NSFrameAutosaveName]NSWindowTitleYNSWTFlags]NSWindowClass\NSWindowRectYNSMaxSize_NSWindowBacking_NSWindowStyleMaskYNSMinSize[NSViewClass€€¡€€ €[`x  €\€Z€Ÿ€€]_{{358, 543}, {565, 196}}_About Chicken of the VNCWNSPanelTViewÒ  > F¨€š©© œ«¬­®¯°±€_€€f€l€s€‚€‹€€•× ¤  ¥ ¦ § ¨ © ª «µ¶ ® ¯ ª€€)€`€a	€_{{124, 137}, {265, 39}}Ø º  » ¼ ½ ¾ ¿ À Á Â Ã½¾© ÇÀ€(€"€b€c€_€e_Chicken of the VNCÔ  Ë Ì Í ÎÄÅ Ñ€!#@<      €d^Helvetica-BoldÓ  ØÈ ÛÊËUNSRGB€&M0.709804 0 0 × ¤  ¥ ¦ § ¨ © ª «ÏĞ ® ¯ ª€€)€g€h	€_{{126, 99}, {242, 30}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Â ÃØÙ« ÇÛ!ş€(€"€i€j€f€k_DAdministered by Jason Harris
+-based on VNCViewer by Helmut MaierhoferÔ  Ë Ì Í Îß Ğ Ñ€!#@(      € Ó  ØÈ ÛÊã€&O0.117647 0.192157 0.45882401 × ¤  ¥ ¦ § ¨ © ª «çè ® ¯ ª€€)€m€n	€_{{342, 20}, {203, 26}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Âîï Å¬ò È€(€p€o€€l   €'_LCopyright 1998-2000 by Helmut Maierhofer
+-Copyright 2002-2006 by Jason HarrisÕ  × Ø Ù Ú Û÷ İø ß€&€r€q€#\controlColorÓ  Ø ã Û åı€&K0.66666669 Ù ¤  ¥ÿ ¦  § ¨ © ª ® ¯ ªZNSEditable[NSDragTypes€€€|€}€t	€Ò  > ?€§€u€v€w€x€y€z€{_Apple PDF pasteboard type_Apple PNG pasteboard type_1NeXT Encapsulated PostScript v1.2 pasteboard type_NSFilenamesPboardType_NeXT TIFF v4.0 pasteboard type_Apple PICT pasteboard type_NeXT filename pasteboard type_{{20, 80}, {96, 96}}Ø º  ¼ ¿ ! Ç" Ç Ç#WNSStyleWNSAlignWNSScaleZNSAnimates ş €€€~   Ó  2 ƒ „ …(€€€_NSApplicationIconÒ 7 8+,£, ¦ ;[NSImageCellÒ 7 8./¥/ ó ô õ ;[NSImageViewÛ ¤1 2 ¥3 §456 © ªŸ89: ® å< Ç ªYNSBoxType[NSTitleCell]NSTransparent\NSBorderTypeYNSOffsets_NSTitlePosition€€Š€…€ƒ€„€_{{12, 52}, {541, 5}}V{0, 0}× º  » ¼ ½ ¿ À Á Â ÃCD ÇE€(€"€†€‡€‰SBoxÔ  Ë Ì Í ÎIJK€!#@*      €ˆ\LucidaGrandeÓ  Ø ã Û åO€&M0 0.80000001 Ò 7 8QR¤R ô õ ;UNSBox× ¤  ¥ ¦ § ¨ © ª «VW ® ¯ ª€€)€Œ€	€_{{125, 63}, {334, 28}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Â Ã^ Å¯ Ça€(€"€€€‹€_hreleased under the GNU Public License
+-source code and support available at http://cotvnc.sourceforge.netÓ  ØÈ ÛÊã€&× ¤  ¥ ¦ § ¨ © ª «hi ® ¯ ª€€)€‘€’	€_{{20, 20}, {39, 10}}Ø º  » ¼ ½ ¾ ¿ À Á Â Ãp Å° Çs€(€"€“€€€”WVersionÓ  Ø ã Û å ë€&× ¤  ¥ ¦ § ¨ © ª «z{ ® ¯ ª€€)€–€—	€_{{376, 99}, {169, 30}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Â Ã‚Ù±ò…€(€"€˜€j€•€™_6(support@geekspiff.com)
++bplist00Ô        
++Y$archiverX$versionT$topX$objects_NSKeyedArchiver † Ñ  	]IB.objectdata€¯û   1 5 6 < = A E p v „ ‰ Š ‹  ‘ ’ – š ›  Ÿ £ § ° ± ² ¶ ½ Ã Ä Å É Í Ñ Ø Ù Ú İ á é Ù ê ë ï ö ÷ ø ş$0<=MNUVYcdeikpt{‚ƒŠ‹“š›£¤¨«²³»¼ÁÂÅĞÚÛÜİŞßàáâìğñõø %&),34;<>EFMNPWX_`bcdefgjknsz{|€‡ˆ‰Š•™š›Ÿ¦ª«¬¯³º»¼¿ÃÊËÌÏÓÚÛÜàçèéìğ÷øùü 	%*+,-189:>EFIMTUVY^abchopqv}~€…Œ”•š› §¨©ª¯¶º»¼½ÂÉÊËÌĞ×ÛÜİáèéêîõö÷û")*+/678=DEFG—˜¥°¹ÄÅÄÆÒÛİâåèéêî÷ 	$-Å-.3<MÅMAPYãÅbc—ÅléÅuv~‡ÅˆŠ— Å¡£¬µ¶·¹	% ABCDEFGyH wGIJKLa wMK KNBOPSVÏHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxnyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½ÀÃÆU$nullß                      ! " # $ % & ' ( ) * + , - . / 0_NSObjectsValues_NSAccessibilityConnectors_NSClassesValuesZNSOidsKeys[NSNamesKeys]NSClassesKeys_NSAccessibilityOidsValues\NSOidsValues_NSVisibleWindowsV$class]NSConnections]NSNamesValues]NSObjectsKeys_NSAccessibilityOidsKeys[NSFramework]NSFontManagerYNSNextOidVNSRoota÷~b}ù€€ú€c#ø€€ È€Ò  2 3 4[NSClassName€€]NSApplicationÒ 7 8 9 :X$classesZ$classname¢ : ;^NSCustomObjectXNSObject_IBCocoaFrameworkÒ >  ? @ZNS.objects €Ò 7 8 B C£ C D ;\NSMutableSetUNSSetÒ >  F o¯( G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n€	€€€"€'€,€0€€“€˜€€£€¨€­€±€¶€»€¿€Ä€Ê€Î€Ò€×€Û€ß€ä€é€ë€í€ò€ø€ı
++€oÓ q  r s t uWNSLabelXNSSource€€€
++× w x y z { |  } ~  €  ‚ ƒVNSMenu]NSMnemonicLocWNSTitleYNSOnImageZNSKeyEquiv\NSMixedImage€ÿÿÿ€€€€€Ó y  … † ‡ ˆ[NSMenuItems$.%o S e t   C o n n e c t i o n   T i t l e &PÓ Œ  2   ^NSResourceName€€€WNSImage_NSMenuCheckmarkÒ 7 8 “ ”£ ” • ;_NSCustomResource_%NSCustomResourceÓ Œ  2 —  €€€_NSMenuMixedStateÒ 7 8 œ ¢  ;ZNSMenuItem_openNewTitlePanel:Ò 7 8   ¡£ ¡ ¢ ;_NSNibControlConnector^NSNibConnectorÓ q  r ¤ t ¦€€€Ø w x ¨ y z { |  } ~ ª « €  ‚ ƒ_NSKeyEquivModMask€   €€€€€o G e t   C o n n e c t i o n   I n f o &\openOptions:Ó q  r ³ t µ€ €€Ø w x ¨ y z { |  · ~ ª ¸ € º ‚ ƒ€€€€€€Ô y ¾  … ¿ À ‡ ÂVNSNameDJ.E_Quit Chicken of the VNCQqÒ Æ  Ç ÈYNS.stringZterminate:€!Ò 7 8 Ê Ë£ Ë Ì ;_NSMutableStringXNSStringÓ q  r Î t Ğ€&€€#Ø w x ¨ y z { |  · ~ ª Ó € Õ ‚ ƒ€€$€€%€€_Hide Chicken of the VNCQhÒ Æ  Û ÈUhide:€!Ó q  r Ş t à€+€€(Ø w x ¨ y z { |  · ~ ã ä € æ ‚ ƒ€   €)€€*€€[Hide Others_hideOtherApplications:Ó q  r ì t î€/€€-Ø w x ¨ y z { |  · ~ ª ñ €  ‚ ƒ€€.€€€€XShow All_unhideAllApplications:Ô ù q  r ú û ü ú]NSDestination€1€€€1İ ÿ  	
++_NSWindowStyleMask_NSWindowBackingYNSMinSize]NSWindowTitle]NSWindowClass\NSWindowRect\NSScreenRectYNSMaxSize\NSWindowViewYNSWTFlags[NSViewClass_NSFrameAutosaveName€‰€3€4€2€ˆ€Š€6`x  €Œ€5€‹_{{358, 593}, {565, 196}}_About Chicken of the VNCWNSPanelTViewÔ   ."#ZNSSubviews_NSNextResponderWNSFrame€7€ €‡€nÒ > % o©&'()*+,-.€8€G€N€T€[€j€x€}€‚€o×123 4789:;[NSSuperviewYNSEnabledXNSvFlagsVNSCell€6€6€9	 €F€:_{{124, 137}, {265, 39}}Ø>?@AB CDEFGH&JKL_NSBackgroundColor[NSTextColorYNSSupportZNSContents]NSControlView[NSCellFlags\NSCellFlags2€?€D€<€;€8€Eş  _Chicken of the VNCÔO ¾ PQRSTVNSSizeXNSfFlags"Aà  €=€>^Helvetica-BoldÒ 7 8WX¢X ;VNSFontÕZ[\] ^_`abWNSColor[NSColorName\NSColorSpace]NSCatalogName€B€A€@€CVSystem_textBackgroundColorÓf\ gbWNSWhiteB1 €CÒ 7 8jZ¢Z ;Ól\ mnbUNSRGBM0.709804 0 0 €CÒ 7 8qr¤rs4 ;_NSTextFieldCell\NSActionCellÒ 7 8uv¦vwxyz ;[NSTextField\%NSTextFieldYNSControlVNSView[NSResponder×123 4~89:€6€6€H	€F€I_{{59, 20}, {154, 10}}Ø>?@AB CDE…†‡'JKL€?€M€K€J€G€ES2.0ÔO ¾ PŒST"A   €L€>YHelveticaÓf\ ‘bK0.33333299 €C×123 4–89:™€6€6€O	€F€P_{{126, 99}, {242, 30}}Ø>?@AB CDEŸ(J¢L€?€S€R€Q€N€E!ş_DAdministered by Jason Harris
++based on VNCViewer by Helmut MaierhoferÔO ¾ P¥ST"A@  €L€>Ól\ ©nbO0.117647 0.192157 0.45882401 €C×123 4®89:±€6€6€U	€F€V_{{342, 20}, {203, 26}}Ø>?@AB CD´…†·)J¢º€X€M€K€W€T€E   _LCopyright 1998-2000 by Helmut Maierhofer
++Copyright 2002-2006 by Jason HarrisÕZ[\] ½¾`ab€Z€Y€@€C\controlColorÓf\ ÃbK0.66666669 €CÙ123 4ÆÇÊ89ÌÍÎÏ[NSDragTypesZNSEditable€6€6€d	€i€e€\Ò > Ñ @§ÒÓÔÕÖ×Ø€]€^€_€`€a€b€c€_Apple PDF pasteboard type_1NeXT Encapsulated PostScript v1.2 pasteboard type_NeXT filename pasteboard type_NeXT TIFF v4.0 pasteboard type_NSFilenamesPboardType_Apple PICT pasteboard type_Apple PNG pasteboard type_{{20, 80}, {96, 96}}ØãäAåæ CDLLçÏLéêëWNSScaleWNSStyleZNSAnimatesWNSAlign€f€h ş    Ó Œ  2í  €g€€_NSApplicationIconÒ 7 8òó¤óô4 ;[NSImageCell\%NSImageCellÒ 7 8ö÷¥÷xyz ;[NSImageViewÛ1ùúûüı şÿLÏ\NSBorderType_NSTitlePosition[NSTitleCellYNSOffsets]NSTransparentYNSBoxType€k€6€6€r€p€q€wÒ >  o¡	€l€oÔ1 ++#€j€j€m€n_{{2, 2}, {435, 1}}Ò 7 8y£yz ;Ò 7 8£ ;^NSMutableArrayWNSArray_{{12, 52}, {541, 5}}V{0, 0}×>?@A CDEJKL€?€v€t€s€ESBoxÔO ¾ P!"S$"AP  €u€>\LucidaGrandeÓf\ 'bM0 0.80000001 €CÒ 7 8*+¤+yz ;UNSBox×123 4/89:2€6€6€y	€F€z_{{125, 63}, {334, 28}}Ø>?@AB CDE6†8,J¢L€?€|€K€{€x€E_hreleased under the GNU Public License
++source code and support available at http://cotvnc.sourceforge.netÓl\ ©nb€C×123 4A89:D€6€6€~	€F€_{{20, 20}, {39, 10}}Ø>?@AB CDEH†J-JKL€?€€K€€€}€EWVersionÓf\ ‘b€C×123 4S89:V€6€6€ƒ	€F€„_{{376, 99}, {169, 30}}Ø>?@AB CDEZ\.J¢º€?€†€R€…€‚€E_6(support@geekspiff.com)
+ (helmut.maierhofer@chello.at)
+-Ó  ØÈ ÛÊã€&Ò 7 8Š‹£‹Œ ;^NSMutableArrayWNSArrayZ{565, 196}Ò 7 8 ô£ ô õ ;_{{0, 0}, {1280, 778}}]{246.944, 28}_{3.40282e+38, 3.40282e+38}UaboutÒ 7 8•–¢– ;_NSWindowTemplate_makeKeyAndOrderFront:Ó  f g hš›€€¤€§Ø  l m n o p q r s uŸ w x y€€¥€¦€€€4_Quit Chicken of the VNCQqZterminate:Ó  f g h¨©€€©€­Ø  l m n o p q r s¬ u­ w x y°€€«€¬€€€ªÓ  l | }³´€ò€ó€ô\Close WindowQw]performClose:Ó  f g hº»€€¯€±Ø  l m n o p q r s¾¿ w x y€€°   €6€€€4[Hide Others_hideOtherApplications:Ó  f g hÈÉ€€³€µØ  l m n o p q r sÌ u v w x y z€€´€€€€\Send "Pause"_sendPauseKeyCode:Ó  f g hÕÖ€€·€ºØ  l m n o p q r sÙ u v w x yİ€€¹€€€€¸Ó  l | }àá€ò€ğ€ñ]Stop Speaking]stopSpeaking:Ó  f g hæç€€¼€¾Ø  l m n o p q r sê u v w x y)€€½€€€€:_Bring All to Front_arrangeInFront:Ó  f g hóô€€À€ÃØ  l m n o p q r s÷9ø w x y)€€Á€Â€€€:_Fullscreen ModeQ~_toggleFullscreenMode:Ó  f g h€€Å€ÇØ  l m n o p q r s u v w x y)€€Æ€€€€:WRefresh_manuallyUpdateFrameBuffer:Ó  f g h€€É€ÌØ  l m n o p q r s u w x y€€Ê€Ë€€€.TRedoQZUredo:Ó  f g h€€Î€ĞØ  l m n o p q r s  u v w x y z€€Ï€€€€]Send "Insert"_sendInsertKeyCode:Ó  f g h)*€€Ò€ÔØ  l m n o p q r s- u v w x y€€Ó€€€€.VDeleteWdelete:Ó  f g h67€€Ö€ÙØ  l m n o p q r s: u; w x y€€×€Ø€€€.SCutQxTcut:Ó  f g hDE€€Û€İØ  l m n o p q r sH u v w x yİ€€Ü€€€€¸^Start Speaking^startSpeaking:Ó  f g hQR€€ß€âØ  l m n o p q r sU uV w x y€€à€á€€€.TCopyQcUcopy:Ó  f g h_`€€ä€æØ  l m n o p q r sc u v w x y z€€å€€€€]Send "Delete"_sendDeleteKeyCode:Ó  f g hlm€€è€êØ  l m n o p q r sp u v w x y€€é€€€€4XShow All_unhideAllApplications:Ó  f g hyz€€ì€îØ  l m n o p q r s} u v w x y z€€í€€€€^Send "Execute"_sendExecuteKeyCode:Ò  >…†*¯CP)İ œ±°¯yl’)~•q— ªš› üBæ!ÈÕDó6¦º°ª«¬¨ i¯4Q]³©­_®¸¹º»¼š¾¿ÀÁÂ ¬ zÉ€H€Ò€¸€€•€ª€‹€ì€û€è€.€:€Y€S€4€€ö€-€C€¼€9€W€³€·€Û€À€Ö€Î€¯€€ú€f€õ€©€
+-€?€ß€L€_€s€ä€‚€¤"	%(€€É€3€l€Å€VSpeechÒ  > FÍ€š¢DÕ€Û€·Ò 7 8Ñ r¢ r ;ZConnectionÒ  > FÕ€š£¨¬š€©€õ€öÚ  l mÚ nÛ o p q r s v u ¯ v ¯ w x y°]NSIsSeparator\NSIsDisabled€€	€	€€€ªÚ å l m n o p q ræ s z ~ u v w x y°îYNSSubmenuXNSAction€€€÷€€€€ª€ø\Special Keys^submenuAction:Ò  > Fó€š©4Pª_Èq iy€?€H€ú€Î€ä€³€S€
+-€ìÚ  l mÚ nÛ o p q r s v u ¯ v ¯ w x y z€€	€	€€€Ô  l Ì | }	
+-€ò€ü€ÿ€şÒ YNS.string€ıXServicesÒ 7 8£ ;_NSMutableStringXNSStringÒ  > F€š __NSServicesMenuÒ €ıTEditÒ  > F€šª ü³6QB)]’»€-€É€Ö€ß€C€Ò€LÚ  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€.Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€.Ú å l m n o p q ræ sİà u v w x yA€€¸€ğ€€€€.Ò D€ıVWindowÒ  > FG€š¦óÉ!Àæ€À€9€Å	€¼Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y)€€	€	€€€:Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y)€€	€	€€€:^_NSWindowsMenuÒ  2 3 4€€Ú å l m n o p q ræ sg u v w x yl€€û€€€€4_Chicken Of the VNCÒ  > Fp€š©¸—¼ºl¿š€W€3€¯€è€¤Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€4Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€4Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€4\_NSAppleMenuÚ å l m n o p q ræ s°³ u v w x y¹€€ª€ó€€€Ô  l Ì | }¡¢£€ò'Ú å l m n o p q ræ s)§ u v w x y¹¬€€:€€€Ú å l m n o p q ræ s u v w x y¹µ€€4€€€]OSX_RFBViewerÒ  > F¹€š¥¯›º¦¾"Ú å l m n o p q ræ sÂ u v w x y¹Ç€€. €€€!Ú å l m n o p q ræ sÁË u v w x y¹Ğ€%#€€€$THelpÓ  l | }ËÕ€ò#&Ò  > FØ€š [_NSMainMenuÔ ¤  ¥ § + µİ ®€ €œ)_{{2, 2}, {435, 1}}Ò 7 8àŒ¢Œ ;Ò  >…ã*¯C z» ª ª› ª z—º¦   z¯~°¹)) zİİ)¹ z ª z ª°° z¹ z ª ª z ª ¹¹)¾®  ª)š)€€.€€€€€4€.€€€€4€Y€ª€.€.€:€:€4€€¸€¸€:€.€€4€€€€ª€ª€€€.€.€.€€€€€4€€.€4€4€4€:"€‚€€.€4€€:€ö€:Ò  >…)*¯DP ) œİ±°¯l’~)y•q— ªš› üBæ!ÈÕDó6¦°º«ª¬¯¨ iQ4©­]³_®º¹¸» ¼¾šÀÁ¿Â¬É z€H€€Ò€€¸€•€ª€‹€è€.€û€Y€:€ì€S€4€€ö€-€C€¼€9€W€³€·€Û€À€Ö€Î€€¯€f€ú€õ€©€
+-€ß€?€_€s€L€ä€‚€"€¤	%(€É€l€3€Å€Ò  >…p*¯Dqrstuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦ ¡¨©ª«¬­¡¯°±²³´./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abc€defghi€]jklmno_Menu Item (Send "Ctrl-Alt-Del")\File's Owner_Menu Item (Delete)_Static Text (2.0)]Menu (Speech)_DStatic Text ((support@geekspiff.com)
+-(helmut.maierhofer@chello.at)
+-)_Menu (Connection)_vStatic Text (released under the GNU Public License
+-source code and support available at http://cotvnc.sourceforge.net)_Menu Item (Show All)[Menu (Edit)[Separator-6_Menu (Services)TInfo]Menu (Window)_Menu Item (Send "Execute")[Application_Menu Item (Send "Break")_Menu Item (Services)_Menu (Chicken Of the VNC)\Content View_Menu Item (Special Keys)_Menu Item (Connection)_Menu Item (Undo)_Menu Item (Paste)_Menu Item (Bring All to Front)_Menu Item (Minimize)o% M e n u   I t e m   ( A b o u t   C h i c k e n   o f   t h e   V N C & )_Menu Item (Send "Pause")_Menu Item (Stop Speaking)_Menu Item (Start Speaking)_Menu Item (Fullscreen Mode)_Menu Item (Cut)_Menu Item (Window)_Menu Item (Send "Insert")_Static Text (Version)_Menu Item (Hide Others)_RStatic Text (Administered by Jason Harris
+-based on VNCViewer by Helmut Maierhofer)[Separator-8YSeparator_Menu Item (Chicken Of the VNC)_Menu Item (Close Window)_Menu Item (Send "Print")_Menu Item (Copy)_$Menu Item (Send "Cmd-Option-Escape")_ Static Text (Chicken of the VNC)_Image View (NSApplicationIcon)_Menu Item (Select All)[Separator-7_Menu Item (Send "Delete")_Horizontal Line_Menu Item (Edit)XMainMenu[Separator-3_Menu Item (Speech)[Separator-4_Menu Item (Help)_#Menu Item (Quit Chicken of the VNC)[Separator-1[Menu (Help)[Separator-5_Menu Item (Redo)_ZStatic Text (Copyright 1998-2000 by Helmut Maierhofer
+-Copyright 2002-2006 by Jason Harris)_#Menu Item (Hide Chicken of the VNC)_Menu Item (Refresh)[Separator-2_Menu (Special Keys)Ò  >…ù* Ò  >…ü* Ò  >…ÿ*¯aP) œ H O [¯ cy’)~ Y ^ L— T ª Xš› W!ÕD Z Só6¦ \°ª«¬¯4]³© Mº¹»  aš¾¿ÀÁÂ¬ zÉ İ ]± V° Jl I•q b üBæ NÈ U d Qº¨ i KQ­_ R®¸ _¼ P `€H€Ò€€	€G€Ä€‹€ç€ì€û€.€:€Y€»€Ñ€8€4€£€€¶€ö€²€9€W€·€Û€¿€V€À€Ö€Î€È€€ú€f€õ€?€L€_€>€€Ş€¤"	%(€l€Å€€€¸€Í€•€®€ª€,€è€€S€ã€-€C€¼€B€³€¨€ë€P€¯€©€
+-€2€ß€s€ä€R€‚€Õ€K€É€3€ÚÒ  >…c*¯adefghijklmnopqrstuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄtuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔ¾ ä¼¿8q¸m3è9*:efnç#°4º1g7t02Á+V¹åûd³áÀW)kza6‚æ4²5ÃÇp=$i`ÿÿÿÿÿÿÿı¶Ä!/&±½Xh·o"ãÂ»Õ%j(c'Ò  > F'€š Ò  >…** Ò  >…-* Ò 7 8/0¢0 ;^NSIBObjectData   " ' 1 : ? D R T f"mt{‰›·ÅÑİëö .ASmw„†‰‹‘“–˜›¡¤¦¨«®±´½ÉËÍÛäíøı(1<>?HO\bkmª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎĞÒÔÖØÚÜŞàâäñú)1EP^hu|~€…‡Œ’Ÿ«­¯±¾¿ÌÛİßáéû	)+-/BKP[ox—¦·ÅÇÉËÍÖØÚæ				$	-	7	C	E	G	I	K	N	O	Q	f	q	}			ƒ	…		¾	Ê	Ş	é	ó
++Ól\ ©nb€C_{{1, 1}, {565, 196}}_{{0, 0}, {1280, 832}}]{246.944, 28}_{3.40282e+38, 3.40282e+38}UaboutÒ 7 8hi¢i ;_NSWindowTemplate_initialFirstResponderÒ 7 8lm£m ¢ ;_NSNibOutletConnectorÔ ù q  r úp tr€1€’€€× w x y z { |  · ~u €  ‚ ƒ€€‘€€€€o A b o u t   C h i c k e n   o f   t h e   V N C &_makeKeyAndOrderFront:Ó q  r} t€—€€”Ø w x ¨ y z { |  } ~ ª‚ €„ ‚ ƒ€€•€€–€€\Close WindowQw]performClose:Ó q  r‹ t€œ€€™Ø w x ¨ y z { |  ~ ª €  ‚ ƒ€š€›€€€€Ó y  …– ‡˜>.?]Stop Speaking]stopSpeaking:Ó q  rœ t€¢€€Ø w x ¨ y z { |   ~ ª¡ €£ ‚ ƒ€Ÿ€ €€¡€€Ó y  …§ ‡©V.WTUndoQzÒ Æ ­ ÈUundo:€!Ó q  r° t²€§€€¤Ø w x ¨ y z { |   ~ ªµ €· ‚ ƒ€Ÿ€¥€€¦€€SCutQxÒ Æ ½ ÈTcut:€!Ó q  rÀ tÂ€¬€€©Ø w x ¨ y z { |   ~ ªÅ €Ç ‚ ƒ€Ÿ€ª€€«€€UPasteQvÒ Æ Í ÈVpaste:€!Ó q  rĞ tÒ€°€€®Ø w x ¨ y z { |  ~ ªÕ €  ‚ ƒ€š€¯€€€€^Start Speaking^startSpeaking:Ó q  rİ tß€µ€€²Ø w x ¨ y z { |   ~ ªâ €ä ‚ ƒ€Ÿ€³€€´€€ZSelect AllQaÒ Æ ê ÈZselectAll:€!Ó q  rí tï€º€€·Ø w x ¨ y z { |   ~ ªò €ô ‚ ƒ€Ÿ€¸€€¹€€TCopyQcÒ Æ ú ÈUcopy:€!Ó q  rı tÿ€¾€€¼Ø w x ¨ y z { |   ~ ª €  ‚ ƒ€Ÿ€½€€€€VDeleteWdelete:Ó q  r
++ t€Ã€€ÀØ w x ¨ y z { |   ~ ª € ‚ ƒ€Ÿ€Á€€Â€€TRedoQZÒ Æ  ÈUredo:€!Ó q  r t€É€€ÅØ w x ¨ y z { |  ~  €" ‚ ƒ€Æ   €Ç€€È€€Ô y ¾  …&' ‡)[^.\_Fullscreen ModeQ~_toggleFullscreenMode:Ó q  r. t0€Í€€ËØ w x ¨ y z { |  ~ ª3 €  ‚ ƒ€Æ€Ì€€€€WRefresh_manuallyUpdateFrameBuffer:Ó q  r; t=€Ñ€€ÏØ w x ¨ y z { |  ~ ª@ €  ‚ ƒ€Æ€Ğ€€€€_Bring All to FrontÒ Æ G È_arrangeInFront:€!Ó q  rJ tL€Ö€€ÓØ w x ¨ y z { |  ~ ªO €Q ‚ ƒ€Æ€Ô€€Õ€€XMinimizeQmÒ Æ W È_performMiniaturize:€!Ô ù q  rZ[ ü 0€Ø€Ú€€Ò  2 3`€€Ù[AppDelegateXdelegateÔ ù q  rZe tg€Ø€Ş€€ÜØ w x ¨ y z { |  · ~ ªj €  ‚ ƒ€€İ€€€€[Use Bonjour_changeRendezvousUse:Ô ù q  rZs tu€Ø€ã€€àØ w x ¨ y z { |  · ~ ªx €z ‚ ƒ€€á€€â€€l P r e f e r e n c e s &Q,_showPreferences:Ô ù q  rZ‚ t„€Ø€è€€åØ w x ¨ y z { |  } ~ ª‡ €‰ ‚ ƒ€€æ€€ç€€o O p e n   C o n n e c t i o n &Qo_showConnectionDialog:Ô ù q  rg‘ üZ€Ü€ê€€Ø_mRendezvousMenuItemÔ ù q  r'— üZ€G€ì€€Ø_mInfoVersionNumberÔ ù q  rZ tŸ€Ø€ñ€€îØ w x ¨ y z { |  } ~ ã¢ €¤ ‚ ƒ€€ï€€ğ€€o C o n n e c t i o n   P r o f i l e s &Qp_showProfileManager:Ô ù q  rZ¬ t®€Ø€÷€€óØ w x ¨ y z { | ° ~ ª± €³ ‚ ƒ€ô€õ€€ö€€Ó y  …· ‡¹3.4_Chicken of the VNC HelpQ?YshowHelp:Ô ù q  rZ¿ tÁ€Ø€ü€€ùØ w x ¨ y z { |  } ~ ªÄ €Æ ‚ ƒ€€ú€€û€€o L i s t e n   f o r   S e r v e r &Ql_showListenerDialog:Ó q  rÍ tÏ€€şØ w x ¨ y z { | Ñ ~ ªÒ €  ‚ ƒ€ÿ €€€€Ó y  …Ø ‡Ú+.,\Send "Pause"_sendPauseKeyCode:Ó q  rŞ tà€Ø w x ¨ y z { | Ñ ~ ªã €  ‚ ƒ€ÿ€€€€\Send "Break"_sendBreakKeyCode:Ó q  rë tí	€Ø w x ¨ y z { | Ñ ~ ªğ €  ‚ ƒ€ÿ€€€€\Send "Print"_sendPrintKeyCode:Ó q  rø tú€Ø w x ¨ y z { | Ñ ~ ªı €  ‚ ƒ€ÿ€€€€^Send "Execute"_sendExecuteKeyCode:Ó q  r t€Ø w x ¨ y z { | Ñ ~
++ €  ‚ ƒ€ÿ€€€€_Send "Ctrl-Alt-Del"_sendCtrlAltDel:Ó q  r t€Ø w x ¨ y z { | Ñ ~ €  ‚ ƒ€ÿ€€€€_Send "Cmd-Option-Escape"^sendCmdOptEsc:Ó q  r t!€Ø w x ¨ y z { | Ñ ~ ª$ €  ‚ ƒ€ÿ€€€€]Send "Insert"_sendInsertKeyCode:Ó q  r, t.€Ø w x ¨ y z { | Ñ ~ ª1 €  ‚ ƒ€ÿ€€€€]Send "Delete"_sendDeleteKeyCode:Ô ù q  rZ: t<€Ø"€Ø w x ¨ y z { |  } ~ ª? €A ‚ ƒ€ €!€€o N e w   C o n n e c t i o n &Qn_showNewConnectionDialog:Ò > H–¯Mà î }ßO,Ÿ+°„UíXY)[ ú] uÁuaLc²®Ògh!( Ğ*	p0rg'uïxyz.< ·Ñ µÂ „…ZúÏ. à=-ÿ ¦r&€™€-€À€€²/€x€î€j€ô€å567€T8€19€
++€ù€à-€Ó'€¤€ó€®:;€N€6€#€[€l(€Ë@€Ü€GK€”€·NAS€€ÿ]€F€©€Ÿ&X€€Ø€ş€‚€(€Ï€ÆG€š€Å€}€¼€€€8`ZConnectionÒ > ™ oª<„Á„ u ¦Ÿcp€å€ù€”&€
++€€î'(€oÚ w x ¨ y z¦ { | § } ~ ª  €8  ‚ ƒ8\NSIsDisabled]NSIsSeparator€€€	€€€	Ú w x ¨ y z¦ { | § } ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨º y z { | » } ~ ªÑ¾ €  ‚ ƒÃYNSSubmenuXNSAction€€ÿ)€€€€*\Special Keys^submenuAction:Ò > Ç o©a!.Ïàíú-€ş€oÚ w x ¨ y z¦ { | §Ñ ~ ª  €8  ‚ ƒ8€ÿ€€	€€€	Ò 7 8Ü w¢ w ;Ô y ¾  …Şß ‡á02.1Ò Æ ã ÈXServices€!Ò > æ o €o__NSServicesMenuTHelpÒ > ë o¡®€ó€oÚ w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨ y z¦ { | § ~ ª  €8  ‚ ƒ8€Æ€€	€€€	Ú w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨ y z¦ { | §  ~ ª  €8  ‚ ƒ8€Ÿ€€	€€€	Ú w x ¨ y z¦ { | §  ~ ª  €8  ‚ ƒ8€Ÿ€€	€€€	Ú w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨º y z { | »  ~ ª' €  ‚ ƒ,€Ÿ€š<€€€€=VSpeechÒ > / o¢Ò€®€™€oÚ w x ¨º y z { | »y ~ ª ·6 €  ‚ ƒ;A€B€€€€CÔ y ¾  …=> ‡@Q_.RÒ > B o¬rUugg Ğ à îY µ€5€à€ÜFG:€#€(€-7€€oÚ w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨º y z { | » · ~ ªO\ €  ‚ ƒa€/H€€€€I\_NSAppleMenuÚ w x ¨º y z { | »y ~ ª }f €  ‚ ƒkA€L€€€€MÚ w x ¨º y z { | »y ~ ª°o €  ‚ ƒtA€ôO€€€€P]OSX_RFBViewerÒ > w o¥ruz…x@KSXN€oÚ w x ¨º y z { | »y ~ ª  €  ‚ ƒ†A€ŸT€€€€UTEditÒ Æ ‡ È€!Ò > ‹ oª[²ïÂÿß]h€€À8€¤€·€©€¼€²9;€oÚ w x ¨º y z { | »y ~ ªš €  ‚ ƒŸA€ÆY€€€€ZVWindowÒ Æ   È€!Ò > ¤ o¦XL0=€Å6€Ó€Ë]€Ï€oÚ w x ¨ y z¦ { | § ~ ª  €8  ‚ ƒ8€Æ€€	€€€	^_NSWindowsMenu[_NSMainMenuÒ 7 8¸¢ ;Ò > º–¯MÑ · u  }x } ·ÑÑ ·  0  } } ·Ñ } ° · ÑÑ ú ·+ }y ·y } y 0yÑ }rp · · z }y  0ÑÑ ·… ·h  } ·€š€ÿ€€ŸK€ŸG€6€€6N€€€ÿ€ÿ€Æ€€6€Ÿ€€Ÿ€€€€ÿ€Æ€€Ÿ€ô€š€€Ÿ€ÿ€ÿ€6€1€€6€j€€ÆA€€6A€€ŸA€A€ÿ€@(€Æ€€€ŸS€A€Ÿ€€ÿ€ÿ€6€€ÆX€;€Æ€6€Ÿ€€€6`Ò > 
++–¯Y úg î àr ¦	 0O Ğy uZ ·+u„ur µ7€1:€-€(€€€l€/€#AG€
++€Ø€€jK€åF€à@€`Ò > &–¯'()*+,-./0123456789:;<=>?defghijklmnopqrstuvwxyz{|`TInfo[NSMenuItem7[NSMenuItem6[NSMenuItem5[NSMenuItem4]NSMenuItem211[NSMenuItem2\File's OwnerXMainMenu[NSMenuItem3[NSMenuItem1^NSMenuItem2111VNSBox1[NSMenuItem9[NSMenuItem8Ò > Q– `Ò > T– `Ò > W–¯v( [ kÂ b f Ğ n Z*p ú	„à Q T]0r… î h K NZ ug S g'ï a Mu OOÁ jß }u 0úa à [Ïx.,L i= J m \ d `Ò G²y XŸ®c U cz H ^ V Y+ W ].° ¦-„g ·ÿ< L Ph l R eUí I _XÑ&Yr)! µ€N€ŸF8€©€6€ë€ı€#€™€Ê€[(€1€l&€€­9€Ë@X€-€'€€€Ø€
++€Ü€¨€G€·€é€0K€”€“€À/€ù€²€€à€-€(€Î€şN€‚€x€Ó
++€Ï€"€Ò€ò€Æ€ä€®€	€šG€¤A€¿€î€ó'€±€íS€€Û€¶€Ä€j€»€×€ô€Å€€}€å:€€¼€,€˜;€£€ø5€€ß6€ÿ]€87€€T€`Ò > Ğ–¯vÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷øùúûüışÿ 	
++ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEF‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö`åbÀ!ç`ºcÆ8ã°è¶$'4d2i¼ptW¥Q&»ä"_s4m®¿=l¸¹h9±zÇ1½/oÄ:­3^¦e+¬û(a<Z)7*XÂ‚0;V5jf Åq#Ã%¯Õ¾·n]5³²6áagæÁkÒ > ¾ o €oÒ > Á– `Ò > Ä– `Ò 7 8ÇÈ¢È ;^NSIBObjectData   # , 1 : L Q V d f`f±Ãßñü2?RYguƒ©·ÁÈËÎÑÔ×Úİàâåçêíğòô÷ù )2=BQZmv‚„”¡§°	!#%')+-/13579;=?ACFILORUX[]jr{}¥³»ÅĞİßäæèêìîû
++=>KZ\^`hzƒŠ±¾ÀÂÄ×àåğ				-	<	I	K	M	O	p	„	†	‹			‘	“	•	À	Í	Ú	Ü	Ş	à
+ 
+-
+-
+-
+-!
+-#
++
++
++
++	
++
++
++
+ %
+-'
+-)
++(
+ +
+--
++.
+ 1
+-B
+-I
+-P
+-Y
+-[
+-d
+-f
+-h
+-r
+-{
+-€
+-‡
+-œ
+-¤
+-±
+-½
+-Ë
+-Í
+-Ï
+-Ñ
+-Ó
+-Õ
+-Ü
++K
++M
++V
++`
++k
++m
++v
++}
++
++˜
++¥
++§
++©
++«
++Ì
++Î
++Ğ
++Ò
++Ô
++Ö
++Ø
+ ò
+-ÿ	)+7@I[hq|ˆ’™¥ºÃÊáîğòô!.036;=CPRTVwy{}ƒ”–™œŸ¹»ÁÎĞÒÔõ÷ùûıÿ&(>KMOQrtv{}ƒ­º¼¾Àáãåçéëíóõü	02468:<Rdqsuw˜šœ ¢¤¯±¼ÍÏÑÓÕŞëíïñ+?PRTVXuwy{}¶ëø)3ANXj~ˆ”–˜šœ£¥§©«­¯Êåíòûı "?ACEGHJd…‡‰‹‘¦·¹ÂÄÓàæèêø 9Z_acegik²ÃÅÎĞİßÿ "$%'@acegikprÁÖØÚÜŞëøú+6BDFHIKMNPY[jlnprtvx”°äü:Zq’š¢ªµº¼¾ÃÄÑÓÕ×ëôû'T^jx…¡£¥§©ª¬®ÅÌéëíïñó÷
+-%24BKTZwy{}€‚›¼¾ÀÂÄÆÈ3@B_aceghj¢¤¦¨ª¬®¶ÃÅâäæèêëí')+-/13ly{„‹š¢­¶½Õã '?LNPRsuwy{}™›¦³µ·¹ÚÜŞàâäæóõ÷ù#%')JLNSUWY[g€‘“´¶¸º¼¾ÀÍáîğòô!.024BP]_ac„†ˆŠŒ¥·ÄÆÈÊëíïñóõ÷	#0246WY[]_ackˆ•—™›¼¾ÀÂÄÆÈÍÏÕâäæè	#8EGIKlnprtvx‡”–˜š»½¿ÁÃÅÇËÍÒßáãå
+-!0=?ACdfhjlnpuw}ŠŒ±³µ·¹»½Ëàíïñó         ) B O Q S U v x z | ~ € ‚ ‘ § ° ³!<!>!@!B!D!F!H!J!L!N!P!R!U!W!Y!\!^!a!c!e!g!j!l!n!p!r!t!v!x!z!|!~!!ƒ!…!‡!‰!‹!!!‘!”!–!˜!š!!Ÿ!¡!£!¥!¨!«!®!±!´!¶!¹!¼!¿!Â!Å!Ç!É!Ë!Í!Ï!Ñ!Ô!Û!ä!æ!ë!í!ï!ø!ı""""""" "I"W"d"f"h"i"k"l"n"p"r"›"¥"®"°"²"´"¶"¸"º"¼"¾"Ë"Ú"ã"å"ø"ú"ü"ş# #####
+-#3#5#7#8#:#;#=#?#A#R#T#V#X#Z#c#m#o#x##ˆ#š#£#¬#®#¯#Á#Ê#Ì#Ñ#Ú#Ü#ñ#ó#õ#ø#ú#ü#ş$ $$$$1$3$5$6$8$9$;$=$?$h$j$l$m$o$p$r$t$v$Ÿ$¡$£$¥$§$©$«$­$°$¹$»$Â$Ë$Í$Ú$Ü$ß$á$ã$æ$è%%%%%%%%%%H%J%L%M%O%P%R%T%V%e%n%p%r%›%%Ÿ%¢%¤%¦%¨%ª%­%Â%Ë%Í%à%â%å%è%ë%í%ï%ñ%ô%ö&&!&#&$&&&'&)&+&-&V&X&Z&[&]&^&`&b&d&&&‘&’&”&•&—&™&›&¨&Ñ&Ó&Õ&×&Ù&Û&İ&à&ã&ô&ö&ù&ü&ÿ'('*','/'1'3'5'8';'d'f'h'k'm'o'q't'w'…'''›''¡'¤'§'ª'Ó'Õ'×'Ú'Ü'Ş'à'ã'æ(((((((( (#(((5(7(:(=(F(H(I(U(f(h(j(m(‚(‹((™(œ)%)'))),).)0)3)5)7):)<)?)A)D)F)H)J)L)O)Q)S)V)X)Z)\)^)`)b)d)f)h)j)m)o)q)s)u)w)y){)})€)‚)„)†)ˆ)Š)Œ)))’)”)—)™)›)) )¢)¤)§)©)«)­)¯)±)³)µ)·)À)Ã*N*P*R*T*V*X*Z*\*^*`*b*e*g*i*k*m*p*r*u*w*y*{*~*€*‚*„*†*ˆ*Š*Œ***’*•*—*™*›**Ÿ*¡*¤*¦*¨*ª*¬*®*°*²*µ*·*¹*¼*¿*Â*Å*Ç*Ê*Í*Ï*Ò*Õ*Ø*Û*İ*ß*á*ã*æ*è*ñ*ô++‚+…+ˆ+‹++‘+”+—+š++ +£+¦+©+¬+¯+²+µ+¸+»+¾+Á+Ä+Ç+Ê+Í+Ğ+Ó+Ö+Ù+Ü+ß+â+å+è+ë+î+ñ+ô+÷+ú+ı, ,,,	,,,,,,,,!,#,&,),,,/,2,5,7,:,=,@,C,F,I,k,x,,¡,¯,ö-
+--ƒ-š-¦-²-Ä-É-×-ô. ..2.N.[.v..¢.¶.×.î/;/V/r//­/¿/Ô/ğ00"0w0ƒ00®0É0ä0÷11A1b1{1‡1£1µ1È1Ñ1İ1ò1ş2272C2O2[2n2Ë2ñ333)3235363?3B3C3L3O4444444 4"4$4&4(4*4-4/414345474:4<4>4@4B4D4G4I4K4M4O4Q4S4U4W4Y4\4^4`4b4d4f4h4k4m4o4r4t4v4y4|444ƒ4…4ˆ4‹44‘4”4–4˜4š44Ÿ4¡4£4¥4§4©4«4­4¯4²4´4¶4¸4º4¼4¾4À4Â4Ä4Æ4È4Ê4Ì4Î4Ğ4Ò4Ô4Ö4Ø4Û4İ4à4â4ä4æ4è4ñ4ô5¹5¼5¿5Â5Å5È5Ë5Î5Ñ5Ô5×5Ú5İ5à5ã5æ5é5ì5ï5ò5õ5ø5û5ş6666
+-66666666"6%6(6+6.6164676:6=6@6C6F6I6L6O6R6U6X6[6^6a6d6g6j6m6p6s6v6y6|66‚6…6ˆ6‹66‘6”6—6š66 6£6¦6©6¬6¯6²6µ6¸6»6¾6Á6Ä6Ç6Ê6Í6Ğ6Ó6Ö6Ù6Ü6ß6â6ä6ç6ê6í6ğ6ó6ö6ù6ü6ÿ7777
+-77777777 7#7&7)7,7/7275787;7>7A7D7G7J7L7O7R7U7X7[7]7`7c7e7h7k7n7q7t7w7z7}7€7‚7…7ˆ7‹77‘7”7—7™7œ7Ÿ7¢7«7®7±7´7·7º7½7À7Ã7Æ7É7Ì7Ï7Ò7Õ7Ø7Ú7İ7à7ã7æ7é7ì7ï7ò7õ7ø8888888888'8,            1              8;
+\ No newline at end of file
++ô
++ı9;@BDFHJVo|~€‚£¥§©«­¯¸Ñâğòôöø-AS]ky†“ª´ÀÖØÚÜŞàâäæèíïñó)16GRdlnprt}’”–˜šœ ¢¤ÁÍ×àçéëíîñóõ0DPZesŒ’”–˜Ÿ´ÅÌÕÚÜŞàïøı!-:HJLNPRYo|„‡‰’—¤ª¸º¼ÅÎàíö&-9VXZ\]_ayšœ ¢¤¦ª»ÀÂÄÎÛçé
++*KMOQSUW\£´¹»½Êêì	-NPRTVXZ_®ÃÅÇÉËØåñó$/13568:<=FUWY[]_aceµÕö+G^‡š¢¤¥§¬±¾ÀÂÄØáêö#P]o{…“Ÿ¡£¥§©ª¬µ¸º¼ÍÏÑÓÕêóú
++!8?\^`bdfj{€‚„‡”¡¯±ºÃÉæèêìíïñ
+++-/1357¢¯±ÎĞÒÔÕ×Ùğ%24QSUWXZ\u–˜šœ ¢Ûèê'DJSXkƒŒ“ª»½¿ÁÃàâäæèêì!9FHJLmoqsuwy†ˆ–£¥§©ÊÌÎĞÒÔÖãæéìú<>@BDFHUX[^centvƒ…‡‰ª¬®°²´¶º¼ÅÊÌÙÛİß 
++$&3579Z\^`bdfu„‘“•—¸º¼¾ÀÂÄÏÑÚåçôöøú!#%',.7=?LNPRsuwy{}†›Ÿ¡ÂÄÆÈÊÌÎÓÕŞäæóõ÷ù!#%')+<?BEHZ\tƒ…‡¨ª¬®°²´¼Ùæèêì.7IKXZ\^ƒ…‡‰‹”–Ÿµ·ÈÊÌÎĞÙÛİéò    	  , . 0 2 4 6 8 D [ l n p r t • — ™ ›  Ÿ ¡ º ¼ Ï à â ä æ è!	!!!!!!!8!:!R!c!e!g!i!k!!’!”!–!˜!š!¯!À!Â!Ä!Æ!È!é!ë!í!ï!ñ!ó!õ" """8"I"K"M"O"Q"r"t"v"x"z"|"~"‹""‘"”"®"°"º"Ë"Í"Ï"Ñ"Ó"ô"ö"ø"ú"ü"ş# #'#)#?#L#O#Q#S#t#v#y#{#}####‘#”#—#¤#¸#Å#È#Ê#Í#î#ğ#ó#õ#÷#ù#û$$$)$,$.$1$R$T$W$Y$[$]$_$l$€$$$’$•$¶$¸$»$½$¿$Á$Ã$Ò$è$õ$ø$ú$ı%% %#%%%'%)%+%A%S%`%c%e%h%‰%‹%%%’%”%–%±%À%Í%Ğ%Ò%Õ%ö%ø%û%ı%ÿ&&&&&&3&6&8&;&\&^&a&c&e&g&i&w&Œ&&Ÿ&¢&¤&§&È&Ê&Í&Ï&Ò&Ô&Ö&÷&ù'''º'¼'¿'Á'Ã'Å'Ç'Ê'Ì'Î'Ğ'Ò'Ô'×'Ú'İ'à'ã'å'è'ê'í'ï'ñ'ó'ö'ø'û'ı'ÿ((((
++((((((((((!(#(&(((*(-(0(3(6(9(;(=(@(B(E(G(I(L(O(Q(S(V(X(Z(\(^(`(c(e(g(i(k(m(o(q(t((ˆ(( (¢(¤(¦(©(«(­(¯(²(µ(·(à(í(û(ı(ÿ))))))	)2)4)6)8)9);)=)?)@)i)s)|)~)€)ƒ)…)‡)‰)‹))›)ª)³)Æ)É)Ì)Ï)Ò)Õ)×)Ú)İ)à)â**********"*'*8*;*>*A*D*M*V*X*a*b*d*v*{*„*‡*‰*‹*´*¶*¸*º*»*½*¿*Á*Â*ë*í*ï*ñ*ò*ô*ö*ø*ù+"+$+&+(+)+++-+/+0+Y+[+]+_+`+b+d+f+g++’+”+–+—+™+›+++Ç+É+Ë+Í+Î+Ğ+Ò+Ô+Õ+ş, ,,,,	,,,,, ,%,',),+,T,W,Y,\,^,`,b,d,g,x,{,~,,„,,¦,¨,«,­,¯,²,µ,¸,º,¼,¾,Á,Ã,Å,î,ğ,ò,ô,õ,÷,ù,û,ü-%-'-*---/-1-3-5-8-E-n-q-s-v-x-z-|-~--ª-­-¯-²-´-¶-¸-º-½-Ë-Ô-ß-â-å-è-ë-î-ğ....!.#.%.'.).,.1.:.<.E.Z.\.^.a.c.e.g.i.k.n.q.s.œ.Ÿ.¡.¤.¦.¨.ª.¬.¯.¶.¿.Á.Ê.×.Ù.Ü.Ş.à.ã.å.ç//////////-/9/B/G/P/í/ï/ñ/ó/õ/ø/ú/ı/ÿ00000
++00000000000 0"0$0&0(0*0,0.00020406080:0<0>0@0B0E0G0I0L0N0P0S0U0X0Z0\0_0b0d0f0h0j0m0o0r0t0v0x0z0|0~0€0ƒ0…0ˆ0Š0Œ000’0”0—0 0Õ0Ø0Ú0İ0ß0á0ã0æ0è0ê0ì0ï0ñ0ô0÷0ù0ü0ş1 1111
++111111R1U1X1[1^1a1d1g1j1m1p1s1v1y1|11‚1…1ˆ1‹11‘1”1—1š11 1¥1±1½1É1Õ1ã1ï1ü2222,232?2K2T2U2X2a2b2e2n3]3_3a3d3g3j3l3n3p3r3t3w3y3{3}3€3‚3„3‡3Š3Œ33‘3“3–3™3›33 3¢3¤3¦3¨3ª3¬3¯3±3³3µ3·3º3¼3¾3À3Ã3Å3È3Ê3Ì3Î3Ğ3Ó3Ö3Ø3Ú3Ü3ß3á3ã3å3è3ê3ì3ï3ñ3ó3õ3÷3ù3û3ı4 4444	44444444444!4#4&4(4*4,4.404345474:4<4>4A4D4F4H4K4N4Q4S4U4X4[4]4`4b4e4g4i4l4n4q4z5i5l5o5r5u5x5{5~55„5‡5Š555“5–5™5œ5Ÿ5¢5¥5¨5«5®5±5´5·5º5½5À5Ã5Æ5É5Ì5Ï5Ò5Õ5Ø5Û5Ş5á5ä5ç5ê5í5ğ5ó5ö5ù5ü5ÿ66666666666 6#6&6)6,6/6265686;6>6A6D6G6J6M6P6S6V6Y6\6_6b6e6h6k6n6q6t6w6z6}6€6ƒ6†6‰6Œ66’6•6˜6›66¡6¤6§6ª6­6°6³6¶6¹6¼6¿6Â6Å6È6Ë6Î6Ğ6Ó6Ö6Ù6Ü6ß6á6ä6ç6ê6í6ğ6ó6õ6ø6ú6ı7 777	77777777!7$7'7)7,7/7274777:7=7?7B7E7H7K7N7Q7T7V7Y7\7_7b7e7h7k7n7q7t7w7z7}7€7ƒ7†7‰7Œ77‘7”7—7š7œ7Ÿ7¢7¥7¨7«7®7±7´7·7º7½7À7Ã7Æ7É7Ì7Ï7Ò7Õ7×7Ú7İ7à7ã7æ7é7ì7ï7ò7õ7ø7û7ş8888
++88888888 8)8*8,8586898B8C8F8O8T            É              8c
+\ No newline at end of file
+Only in ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib: objects.nib
+diff -aurr ./Source/ListenerController.m ../cotvnc/Source/ListenerController.m
+--- ./Source/ListenerController.m	2008-11-07 22:40:05.000000000 -0700
++++ ../cotvnc/Source/ListenerController.m	2006-01-17 12:20:14.000000000 -0700
+@@ -86,8 +86,7 @@
+     if (listeningSocket) {
+         [self stopListener];
+     }
+-    //[self savePrefs];
+-	
++    [self savePrefs];
+ 	[super dealloc];
+ 		
+ 	[[NSNotificationCenter defaultCenter] removeObserver:self
+@@ -105,7 +104,7 @@
+                                                  name:ProfileListChangeMsg
+                                                object:(id)[ProfileDataManager sharedInstance]];
+     
+-    //[self updateUI];
++    [self updateUI];
+ }
+ 
+ 
+@@ -199,7 +198,7 @@
+         
+     [listeningSocket acceptConnectionInBackgroundAndNotify];
+     
+-    //[self updateUI];
++    [self updateUI];
+     
+     return YES;
+ }
+@@ -219,7 +218,7 @@
+     [listeningSocket release];  listeningSocket = nil;
+     [listeningProfile release]; listeningProfile = nil;
+     
+-    //[self updateUI];
++    [self updateUI];
+ }
+ 
+ 
+@@ -287,7 +286,7 @@
+ 
+ - (void)updateProfileView:(id)notification
+ {
+-	//[self loadProfileIntoView];
++	[self loadProfileIntoView];
+ }
+ 
+ 
+diff -aurr ./Source/MyApp.m ../cotvnc/Source/MyApp.m
+--- ./Source/MyApp.m	2008-11-07 21:28:00.000000000 -0700
++++ ../cotvnc/Source/MyApp.m	2005-07-11 05:22:56.000000000 -0600
+@@ -14,7 +14,6 @@
+ 
+ @implementation MyApp
+ 
+-
+ - (void)sendEvent:(NSEvent *)anEvent
+ {
+ 	/*
+diff -aurr ./Source/RFBConnection.m ../cotvnc/Source/RFBConnection.m
+--- ./Source/RFBConnection.m	2008-11-10 21:24:43.000000000 -0700
++++ ../cotvnc/Source/RFBConnection.m	2007-03-15 23:24:14.000000000 -0600
+@@ -337,7 +337,7 @@
+ 		[_eventFilter synthesizeRemainingEvents];
+ 		[_eventFilter sendAllPendingQueueEntriesNow];
+ 
+-        if(false) {
++        if(aReason) {
+ 			if ( _autoReconnect ) {
+                 NSLog(@"Automatically reconnecting to server.  The connection was closed because: \"%@\".", aReason);
+ 				// Just auto-reconnect (by reinstantiating ourselves)
+diff -aurr ./Source/RFBConnectionManager.m ../cotvnc/Source/RFBConnectionManager.m
+--- ./Source/RFBConnectionManager.m	2008-11-07 22:42:17.000000000 -0700
++++ ../cotvnc/Source/RFBConnectionManager.m	2007-03-15 21:31:56.000000000 -0600
+@@ -21,7 +21,6 @@
+ #import "RFBConnection.h"
+ #import "PrefController.h"
+ #import "ProfileManager.h"
+-#import "ListenerController.h"
+ #import "Profile.h"
+ #import "rfbproto.h"
+ #import "vncauth.h"
+@@ -37,7 +36,7 @@
+ 	static id sInstance = nil;
+ 	if ( ! sInstance )
+ 	{
+-		sInstance = [self alloc];
++		sInstance = [[self alloc] initWithWindowNibName: @"ConnectionDialog"];
+ 		NSParameterAssert( sInstance != nil );
+ 		
+ 		[sInstance wakeup];
+@@ -145,23 +144,8 @@
+     for (i = 1; i < argCount; i++)
+ 	{
+ 		arg = [args objectAtIndex:i];
+-
+-		if ([arg hasPrefix:@"--listen"])
+-		{
+-			NSLog(@"Called with --listen.");
+-			
+-			ListenerController* listener = [ListenerController sharedController];
+-			ProfileManager* pm = [ProfileManager sharedManager];
+-
+-			int port = 5500;
+-			profile = [pm profileNamed: @"Called with --listen."];
+-			BOOL local = false;
+-
+-			[listener startListenerOnPort:port withProfile:profile localOnly:local];
+-			
+-			return YES;
+-		} 
+-		else if ([arg hasPrefix:@"-psn"])
++		
++		if ([arg hasPrefix:@"-psn"])
+ 		{
+ 			// Called from the finder.  Do nothing.
+ 			continue;
+diff -aurr ./Source/VNCViewer_main.m ../cotvnc/Source/VNCViewer_main.m
+--- ./Source/VNCViewer_main.m	2008-11-07 21:24:00.000000000 -0700
++++ ../cotvnc/Source/VNCViewer_main.m	2003-01-17 04:55:52.000000000 -0700
+@@ -14,6 +14,5 @@
+ 	[NSAutoreleasePool setPoolCountHighWaterMark: 2000];
+ 	[NSAutoreleasePool setPoolCountHighWaterResolution: 2000];
+ #endif
+-
+     return NSApplicationMain(argc, argv);
+ }
+Only in .: cotvnc-gitso.diff
+diff -aurr ./cotvnc-gitso.diff ../cotvnc-gitso/cotvnc-gitso.diff
+--- ./cotvnc-gitso.diff	2008-11-11 15:53:29.000000000 -0700
++++ ../cotvnc-gitso/cotvnc-gitso.diff	2008-11-11 15:28:25.000000000 -0700
+@@ -1,547 +1,547 @@
+-Only in ../cotvnc-gitso/: .DS_Store
+-Only in ../cotvnc-gitso/Chicken of the VNC.xcodeproj: gerberad.mode1v3
+-Only in ../cotvnc-gitso/Chicken of the VNC.xcodeproj: gerberad.pbxuser
+-diff -aurr ./Chicken of the VNC.xcodeproj/project.pbxproj ../cotvnc-gitso/Chicken of the VNC.xcodeproj/project.pbxproj
+---- ./Chicken of the VNC.xcodeproj/project.pbxproj	2007-03-28 18:52:50.000000000 -0600
+-+++ ../cotvnc-gitso/Chicken of the VNC.xcodeproj/project.pbxproj	2008-11-10 21:37:35.000000000 -0700
+-@@ -1209,6 +1209,7 @@
++Only in .: .DS_Store
++Only in ./Chicken of the VNC.xcodeproj: gerberad.mode1v3
++Only in ./Chicken of the VNC.xcodeproj: gerberad.pbxuser
++diff -aurr ./Chicken of the VNC.xcodeproj/project.pbxproj ../cotvnc/Chicken of the VNC.xcodeproj/project.pbxproj
++--- ./Chicken of the VNC.xcodeproj/project.pbxproj	2008-11-10 21:37:35.000000000 -0700
+++++ ../cotvnc/Chicken of the VNC.xcodeproj/project.pbxproj	2007-03-28 18:52:50.000000000 -0600
++@@ -1209,7 +1209,6 @@
+  		29B97313FDCFA39411CA2CEA /* Project object */ = {
+  			isa = PBXProject;
+  			buildConfigurationList = E20426EA087531990026AA26 /* Build configuration list for PBXProject "Chicken of the VNC" */;
+-+			compatibilityVersion = "Xcode 2.4";
++-			compatibilityVersion = "Xcode 2.4";
+  			hasScannedForEncodings = 1;
+  			knownRegions = (
+  				English,
+-@@ -1219,6 +1220,7 @@
++@@ -1220,7 +1219,6 @@
+  			);
+  			mainGroup = 29B97314FDCFA39411CA2CEA /* Chicken of the VNC */;
+  			projectDirPath = "";
+-+			projectRoot = "";
++-			projectRoot = "";
+  			targets = (
+  				7F7A93E305E71B5C00E20416 /* Chicken of the VNC */,
+  				7F916AA40BB6E98900E31F20 /* libjpeg */,
+-Only in ./Chicken of the VNC.xcodeproj: project.pbxproj.rej
+-diff -aurr ./Resources/English.lproj/OSX_RFBViewer.nib/classes.nib ../cotvnc-gitso/Resources/English.lproj/OSX_RFBViewer.nib/classes.nib
+---- ./Resources/English.lproj/OSX_RFBViewer.nib/classes.nib	2005-04-14 18:46:42.000000000 -0600
+-+++ ../cotvnc-gitso/Resources/English.lproj/OSX_RFBViewer.nib/classes.nib	2008-11-07 22:54:10.000000000 -0700
+-@@ -1,130 +1,90 @@
+--{
+--    IBClasses = (
+--        {
+--            ACTIONS = {
+--                changeRendezvousUse = id; 
+--                showConnectionDialog = id; 
+--                showHelp = id; 
+--                showListenerDialog = id; 
+--                showNewConnectionDialog = id; 
+--                showPreferences = id; 
+--                showProfileManager = id; 
+--            }; 
+--            CLASS = AppDelegate; 
+--            LANGUAGE = ObjC; 
+--            OUTLETS = {mInfoVersionNumber = NSTextField; mRendezvousMenuItem = NSMenuItem; }; 
+--            SUPERCLASS = NSObject; 
+--        }, 
+--        {
+--            ACTIONS = {
+--                makeConnectionFullscreen = id; 
+--                makeConnectionWindowed = id; 
+--                manuallyUpdateFrameBuffer = id; 
+--                openNewTitlePanel = id; 
+--                openOptions = id; 
+--                pasteViaKeypress = id; 
+--                sendBreakKeyCode = id; 
+--                sendCmdOptEsc = id; 
+--                sendCtrlAltDel = id; 
+--                sendDeleteKeyCode = id; 
+--                sendExecuteKeyCode = id; 
+--                sendInsertKeyCode = id; 
+--                sendPauseKeyCode = id; 
+--                sendPrintKeyCode = id; 
+--                toggleFullscreenMode = id; 
+--            }; 
+--            CLASS = FirstResponder; 
+--            LANGUAGE = ObjC; 
+--            SUPERCLASS = NSObject; 
+--        }, 
+--        {
+--            ACTIONS = {changeSelectedScenario = id; restoreDefaults = id; }; 
+--            CLASS = KeyEquivalentPrefsController; 
+--            LANGUAGE = ObjC; 
+--            OUTLETS = {mConnectionType = NSPopUpButton; mOutlineView = NSOutlineView; }; 
+--            SUPERCLASS = NSObject; 
+--        }, 
+--        {CLASS = Profile; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+--        {
+--            ACTIONS = {
+--                addProfile = id; 
+--                changeEncodingState = id; 
+--                deleteProfile = id; 
+--                profileChanged = id; 
+--                profileSelected = id; 
+--                reorderEncodings = id; 
+--            }; 
+--            CLASS = ProfileManager; 
+--            LANGUAGE = ObjC; 
+--            OUTLETS = {
+--                altKey = id; 
+--                commandKey = id; 
+--                controlKey = id; 
+--                deleteProfileButton = id; 
+--                enableCopyRect = id; 
+--                encodingTableView = id; 
+--                m3bTimeout = id; 
+--                mkbTimeout = id; 
+--                mkdTimeout = id; 
+--                newProfileButton = id; 
+--                pixelFormatMatrix = id; 
+--                profileBrowser = id; 
+--                profileField = id; 
+--                profilePanel = id; 
+--                shiftKey = id; 
+--                upDownButtonMatrix = id; 
+--            }; 
+--            SUPERCLASS = NSObject; 
+--        }, 
+--        {
+--            ACTIONS = {
+--                addServer = id; 
+--                deleteSelectedServer = id; 
+--                showConnectionDialog = id; 
+--                showNewConnectionDialog = id; 
+--            }; 
+--            CLASS = RFBConnectionManager; 
+--            LANGUAGE = ObjC; 
+--            OUTLETS = {
+--                groupList = NSTableView; 
+--                serverDataBoxLocal = NSBox; 
+--                serverDeleteBtn = NSButton; 
+--                serverGroupBox = NSBox; 
+--                serverList = NSTableView; 
+--                serverListBox = NSBox; 
+--                splitView = NSSplitView; 
+--            }; 
+--            SUPERCLASS = NSWindowController; 
+--        }, 
+--        {CLASS = ServerDataManager; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+--        {
+--            ACTIONS = {
+--                connectToServer = id; 
+--                displayChanged = id; 
+--                hostChanged = id; 
+--                passwordChanged = id; 
+--                profileSelectionChanged = id; 
+--                rememberPwdChanged = id; 
+--                sharedChanged = id; 
+--            }; 
+--            CLASS = ServerDataViewController; 
+--            LANGUAGE = ObjC; 
+--            OUTLETS = {
+--                box = NSBox; 
+--                connectBtn = NSButton; 
+--                connectIndicator = NSProgressIndicator; 
+--                connectIndicatorText = NSTextField; 
+--                display = NSTextField; 
+--                hostName = NSTextField; 
+--                mDelegate = id; 
+--                mServer = id; 
+--                password = NSTextField; 
+--                profilePopup = NSPopUpButton; 
+--                rememberPwd = NSButton; 
+--                shared = NSButton; 
+--            }; 
+--            SUPERCLASS = NSWindowController; 
+--        }
+--    ); 
+--    IBVersion = 1; 
+--}
++diff -aurr ./Resources/English.lproj/OSX_RFBViewer.nib/classes.nib ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/classes.nib
++--- ./Resources/English.lproj/OSX_RFBViewer.nib/classes.nib	2008-11-07 22:54:10.000000000 -0700
+++++ ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/classes.nib	2005-04-14 18:46:42.000000000 -0600
++@@ -1,90 +1,130 @@
++-<?xml version="1.0" encoding="UTF-8"?>
++-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
++-<plist version="1.0">
++-<dict>
++-	<key>IBClasses</key>
++-	<array>
++-		<dict>
++-			<key>ACTIONS</key>
++-			<dict>
++-				<key>changeRendezvousUse</key>
++-				<string>id</string>
++-				<key>showConnectionDialog</key>
++-				<string>id</string>
++-				<key>showHelp</key>
++-				<string>id</string>
++-				<key>showListenerDialog</key>
++-				<string>id</string>
++-				<key>showNewConnectionDialog</key>
++-				<string>id</string>
++-				<key>showPreferences</key>
++-				<string>id</string>
++-				<key>showProfileManager</key>
++-				<string>id</string>
++-			</dict>
++-			<key>CLASS</key>
++-			<string>AppDelegate</string>
++-			<key>LANGUAGE</key>
++-			<string>ObjC</string>
++-			<key>OUTLETS</key>
++-			<dict>
++-				<key>mInfoVersionNumber</key>
++-				<string>NSTextField</string>
++-				<key>mRendezvousMenuItem</key>
++-				<string>NSMenuItem</string>
++-			</dict>
++-			<key>SUPERCLASS</key>
++-			<string>NSObject</string>
++-		</dict>
++-		<dict>
++-			<key>CLASS</key>
++-			<string>NSObject</string>
++-			<key>LANGUAGE</key>
++-			<string>ObjC</string>
++-		</dict>
++-		<dict>
++-			<key>ACTIONS</key>
++-			<dict>
++-				<key>makeConnectionFullscreen</key>
++-				<string>id</string>
++-				<key>makeConnectionWindowed</key>
++-				<string>id</string>
++-				<key>manuallyUpdateFrameBuffer</key>
++-				<string>id</string>
++-				<key>openNewTitlePanel</key>
++-				<string>id</string>
++-				<key>openOptions</key>
++-				<string>id</string>
++-				<key>pasteViaKeypress</key>
++-				<string>id</string>
++-				<key>sendBreakKeyCode</key>
++-				<string>id</string>
++-				<key>sendCmdOptEsc</key>
++-				<string>id</string>
++-				<key>sendCtrlAltDel</key>
++-				<string>id</string>
++-				<key>sendDeleteKeyCode</key>
++-				<string>id</string>
++-				<key>sendExecuteKeyCode</key>
++-				<string>id</string>
++-				<key>sendInsertKeyCode</key>
++-				<string>id</string>
++-				<key>sendPauseKeyCode</key>
++-				<string>id</string>
++-				<key>sendPrintKeyCode</key>
++-				<string>id</string>
++-				<key>toggleFullscreenMode</key>
++-				<string>id</string>
++-			</dict>
++-			<key>CLASS</key>
++-			<string>FirstResponder</string>
++-			<key>LANGUAGE</key>
++-			<string>ObjC</string>
++-			<key>SUPERCLASS</key>
++-			<string>NSObject</string>
++-		</dict>
++-	</array>
++-	<key>IBVersion</key>
++-	<string>1</string>
++-</dict>
++-</plist>
+++{
+++    IBClasses = (
+++        {
+++            ACTIONS = {
+++                changeRendezvousUse = id; 
+++                showConnectionDialog = id; 
+++                showHelp = id; 
+++                showListenerDialog = id; 
+++                showNewConnectionDialog = id; 
+++                showPreferences = id; 
+++                showProfileManager = id; 
+++            }; 
+++            CLASS = AppDelegate; 
+++            LANGUAGE = ObjC; 
+++            OUTLETS = {mInfoVersionNumber = NSTextField; mRendezvousMenuItem = NSMenuItem; }; 
+++            SUPERCLASS = NSObject; 
+++        }, 
+++        {
+++            ACTIONS = {
+++                makeConnectionFullscreen = id; 
+++                makeConnectionWindowed = id; 
+++                manuallyUpdateFrameBuffer = id; 
+++                openNewTitlePanel = id; 
+++                openOptions = id; 
+++                pasteViaKeypress = id; 
+++                sendBreakKeyCode = id; 
+++                sendCmdOptEsc = id; 
+++                sendCtrlAltDel = id; 
+++                sendDeleteKeyCode = id; 
+++                sendExecuteKeyCode = id; 
+++                sendInsertKeyCode = id; 
+++                sendPauseKeyCode = id; 
+++                sendPrintKeyCode = id; 
+++                toggleFullscreenMode = id; 
+++            }; 
+++            CLASS = FirstResponder; 
+++            LANGUAGE = ObjC; 
+++            SUPERCLASS = NSObject; 
+++        }, 
+++        {
+++            ACTIONS = {changeSelectedScenario = id; restoreDefaults = id; }; 
+++            CLASS = KeyEquivalentPrefsController; 
+++            LANGUAGE = ObjC; 
+++            OUTLETS = {mConnectionType = NSPopUpButton; mOutlineView = NSOutlineView; }; 
+++            SUPERCLASS = NSObject; 
+++        }, 
+++        {CLASS = Profile; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+++        {
+++            ACTIONS = {
+++                addProfile = id; 
+++                changeEncodingState = id; 
+++                deleteProfile = id; 
+++                profileChanged = id; 
+++                profileSelected = id; 
+++                reorderEncodings = id; 
+++            }; 
+++            CLASS = ProfileManager; 
+++            LANGUAGE = ObjC; 
+++            OUTLETS = {
+++                altKey = id; 
+++                commandKey = id; 
+++                controlKey = id; 
+++                deleteProfileButton = id; 
+++                enableCopyRect = id; 
+++                encodingTableView = id; 
+++                m3bTimeout = id; 
+++                mkbTimeout = id; 
+++                mkdTimeout = id; 
+++                newProfileButton = id; 
+++                pixelFormatMatrix = id; 
+++                profileBrowser = id; 
+++                profileField = id; 
+++                profilePanel = id; 
+++                shiftKey = id; 
+++                upDownButtonMatrix = id; 
+++            }; 
+++            SUPERCLASS = NSObject; 
+++        }, 
+++        {
+++            ACTIONS = {
+++                addServer = id; 
+++                deleteSelectedServer = id; 
+++                showConnectionDialog = id; 
+++                showNewConnectionDialog = id; 
+++            }; 
+++            CLASS = RFBConnectionManager; 
+++            LANGUAGE = ObjC; 
+++            OUTLETS = {
+++                groupList = NSTableView; 
+++                serverDataBoxLocal = NSBox; 
+++                serverDeleteBtn = NSButton; 
+++                serverGroupBox = NSBox; 
+++                serverList = NSTableView; 
+++                serverListBox = NSBox; 
+++                splitView = NSSplitView; 
+++            }; 
+++            SUPERCLASS = NSWindowController; 
+++        }, 
+++        {CLASS = ServerDataManager; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+++        {
+++            ACTIONS = {
+++                connectToServer = id; 
+++                displayChanged = id; 
+++                hostChanged = id; 
+++                passwordChanged = id; 
+++                profileSelectionChanged = id; 
+++                rememberPwdChanged = id; 
+++                sharedChanged = id; 
+++            }; 
+++            CLASS = ServerDataViewController; 
+++            LANGUAGE = ObjC; 
+++            OUTLETS = {
+++                box = NSBox; 
+++                connectBtn = NSButton; 
+++                connectIndicator = NSProgressIndicator; 
+++                connectIndicatorText = NSTextField; 
+++                display = NSTextField; 
+++                hostName = NSTextField; 
+++                mDelegate = id; 
+++                mServer = id; 
+++                password = NSTextField; 
+++                profilePopup = NSPopUpButton; 
+++                rememberPwd = NSButton; 
+++                shared = NSButton; 
+++            }; 
+++            SUPERCLASS = NSWindowController; 
+++        }
+++    ); 
+++    IBVersion = 1; 
+++}
+ \ No newline at end of file
+-+<?xml version="1.0" encoding="UTF-8"?>
+-+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+-+<plist version="1.0">
+-+<dict>
+-+	<key>IBClasses</key>
+-+	<array>
+-+		<dict>
+-+			<key>ACTIONS</key>
+-+			<dict>
+-+				<key>changeRendezvousUse</key>
+-+				<string>id</string>
+-+				<key>showConnectionDialog</key>
+-+				<string>id</string>
+-+				<key>showHelp</key>
+-+				<string>id</string>
+-+				<key>showListenerDialog</key>
+-+				<string>id</string>
+-+				<key>showNewConnectionDialog</key>
+-+				<string>id</string>
+-+				<key>showPreferences</key>
+-+				<string>id</string>
+-+				<key>showProfileManager</key>
+-+				<string>id</string>
+-+			</dict>
+-+			<key>CLASS</key>
+-+			<string>AppDelegate</string>
+-+			<key>LANGUAGE</key>
+-+			<string>ObjC</string>
+-+			<key>OUTLETS</key>
+-+			<dict>
+-+				<key>mInfoVersionNumber</key>
+-+				<string>NSTextField</string>
+-+				<key>mRendezvousMenuItem</key>
+-+				<string>NSMenuItem</string>
+-+			</dict>
+-+			<key>SUPERCLASS</key>
+-+			<string>NSObject</string>
+-+		</dict>
+-+		<dict>
+-+			<key>CLASS</key>
+-+			<string>NSObject</string>
+-+			<key>LANGUAGE</key>
+-+			<string>ObjC</string>
+-+		</dict>
+-+		<dict>
+-+			<key>ACTIONS</key>
+-+			<dict>
+-+				<key>makeConnectionFullscreen</key>
+-+				<string>id</string>
+-+				<key>makeConnectionWindowed</key>
+-+				<string>id</string>
+-+				<key>manuallyUpdateFrameBuffer</key>
+-+				<string>id</string>
+-+				<key>openNewTitlePanel</key>
+-+				<string>id</string>
+-+				<key>openOptions</key>
+-+				<string>id</string>
+-+				<key>pasteViaKeypress</key>
+-+				<string>id</string>
+-+				<key>sendBreakKeyCode</key>
+-+				<string>id</string>
+-+				<key>sendCmdOptEsc</key>
+-+				<string>id</string>
+-+				<key>sendCtrlAltDel</key>
+-+				<string>id</string>
+-+				<key>sendDeleteKeyCode</key>
+-+				<string>id</string>
+-+				<key>sendExecuteKeyCode</key>
+-+				<string>id</string>
+-+				<key>sendInsertKeyCode</key>
+-+				<string>id</string>
+-+				<key>sendPauseKeyCode</key>
+-+				<string>id</string>
+-+				<key>sendPrintKeyCode</key>
+-+				<string>id</string>
+-+				<key>toggleFullscreenMode</key>
+-+				<string>id</string>
+-+			</dict>
+-+			<key>CLASS</key>
+-+			<string>FirstResponder</string>
+-+			<key>LANGUAGE</key>
+-+			<string>ObjC</string>
+-+			<key>SUPERCLASS</key>
+-+			<string>NSObject</string>
+-+		</dict>
+-+	</array>
+-+	<key>IBVersion</key>
+-+	<string>1</string>
+-+</dict>
+-+</plist>
+-diff -aurr ./Resources/English.lproj/OSX_RFBViewer.nib/info.nib ../cotvnc-gitso/Resources/English.lproj/OSX_RFBViewer.nib/info.nib
+---- ./Resources/English.lproj/OSX_RFBViewer.nib/info.nib	2006-01-18 12:42:18.000000000 -0700
+-+++ ../cotvnc-gitso/Resources/English.lproj/OSX_RFBViewer.nib/info.nib	2008-11-07 22:54:10.000000000 -0700
+-@@ -1,26 +1,20 @@
++diff -aurr ./Resources/English.lproj/OSX_RFBViewer.nib/info.nib ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/info.nib
++--- ./Resources/English.lproj/OSX_RFBViewer.nib/info.nib	2008-11-07 22:54:10.000000000 -0700
+++++ ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/info.nib	2006-01-18 12:42:18.000000000 -0700
++@@ -1,20 +1,26 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+--<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+-+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
++-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+++<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+  <plist version="1.0">
+  <dict>
+--	<key>IBDocumentLocation</key>
+--	<string>3 4 356 240 0 0 1280 832 </string>
+--	<key>IBEditorPositions</key>
+--	<dict>
+--		<key>29</key>
+--		<string>270 514 419 44 0 0 1280 832 </string>
+--	</dict>
+++	<key>IBDocumentLocation</key>
+++	<string>3 4 356 240 0 0 1280 832 </string>
+++	<key>IBEditorPositions</key>
+++	<dict>
+++		<key>29</key>
+++		<string>270 514 419 44 0 0 1280 832 </string>
+++	</dict>
+  	<key>IBFramework Version</key>
+--	<string>443.0</string>
+--	<key>IBLockedObjects</key>
+--	<array>
+--		<integer>1191</integer>
+--		<integer>1208</integer>
+--	</array>
+-+	<string>629</string>
+-+	<key>IBLastKnownRelativeProjectPath</key>
+-+	<string>../../../Chicken of the VNC.xcodeproj</string>
+-+	<key>IBOldestOS</key>
+-+	<integer>5</integer>
++-	<string>629</string>
++-	<key>IBLastKnownRelativeProjectPath</key>
++-	<string>../../../Chicken of the VNC.xcodeproj</string>
++-	<key>IBOldestOS</key>
++-	<integer>5</integer>
+++	<string>443.0</string>
+++	<key>IBLockedObjects</key>
+++	<array>
+++		<integer>1191</integer>
+++		<integer>1208</integer>
+++	</array>
+  	<key>IBOpenObjects</key>
+  	<array>
+--		<integer>29</integer>
+-+		<integer>612</integer>
++-		<integer>612</integer>
+++		<integer>29</integer>
+  	</array>
+  	<key>IBSystem Version</key>
+--	<string>8F46</string>
+-+	<string>9F33</string>
+-+	<key>targetFramework</key>
+-+	<string>IBCocoaFramework</string>
++-	<string>9F33</string>
++-	<key>targetFramework</key>
++-	<string>IBCocoaFramework</string>
+++	<string>8F46</string>
+  </dict>
+  </plist>
+-diff -aurr ./Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib ../cotvnc-gitso/Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib
+---- ./Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib	2006-01-18 12:42:18.000000000 -0700
+-+++ ../cotvnc-gitso/Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib	2008-11-07 22:54:10.000000000 -0700
++diff -aurr ./Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib
++--- ./Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib	2008-11-07 22:54:10.000000000 -0700
+++++ ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib/keyedobjects.nib	2006-01-18 12:42:18.000000000 -0700
+ @@ -1,65 +1,65 @@
+--bplist00Ô        
+--Y$archiverX$versionT$topX$objects_NSKeyedArchiver † Ñ  	]IB.objectdata€¯û   1 5 6 < = A E p v „ ‰ Š ‹  ‘ ’ – š ›  Ÿ £ § ° ± ² ¶ ½ Ã Ä Å É Í Ñ Ø Ù Ú İ á é Ù ê ë ï ö ÷ ø ş$0<=MNUVYcdeikpt{‚ƒŠ‹“š›£¤¨«²³»¼ÁÂÅĞÚÛÜİŞßàáâìğñõø %&),34;<>EFMNPWX_`bcdefgjknsz{|€‡ˆ‰Š•™š›Ÿ¦ª«¬¯³º»¼¿ÃÊËÌÏÓÚÛÜàçèéìğ÷øùü 	%*+,-189:>EFIMTUVY^abchopqv}~€…Œ”•š› §¨©ª¯¶º»¼½ÂÉÊËÌĞ×ÛÜİáèéêîõö÷û")*+/678=DEFG—˜¥°¹ÄÅÄÆÒÛİâåèéêî÷ 	$-Å-.3<MÅMAPYãÅbc—ÅléÅuv~‡ÅˆŠ— Å¡£¬µ¶·¹	% ABCDEFGyH wGIJKLa wMK KNBOPSVÏHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxnyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½ÀÃÆU$nullß                      ! " # $ % & ' ( ) * + , - . / 0_NSObjectsValues_NSAccessibilityConnectors_NSClassesValuesZNSOidsKeys[NSNamesKeys]NSClassesKeys_NSAccessibilityOidsValues\NSOidsValues_NSVisibleWindowsV$class]NSConnections]NSNamesValues]NSObjectsKeys_NSAccessibilityOidsKeys[NSFramework]NSFontManagerYNSNextOidVNSRoota÷~b}ù€€ú€c#ø€€ È€Ò  2 3 4[NSClassName€€]NSApplicationÒ 7 8 9 :X$classesZ$classname¢ : ;^NSCustomObjectXNSObject_IBCocoaFrameworkÒ >  ? @ZNS.objects €Ò 7 8 B C£ C D ;\NSMutableSetUNSSetÒ >  F o¯( G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n€	€€€"€'€,€0€€“€˜€€£€¨€­€±€¶€»€¿€Ä€Ê€Î€Ò€×€Û€ß€ä€é€ë€í€ò€ø€ı
+--€oÓ q  r s t uWNSLabelXNSSource€€€
+--× w x y z { |  } ~  €  ‚ ƒVNSMenu]NSMnemonicLocWNSTitleYNSOnImageZNSKeyEquiv\NSMixedImage€ÿÿÿ€€€€€Ó y  … † ‡ ˆ[NSMenuItems$.%o S e t   C o n n e c t i o n   T i t l e &PÓ Œ  2   ^NSResourceName€€€WNSImage_NSMenuCheckmarkÒ 7 8 “ ”£ ” • ;_NSCustomResource_%NSCustomResourceÓ Œ  2 —  €€€_NSMenuMixedStateÒ 7 8 œ ¢  ;ZNSMenuItem_openNewTitlePanel:Ò 7 8   ¡£ ¡ ¢ ;_NSNibControlConnector^NSNibConnectorÓ q  r ¤ t ¦€€€Ø w x ¨ y z { |  } ~ ª « €  ‚ ƒ_NSKeyEquivModMask€   €€€€€o G e t   C o n n e c t i o n   I n f o &\openOptions:Ó q  r ³ t µ€ €€Ø w x ¨ y z { |  · ~ ª ¸ € º ‚ ƒ€€€€€€Ô y ¾  … ¿ À ‡ ÂVNSNameDJ.E_Quit Chicken of the VNCQqÒ Æ  Ç ÈYNS.stringZterminate:€!Ò 7 8 Ê Ë£ Ë Ì ;_NSMutableStringXNSStringÓ q  r Î t Ğ€&€€#Ø w x ¨ y z { |  · ~ ª Ó € Õ ‚ ƒ€€$€€%€€_Hide Chicken of the VNCQhÒ Æ  Û ÈUhide:€!Ó q  r Ş t à€+€€(Ø w x ¨ y z { |  · ~ ã ä € æ ‚ ƒ€   €)€€*€€[Hide Others_hideOtherApplications:Ó q  r ì t î€/€€-Ø w x ¨ y z { |  · ~ ª ñ €  ‚ ƒ€€.€€€€XShow All_unhideAllApplications:Ô ù q  r ú û ü ú]NSDestination€1€€€1İ ÿ  	
+--_NSWindowStyleMask_NSWindowBackingYNSMinSize]NSWindowTitle]NSWindowClass\NSWindowRect\NSScreenRectYNSMaxSize\NSWindowViewYNSWTFlags[NSViewClass_NSFrameAutosaveName€‰€3€4€2€ˆ€Š€6`x  €Œ€5€‹_{{358, 593}, {565, 196}}_About Chicken of the VNCWNSPanelTViewÔ   ."#ZNSSubviews_NSNextResponderWNSFrame€7€ €‡€nÒ > % o©&'()*+,-.€8€G€N€T€[€j€x€}€‚€o×123 4789:;[NSSuperviewYNSEnabledXNSvFlagsVNSCell€6€6€9	 €F€:_{{124, 137}, {265, 39}}Ø>?@AB CDEFGH&JKL_NSBackgroundColor[NSTextColorYNSSupportZNSContents]NSControlView[NSCellFlags\NSCellFlags2€?€D€<€;€8€Eş  _Chicken of the VNCÔO ¾ PQRSTVNSSizeXNSfFlags"Aà  €=€>^Helvetica-BoldÒ 7 8WX¢X ;VNSFontÕZ[\] ^_`abWNSColor[NSColorName\NSColorSpace]NSCatalogName€B€A€@€CVSystem_textBackgroundColorÓf\ gbWNSWhiteB1 €CÒ 7 8jZ¢Z ;Ól\ mnbUNSRGBM0.709804 0 0 €CÒ 7 8qr¤rs4 ;_NSTextFieldCell\NSActionCellÒ 7 8uv¦vwxyz ;[NSTextField\%NSTextFieldYNSControlVNSView[NSResponder×123 4~89:€6€6€H	€F€I_{{59, 20}, {154, 10}}Ø>?@AB CDE…†‡'JKL€?€M€K€J€G€ES2.0ÔO ¾ PŒST"A   €L€>YHelveticaÓf\ ‘bK0.33333299 €C×123 4–89:™€6€6€O	€F€P_{{126, 99}, {242, 30}}Ø>?@AB CDEŸ(J¢L€?€S€R€Q€N€E!ş_DAdministered by Jason Harris
+--based on VNCViewer by Helmut MaierhoferÔO ¾ P¥ST"A@  €L€>Ól\ ©nbO0.117647 0.192157 0.45882401 €C×123 4®89:±€6€6€U	€F€V_{{342, 20}, {203, 26}}Ø>?@AB CD´…†·)J¢º€X€M€K€W€T€E   _LCopyright 1998-2000 by Helmut Maierhofer
+--Copyright 2002-2006 by Jason HarrisÕZ[\] ½¾`ab€Z€Y€@€C\controlColorÓf\ ÃbK0.66666669 €CÙ123 4ÆÇÊ89ÌÍÎÏ[NSDragTypesZNSEditable€6€6€d	€i€e€\Ò > Ñ @§ÒÓÔÕÖ×Ø€]€^€_€`€a€b€c€_Apple PDF pasteboard type_1NeXT Encapsulated PostScript v1.2 pasteboard type_NeXT filename pasteboard type_NeXT TIFF v4.0 pasteboard type_NSFilenamesPboardType_Apple PICT pasteboard type_Apple PNG pasteboard type_{{20, 80}, {96, 96}}ØãäAåæ CDLLçÏLéêëWNSScaleWNSStyleZNSAnimatesWNSAlign€f€h ş    Ó Œ  2í  €g€€_NSApplicationIconÒ 7 8òó¤óô4 ;[NSImageCell\%NSImageCellÒ 7 8ö÷¥÷xyz ;[NSImageViewÛ1ùúûüı şÿLÏ\NSBorderType_NSTitlePosition[NSTitleCellYNSOffsets]NSTransparentYNSBoxType€k€6€6€r€p€q€wÒ >  o¡	€l€oÔ1 ++#€j€j€m€n_{{2, 2}, {435, 1}}Ò 7 8y£yz ;Ò 7 8£ ;^NSMutableArrayWNSArray_{{12, 52}, {541, 5}}V{0, 0}×>?@A CDEJKL€?€v€t€s€ESBoxÔO ¾ P!"S$"AP  €u€>\LucidaGrandeÓf\ 'bM0 0.80000001 €CÒ 7 8*+¤+yz ;UNSBox×123 4/89:2€6€6€y	€F€z_{{125, 63}, {334, 28}}Ø>?@AB CDE6†8,J¢L€?€|€K€{€x€E_hreleased under the GNU Public License
+--source code and support available at http://cotvnc.sourceforge.netÓl\ ©nb€C×123 4A89:D€6€6€~	€F€_{{20, 20}, {39, 10}}Ø>?@AB CDEH†J-JKL€?€€K€€€}€EWVersionÓf\ ‘b€C×123 4S89:V€6€6€ƒ	€F€„_{{376, 99}, {169, 30}}Ø>?@AB CDEZ\.J¢º€?€†€R€…€‚€E_6(support@geekspiff.com)
+-+bplist00Ô       	 
+-+X$versionT$topY$archiverX$objects † Ñ  ]IB.objectdata€_NSKeyedArchiver¯Ù   1 5 6 < = A E e k { €  ‚ ‡ ˆ ‰ Œ  ‘ ” • ™ Ÿ ¢ £ ± ¸ ¹ É Ê Ò Ó Ö à á â ç é ì ğ ö ÷ ú ş	
+-+#*/0126>?@DKLMNRYZ[_fghinosz{|ˆ‰¢£¤¥¦²¹ºÁÂÆÇÌÓÔÜİáäëìôõúûş	%)*-0>?@FGLMPSZ[bcelmtuw~†‡‰‘’“”—˜œ£¤¥¦ª±µ¶·¸¼ÄÅÆÊÑÒÓ×Şâãäèïğñõüışÿ
+-+%&'+2348?@ABFMNOSZ[\]ahijnuvw{‚ƒ„ÊËĞÒÓÙäïğñı'09ğBENW`adğmnzƒŒ•–Ÿğ¤Dğ­ğ¶·¿ğÈÑğÒÖÙÚŞßá'nµ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷úıaÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷øùúûüışÿ Ê	
+-+ !"#$%(+.U$nullß                      ! " # $ % & ' ( ) * + , - . / 0VNSRootV$class]NSObjectsKeys_NSClassesValues_NSAccessibilityOidsValues]NSConnections[NSNamesKeys[NSFramework]NSClassesKeysZNSOidsKeys]NSNamesValues_NSAccessibilityConnectors]NSFontManager_NSVisibleWindows_NSObjectsValues_NSAccessibilityOidsKeysYNSNextOid\NSOidsValues€Ø€ïq×€,€pr-Õ€ €+ÖÈsÒ  2 3 4[NSClassName€€]NSApplicationÒ 7 8 9 :X$classesZ$classname¢ : ;^NSCustomObjectXNSObject_IBCocoaFrameworkÒ  > ? @ZNS.objects€ Ò 7 8 B C£ C D ;\NSMutableSetUNSSetÒ  > F G€š¯ H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d€	€€,€2€8€>€B€G€K€P€R€V€£€¨€®€²€¶€»€¿€Ä€È€Í€Ñ€Õ€Ú€Ş€ã€ç€ëÓ  f g h i jXNSSourceWNSLabel€€
+-+€Ø  l m n o p q r s t u v w x y zWNSTitle_NSKeyEquivModMaskZNSKeyEquiv]NSMnemonicLocYNSOnImage\NSMixedImageVNSMenu€€   €ÿÿÿ€€€Ó  l | } ~ [NSMenuItems€ò€÷€ù\Send "Print"PÓ  2 ƒ „ … †^NSResourceName€€€WNSImage_NSMenuCheckmarkÒ 7 8 Š ‹¢ ‹ ;_NSCustomResourceÓ  2 ƒ „ … €€€_NSMenuMixedStateÒ 7 8 ’ “¢ “ ;ZNSMenuItem_sendPrintKeyCode:Ò 7 8 – —£ — ˜ ;_NSNibControlConnector^NSNibConnectorÔ  š f g › œ  ]NSDestination€+€€€*Ò  2 3 ¡€€[AppDelegate× ¤  ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ª_NSNextResponderWNSFrameVNSCellXNSvFlagsYNSEnabled[NSSuperview€€)€€ 	€Õ ¤  ² § ³ + µ ¶ ® ·ZNSSubviews[NSFrameSize€ €œ€^€›_{{59, 20}, {154, 10}}Ø º  » ¼ ½ ¾ ¿ À Á Â Ã Ä Å œ Ç È[NSCellFlags_NSBackgroundColorZNSContentsYNSSupport]NSControlView\NSCellFlags2[NSTextColorş €(€"€€€ €'S2.0Ô  Ë Ì Í Î Ï Ğ ÑVNSSizeVNSNameXNSfFlags€!#@$      € YHelveticaÒ 7 8 Ô Õ¢ Õ ;VNSFontÕ  × Ø Ù Ú Û Ü İ Ş ßWNSColor\NSColorSpace[NSColorName]NSCatalogName€&€%€$€#VSystem_textBackgroundColorÓ  Ø ã Û å æWNSWhite€&B1 Ò 7 8 è ×¢ × ;Ó  Ø ã Û å ë€&K0.33333299 Ò 7 8 í î¤ î ï ¦ ;_NSTextFieldCell\NSActionCellÒ 7 8 ñ ò¥ ò ó ô õ ;[NSTextFieldYNSControlVNSView[NSResponder_mInfoVersionNumberÒ 7 8 ø ù£ ù ˜ ;_NSNibOutletConnectorÓ  f g h ü ı€€-€1Ø  l m n o p q r s  u w x y€€/€0€€€.Ó  l | }€ò TUndoQzUundo:Ó  f g h€€3€7Ø  l m n o p q r s u w x y€€5€6€€€4Ô  l Ì | }€ò_Hide Chicken of the VNCQhUhide:Ó  f g h!"€€9€=Ø  l m n o p q r s% u& w x y)€€;€<€€€:Ô  l Ì | },-.€ò
+-+XMinimizeQm_performMiniaturize:Ó  f g h45€€?€AØ  l m n o p q r s89 v w x y z€€@   €€€€_Send "Cmd-Option-Escape"^sendCmdOptEsc:Ó  f g hBC€€C€FØ  l m n o p q r sF uG w x y€€D€E€€€.UPasteQvVpaste:Ó  f g hPQ€€H€JØ  l m n o p q r sT9 v w x y z€€I€€€€_Send "Ctrl-Alt-Del"_sendCtrlAltDel:Ó  f g h]^€€L€OØ  l m n o p q r sa ub w x y€€M€N€€€.ZSelect AllQaZselectAll:Ô  š f g ›  m€+€€€QXdelegateÓ  f g hqr€€S€UØ  l m n o p q r su u v w x y z€€T€€€€\Send "Break"_sendBreakKeyCode:Ô  š f g h~€€€Y€W€¢×  l n o p q r sƒ v w x y€€X€€€€4o A b o u t   C h i c k e n   o f   t h e   V N C &İŠ ‹Œ‘’“”• ª—˜™š›œŸ å ¡\NSWindowView\NSScreenRect_NSFrameAutosaveName]NSWindowTitleYNSWTFlags]NSWindowClass\NSWindowRectYNSMaxSize_NSWindowBacking_NSWindowStyleMaskYNSMinSize[NSViewClass€€¡€€ €[`x  €\€Z€Ÿ€€]_{{358, 543}, {565, 196}}_About Chicken of the VNCWNSPanelTViewÒ  > F¨€š©© œ«¬­®¯°±€_€€f€l€s€‚€‹€€•× ¤  ¥ ¦ § ¨ © ª «µ¶ ® ¯ ª€€)€`€a	€_{{124, 137}, {265, 39}}Ø º  » ¼ ½ ¾ ¿ À Á Â Ã½¾© ÇÀ€(€"€b€c€_€e_Chicken of the VNCÔ  Ë Ì Í ÎÄÅ Ñ€!#@<      €d^Helvetica-BoldÓ  ØÈ ÛÊËUNSRGB€&M0.709804 0 0 × ¤  ¥ ¦ § ¨ © ª «ÏĞ ® ¯ ª€€)€g€h	€_{{126, 99}, {242, 30}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Â ÃØÙ« ÇÛ!ş€(€"€i€j€f€k_DAdministered by Jason Harris
+-+based on VNCViewer by Helmut MaierhoferÔ  Ë Ì Í Îß Ğ Ñ€!#@(      € Ó  ØÈ ÛÊã€&O0.117647 0.192157 0.45882401 × ¤  ¥ ¦ § ¨ © ª «çè ® ¯ ª€€)€m€n	€_{{342, 20}, {203, 26}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Âîï Å¬ò È€(€p€o€€l   €'_LCopyright 1998-2000 by Helmut Maierhofer
+-+Copyright 2002-2006 by Jason HarrisÕ  × Ø Ù Ú Û÷ İø ß€&€r€q€#\controlColorÓ  Ø ã Û åı€&K0.66666669 Ù ¤  ¥ÿ ¦  § ¨ © ª ® ¯ ªZNSEditable[NSDragTypes€€€|€}€t	€Ò  > ?€§€u€v€w€x€y€z€{_Apple PDF pasteboard type_Apple PNG pasteboard type_1NeXT Encapsulated PostScript v1.2 pasteboard type_NSFilenamesPboardType_NeXT TIFF v4.0 pasteboard type_Apple PICT pasteboard type_NeXT filename pasteboard type_{{20, 80}, {96, 96}}Ø º  ¼ ¿ ! Ç" Ç Ç#WNSStyleWNSAlignWNSScaleZNSAnimates ş €€€~   Ó  2 ƒ „ …(€€€_NSApplicationIconÒ 7 8+,£, ¦ ;[NSImageCellÒ 7 8./¥/ ó ô õ ;[NSImageViewÛ ¤1 2 ¥3 §456 © ªŸ89: ® å< Ç ªYNSBoxType[NSTitleCell]NSTransparent\NSBorderTypeYNSOffsets_NSTitlePosition€€Š€…€ƒ€„€_{{12, 52}, {541, 5}}V{0, 0}× º  » ¼ ½ ¿ À Á Â ÃCD ÇE€(€"€†€‡€‰SBoxÔ  Ë Ì Í ÎIJK€!#@*      €ˆ\LucidaGrandeÓ  Ø ã Û åO€&M0 0.80000001 Ò 7 8QR¤R ô õ ;UNSBox× ¤  ¥ ¦ § ¨ © ª «VW ® ¯ ª€€)€Œ€	€_{{125, 63}, {334, 28}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Â Ã^ Å¯ Ça€(€"€€€‹€_hreleased under the GNU Public License
+-+source code and support available at http://cotvnc.sourceforge.netÓ  ØÈ ÛÊã€&× ¤  ¥ ¦ § ¨ © ª «hi ® ¯ ª€€)€‘€’	€_{{20, 20}, {39, 10}}Ø º  » ¼ ½ ¾ ¿ À Á Â Ãp Å° Çs€(€"€“€€€”WVersionÓ  Ø ã Û å ë€&× ¤  ¥ ¦ § ¨ © ª «z{ ® ¯ ª€€)€–€—	€_{{376, 99}, {169, 30}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Â Ã‚Ù±ò…€(€"€˜€j€•€™_6(support@geekspiff.com)
++-bplist00Ô       	 
++-X$versionT$topY$archiverX$objects † Ñ  ]IB.objectdata€_NSKeyedArchiver¯Ù   1 5 6 < = A E e k { €  ‚ ‡ ˆ ‰ Œ  ‘ ” • ™ Ÿ ¢ £ ± ¸ ¹ É Ê Ò Ó Ö à á â ç é ì ğ ö ÷ ú ş	
++-#*/0126>?@DKLMNRYZ[_fghinosz{|ˆ‰¢£¤¥¦²¹ºÁÂÆÇÌÓÔÜİáäëìôõúûş	%)*-0>?@FGLMPSZ[bcelmtuw~†‡‰‘’“”—˜œ£¤¥¦ª±µ¶·¸¼ÄÅÆÊÑÒÓ×Şâãäèïğñõüışÿ
++-%&'+2348?@ABFMNOSZ[\]ahijnuvw{‚ƒ„ÊËĞÒÓÙäïğñı'09ğBENW`adğmnzƒŒ•–Ÿğ¤Dğ­ğ¶·¿ğÈÑğÒÖÙÚŞßá'nµ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷úıaÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷øùúûüışÿ Ê	
++- !"#$%(+.U$nullß                      ! " # $ % & ' ( ) * + , - . / 0VNSRootV$class]NSObjectsKeys_NSClassesValues_NSAccessibilityOidsValues]NSConnections[NSNamesKeys[NSFramework]NSClassesKeysZNSOidsKeys]NSNamesValues_NSAccessibilityConnectors]NSFontManager_NSVisibleWindows_NSObjectsValues_NSAccessibilityOidsKeysYNSNextOid\NSOidsValues€Ø€ïq×€,€pr-Õ€ €+ÖÈsÒ  2 3 4[NSClassName€€]NSApplicationÒ 7 8 9 :X$classesZ$classname¢ : ;^NSCustomObjectXNSObject_IBCocoaFrameworkÒ  > ? @ZNS.objects€ Ò 7 8 B C£ C D ;\NSMutableSetUNSSetÒ  > F G€š¯ H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d€	€€,€2€8€>€B€G€K€P€R€V€£€¨€®€²€¶€»€¿€Ä€È€Í€Ñ€Õ€Ú€Ş€ã€ç€ëÓ  f g h i jXNSSourceWNSLabel€€
++-€Ø  l m n o p q r s t u v w x y zWNSTitle_NSKeyEquivModMaskZNSKeyEquiv]NSMnemonicLocYNSOnImage\NSMixedImageVNSMenu€€   €ÿÿÿ€€€Ó  l | } ~ [NSMenuItems€ò€÷€ù\Send "Print"PÓ  2 ƒ „ … †^NSResourceName€€€WNSImage_NSMenuCheckmarkÒ 7 8 Š ‹¢ ‹ ;_NSCustomResourceÓ  2 ƒ „ … €€€_NSMenuMixedStateÒ 7 8 ’ “¢ “ ;ZNSMenuItem_sendPrintKeyCode:Ò 7 8 – —£ — ˜ ;_NSNibControlConnector^NSNibConnectorÔ  š f g › œ  ]NSDestination€+€€€*Ò  2 3 ¡€€[AppDelegate× ¤  ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ª_NSNextResponderWNSFrameVNSCellXNSvFlagsYNSEnabled[NSSuperview€€)€€ 	€Õ ¤  ² § ³ + µ ¶ ® ·ZNSSubviews[NSFrameSize€ €œ€^€›_{{59, 20}, {154, 10}}Ø º  » ¼ ½ ¾ ¿ À Á Â Ã Ä Å œ Ç È[NSCellFlags_NSBackgroundColorZNSContentsYNSSupport]NSControlView\NSCellFlags2[NSTextColorş €(€"€€€ €'S2.0Ô  Ë Ì Í Î Ï Ğ ÑVNSSizeVNSNameXNSfFlags€!#@$      € YHelveticaÒ 7 8 Ô Õ¢ Õ ;VNSFontÕ  × Ø Ù Ú Û Ü İ Ş ßWNSColor\NSColorSpace[NSColorName]NSCatalogName€&€%€$€#VSystem_textBackgroundColorÓ  Ø ã Û å æWNSWhite€&B1 Ò 7 8 è ×¢ × ;Ó  Ø ã Û å ë€&K0.33333299 Ò 7 8 í î¤ î ï ¦ ;_NSTextFieldCell\NSActionCellÒ 7 8 ñ ò¥ ò ó ô õ ;[NSTextFieldYNSControlVNSView[NSResponder_mInfoVersionNumberÒ 7 8 ø ù£ ù ˜ ;_NSNibOutletConnectorÓ  f g h ü ı€€-€1Ø  l m n o p q r s  u w x y€€/€0€€€.Ó  l | }€ò TUndoQzUundo:Ó  f g h€€3€7Ø  l m n o p q r s u w x y€€5€6€€€4Ô  l Ì | }€ò_Hide Chicken of the VNCQhUhide:Ó  f g h!"€€9€=Ø  l m n o p q r s% u& w x y)€€;€<€€€:Ô  l Ì | },-.€ò
++-XMinimizeQm_performMiniaturize:Ó  f g h45€€?€AØ  l m n o p q r s89 v w x y z€€@   €€€€_Send "Cmd-Option-Escape"^sendCmdOptEsc:Ó  f g hBC€€C€FØ  l m n o p q r sF uG w x y€€D€E€€€.UPasteQvVpaste:Ó  f g hPQ€€H€JØ  l m n o p q r sT9 v w x y z€€I€€€€_Send "Ctrl-Alt-Del"_sendCtrlAltDel:Ó  f g h]^€€L€OØ  l m n o p q r sa ub w x y€€M€N€€€.ZSelect AllQaZselectAll:Ô  š f g ›  m€+€€€QXdelegateÓ  f g hqr€€S€UØ  l m n o p q r su u v w x y z€€T€€€€\Send "Break"_sendBreakKeyCode:Ô  š f g h~€€€Y€W€¢×  l n o p q r sƒ v w x y€€X€€€€4o A b o u t   C h i c k e n   o f   t h e   V N C &İŠ ‹Œ‘’“”• ª—˜™š›œŸ å ¡\NSWindowView\NSScreenRect_NSFrameAutosaveName]NSWindowTitleYNSWTFlags]NSWindowClass\NSWindowRectYNSMaxSize_NSWindowBacking_NSWindowStyleMaskYNSMinSize[NSViewClass€€¡€€ €[`x  €\€Z€Ÿ€€]_{{358, 543}, {565, 196}}_About Chicken of the VNCWNSPanelTViewÒ  > F¨€š©© œ«¬­®¯°±€_€€f€l€s€‚€‹€€•× ¤  ¥ ¦ § ¨ © ª «µ¶ ® ¯ ª€€)€`€a	€_{{124, 137}, {265, 39}}Ø º  » ¼ ½ ¾ ¿ À Á Â Ã½¾© ÇÀ€(€"€b€c€_€e_Chicken of the VNCÔ  Ë Ì Í ÎÄÅ Ñ€!#@<      €d^Helvetica-BoldÓ  ØÈ ÛÊËUNSRGB€&M0.709804 0 0 × ¤  ¥ ¦ § ¨ © ª «ÏĞ ® ¯ ª€€)€g€h	€_{{126, 99}, {242, 30}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Â ÃØÙ« ÇÛ!ş€(€"€i€j€f€k_DAdministered by Jason Harris
++-based on VNCViewer by Helmut MaierhoferÔ  Ë Ì Í Îß Ğ Ñ€!#@(      € Ó  ØÈ ÛÊã€&O0.117647 0.192157 0.45882401 × ¤  ¥ ¦ § ¨ © ª «çè ® ¯ ª€€)€m€n	€_{{342, 20}, {203, 26}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Âîï Å¬ò È€(€p€o€€l   €'_LCopyright 1998-2000 by Helmut Maierhofer
++-Copyright 2002-2006 by Jason HarrisÕ  × Ø Ù Ú Û÷ İø ß€&€r€q€#\controlColorÓ  Ø ã Û åı€&K0.66666669 Ù ¤  ¥ÿ ¦  § ¨ © ª ® ¯ ªZNSEditable[NSDragTypes€€€|€}€t	€Ò  > ?€§€u€v€w€x€y€z€{_Apple PDF pasteboard type_Apple PNG pasteboard type_1NeXT Encapsulated PostScript v1.2 pasteboard type_NSFilenamesPboardType_NeXT TIFF v4.0 pasteboard type_Apple PICT pasteboard type_NeXT filename pasteboard type_{{20, 80}, {96, 96}}Ø º  ¼ ¿ ! Ç" Ç Ç#WNSStyleWNSAlignWNSScaleZNSAnimates ş €€€~   Ó  2 ƒ „ …(€€€_NSApplicationIconÒ 7 8+,£, ¦ ;[NSImageCellÒ 7 8./¥/ ó ô õ ;[NSImageViewÛ ¤1 2 ¥3 §456 © ªŸ89: ® å< Ç ªYNSBoxType[NSTitleCell]NSTransparent\NSBorderTypeYNSOffsets_NSTitlePosition€€Š€…€ƒ€„€_{{12, 52}, {541, 5}}V{0, 0}× º  » ¼ ½ ¿ À Á Â ÃCD ÇE€(€"€†€‡€‰SBoxÔ  Ë Ì Í ÎIJK€!#@*      €ˆ\LucidaGrandeÓ  Ø ã Û åO€&M0 0.80000001 Ò 7 8QR¤R ô õ ;UNSBox× ¤  ¥ ¦ § ¨ © ª «VW ® ¯ ª€€)€Œ€	€_{{125, 63}, {334, 28}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Â Ã^ Å¯ Ça€(€"€€€‹€_hreleased under the GNU Public License
++-source code and support available at http://cotvnc.sourceforge.netÓ  ØÈ ÛÊã€&× ¤  ¥ ¦ § ¨ © ª «hi ® ¯ ª€€)€‘€’	€_{{20, 20}, {39, 10}}Ø º  » ¼ ½ ¾ ¿ À Á Â Ãp Å° Çs€(€"€“€€€”WVersionÓ  Ø ã Û å ë€&× ¤  ¥ ¦ § ¨ © ª «z{ ® ¯ ª€€)€–€—	€_{{376, 99}, {169, 30}}Ø º  » ¼ ½ ¾ ¿ ÀÕ Â Ã‚Ù±ò…€(€"€˜€j€•€™_6(support@geekspiff.com)
+++bplist00Ô        
+++Y$archiverX$versionT$topX$objects_NSKeyedArchiver † Ñ  	]IB.objectdata€¯û   1 5 6 < = A E p v „ ‰ Š ‹  ‘ ’ – š ›  Ÿ £ § ° ± ² ¶ ½ Ã Ä Å É Í Ñ Ø Ù Ú İ á é Ù ê ë ï ö ÷ ø ş$0<=MNUVYcdeikpt{‚ƒŠ‹“š›£¤¨«²³»¼ÁÂÅĞÚÛÜİŞßàáâìğñõø %&),34;<>EFMNPWX_`bcdefgjknsz{|€‡ˆ‰Š•™š›Ÿ¦ª«¬¯³º»¼¿ÃÊËÌÏÓÚÛÜàçèéìğ÷øùü 	%*+,-189:>EFIMTUVY^abchopqv}~€…Œ”•š› §¨©ª¯¶º»¼½ÂÉÊËÌĞ×ÛÜİáèéêîõö÷û")*+/678=DEFG—˜¥°¹ÄÅÄÆÒÛİâåèéêî÷ 	$-Å-.3<MÅMAPYãÅbc—ÅléÅuv~‡ÅˆŠ— Å¡£¬µ¶·¹	% ABCDEFGyH wGIJKLa wMK KNBOPSVÏHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxnyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½ÀÃÆU$nullß                      ! " # $ % & ' ( ) * + , - . / 0_NSObjectsValues_NSAccessibilityConnectors_NSClassesValuesZNSOidsKeys[NSNamesKeys]NSClassesKeys_NSAccessibilityOidsValues\NSOidsValues_NSVisibleWindowsV$class]NSConnections]NSNamesValues]NSObjectsKeys_NSAccessibilityOidsKeys[NSFramework]NSFontManagerYNSNextOidVNSRoota÷~b}ù€€ú€c#ø€€ È€Ò  2 3 4[NSClassName€€]NSApplicationÒ 7 8 9 :X$classesZ$classname¢ : ;^NSCustomObjectXNSObject_IBCocoaFrameworkÒ >  ? @ZNS.objects €Ò 7 8 B C£ C D ;\NSMutableSetUNSSetÒ >  F o¯( G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n€	€€€"€'€,€0€€“€˜€€£€¨€­€±€¶€»€¿€Ä€Ê€Î€Ò€×€Û€ß€ä€é€ë€í€ò€ø€ı
+++€oÓ q  r s t uWNSLabelXNSSource€€€
+++× w x y z { |  } ~  €  ‚ ƒVNSMenu]NSMnemonicLocWNSTitleYNSOnImageZNSKeyEquiv\NSMixedImage€ÿÿÿ€€€€€Ó y  … † ‡ ˆ[NSMenuItems$.%o S e t   C o n n e c t i o n   T i t l e &PÓ Œ  2   ^NSResourceName€€€WNSImage_NSMenuCheckmarkÒ 7 8 “ ”£ ” • ;_NSCustomResource_%NSCustomResourceÓ Œ  2 —  €€€_NSMenuMixedStateÒ 7 8 œ ¢  ;ZNSMenuItem_openNewTitlePanel:Ò 7 8   ¡£ ¡ ¢ ;_NSNibControlConnector^NSNibConnectorÓ q  r ¤ t ¦€€€Ø w x ¨ y z { |  } ~ ª « €  ‚ ƒ_NSKeyEquivModMask€   €€€€€o G e t   C o n n e c t i o n   I n f o &\openOptions:Ó q  r ³ t µ€ €€Ø w x ¨ y z { |  · ~ ª ¸ € º ‚ ƒ€€€€€€Ô y ¾  … ¿ À ‡ ÂVNSNameDJ.E_Quit Chicken of the VNCQqÒ Æ  Ç ÈYNS.stringZterminate:€!Ò 7 8 Ê Ë£ Ë Ì ;_NSMutableStringXNSStringÓ q  r Î t Ğ€&€€#Ø w x ¨ y z { |  · ~ ª Ó € Õ ‚ ƒ€€$€€%€€_Hide Chicken of the VNCQhÒ Æ  Û ÈUhide:€!Ó q  r Ş t à€+€€(Ø w x ¨ y z { |  · ~ ã ä € æ ‚ ƒ€   €)€€*€€[Hide Others_hideOtherApplications:Ó q  r ì t î€/€€-Ø w x ¨ y z { |  · ~ ª ñ €  ‚ ƒ€€.€€€€XShow All_unhideAllApplications:Ô ù q  r ú û ü ú]NSDestination€1€€€1İ ÿ  	
+++_NSWindowStyleMask_NSWindowBackingYNSMinSize]NSWindowTitle]NSWindowClass\NSWindowRect\NSScreenRectYNSMaxSize\NSWindowViewYNSWTFlags[NSViewClass_NSFrameAutosaveName€‰€3€4€2€ˆ€Š€6`x  €Œ€5€‹_{{358, 593}, {565, 196}}_About Chicken of the VNCWNSPanelTViewÔ   ."#ZNSSubviews_NSNextResponderWNSFrame€7€ €‡€nÒ > % o©&'()*+,-.€8€G€N€T€[€j€x€}€‚€o×123 4789:;[NSSuperviewYNSEnabledXNSvFlagsVNSCell€6€6€9	 €F€:_{{124, 137}, {265, 39}}Ø>?@AB CDEFGH&JKL_NSBackgroundColor[NSTextColorYNSSupportZNSContents]NSControlView[NSCellFlags\NSCellFlags2€?€D€<€;€8€Eş  _Chicken of the VNCÔO ¾ PQRSTVNSSizeXNSfFlags"Aà  €=€>^Helvetica-BoldÒ 7 8WX¢X ;VNSFontÕZ[\] ^_`abWNSColor[NSColorName\NSColorSpace]NSCatalogName€B€A€@€CVSystem_textBackgroundColorÓf\ gbWNSWhiteB1 €CÒ 7 8jZ¢Z ;Ól\ mnbUNSRGBM0.709804 0 0 €CÒ 7 8qr¤rs4 ;_NSTextFieldCell\NSActionCellÒ 7 8uv¦vwxyz ;[NSTextField\%NSTextFieldYNSControlVNSView[NSResponder×123 4~89:€6€6€H	€F€I_{{59, 20}, {154, 10}}Ø>?@AB CDE…†‡'JKL€?€M€K€J€G€ES2.0ÔO ¾ PŒST"A   €L€>YHelveticaÓf\ ‘bK0.33333299 €C×123 4–89:™€6€6€O	€F€P_{{126, 99}, {242, 30}}Ø>?@AB CDEŸ(J¢L€?€S€R€Q€N€E!ş_DAdministered by Jason Harris
+++based on VNCViewer by Helmut MaierhoferÔO ¾ P¥ST"A@  €L€>Ól\ ©nbO0.117647 0.192157 0.45882401 €C×123 4®89:±€6€6€U	€F€V_{{342, 20}, {203, 26}}Ø>?@AB CD´…†·)J¢º€X€M€K€W€T€E   _LCopyright 1998-2000 by Helmut Maierhofer
+++Copyright 2002-2006 by Jason HarrisÕZ[\] ½¾`ab€Z€Y€@€C\controlColorÓf\ ÃbK0.66666669 €CÙ123 4ÆÇÊ89ÌÍÎÏ[NSDragTypesZNSEditable€6€6€d	€i€e€\Ò > Ñ @§ÒÓÔÕÖ×Ø€]€^€_€`€a€b€c€_Apple PDF pasteboard type_1NeXT Encapsulated PostScript v1.2 pasteboard type_NeXT filename pasteboard type_NeXT TIFF v4.0 pasteboard type_NSFilenamesPboardType_Apple PICT pasteboard type_Apple PNG pasteboard type_{{20, 80}, {96, 96}}ØãäAåæ CDLLçÏLéêëWNSScaleWNSStyleZNSAnimatesWNSAlign€f€h ş    Ó Œ  2í  €g€€_NSApplicationIconÒ 7 8òó¤óô4 ;[NSImageCell\%NSImageCellÒ 7 8ö÷¥÷xyz ;[NSImageViewÛ1ùúûüı şÿLÏ\NSBorderType_NSTitlePosition[NSTitleCellYNSOffsets]NSTransparentYNSBoxType€k€6€6€r€p€q€wÒ >  o¡	€l€oÔ1 ++#€j€j€m€n_{{2, 2}, {435, 1}}Ò 7 8y£yz ;Ò 7 8£ ;^NSMutableArrayWNSArray_{{12, 52}, {541, 5}}V{0, 0}×>?@A CDEJKL€?€v€t€s€ESBoxÔO ¾ P!"S$"AP  €u€>\LucidaGrandeÓf\ 'bM0 0.80000001 €CÒ 7 8*+¤+yz ;UNSBox×123 4/89:2€6€6€y	€F€z_{{125, 63}, {334, 28}}Ø>?@AB CDE6†8,J¢L€?€|€K€{€x€E_hreleased under the GNU Public License
+++source code and support available at http://cotvnc.sourceforge.netÓl\ ©nb€C×123 4A89:D€6€6€~	€F€_{{20, 20}, {39, 10}}Ø>?@AB CDEH†J-JKL€?€€K€€€}€EWVersionÓf\ ‘b€C×123 4S89:V€6€6€ƒ	€F€„_{{376, 99}, {169, 30}}Ø>?@AB CDEZ\.J¢º€?€†€R€…€‚€E_6(support@geekspiff.com)
+  (helmut.maierhofer@chello.at)
+--Ól\ ©nb€C_{{1, 1}, {565, 196}}_{{0, 0}, {1280, 832}}]{246.944, 28}_{3.40282e+38, 3.40282e+38}UaboutÒ 7 8hi¢i ;_NSWindowTemplate_initialFirstResponderÒ 7 8lm£m ¢ ;_NSNibOutletConnectorÔ ù q  r úp tr€1€’€€× w x y z { |  · ~u €  ‚ ƒ€€‘€€€€o A b o u t   C h i c k e n   o f   t h e   V N C &_makeKeyAndOrderFront:Ó q  r} t€—€€”Ø w x ¨ y z { |  } ~ ª‚ €„ ‚ ƒ€€•€€–€€\Close WindowQw]performClose:Ó q  r‹ t€œ€€™Ø w x ¨ y z { |  ~ ª €  ‚ ƒ€š€›€€€€Ó y  …– ‡˜>.?]Stop Speaking]stopSpeaking:Ó q  rœ t€¢€€Ø w x ¨ y z { |   ~ ª¡ €£ ‚ ƒ€Ÿ€ €€¡€€Ó y  …§ ‡©V.WTUndoQzÒ Æ ­ ÈUundo:€!Ó q  r° t²€§€€¤Ø w x ¨ y z { |   ~ ªµ €· ‚ ƒ€Ÿ€¥€€¦€€SCutQxÒ Æ ½ ÈTcut:€!Ó q  rÀ tÂ€¬€€©Ø w x ¨ y z { |   ~ ªÅ €Ç ‚ ƒ€Ÿ€ª€€«€€UPasteQvÒ Æ Í ÈVpaste:€!Ó q  rĞ tÒ€°€€®Ø w x ¨ y z { |  ~ ªÕ €  ‚ ƒ€š€¯€€€€^Start Speaking^startSpeaking:Ó q  rİ tß€µ€€²Ø w x ¨ y z { |   ~ ªâ €ä ‚ ƒ€Ÿ€³€€´€€ZSelect AllQaÒ Æ ê ÈZselectAll:€!Ó q  rí tï€º€€·Ø w x ¨ y z { |   ~ ªò €ô ‚ ƒ€Ÿ€¸€€¹€€TCopyQcÒ Æ ú ÈUcopy:€!Ó q  rı tÿ€¾€€¼Ø w x ¨ y z { |   ~ ª €  ‚ ƒ€Ÿ€½€€€€VDeleteWdelete:Ó q  r
+-- t€Ã€€ÀØ w x ¨ y z { |   ~ ª € ‚ ƒ€Ÿ€Á€€Â€€TRedoQZÒ Æ  ÈUredo:€!Ó q  r t€É€€ÅØ w x ¨ y z { |  ~  €" ‚ ƒ€Æ   €Ç€€È€€Ô y ¾  …&' ‡)[^.\_Fullscreen ModeQ~_toggleFullscreenMode:Ó q  r. t0€Í€€ËØ w x ¨ y z { |  ~ ª3 €  ‚ ƒ€Æ€Ì€€€€WRefresh_manuallyUpdateFrameBuffer:Ó q  r; t=€Ñ€€ÏØ w x ¨ y z { |  ~ ª@ €  ‚ ƒ€Æ€Ğ€€€€_Bring All to FrontÒ Æ G È_arrangeInFront:€!Ó q  rJ tL€Ö€€ÓØ w x ¨ y z { |  ~ ªO €Q ‚ ƒ€Æ€Ô€€Õ€€XMinimizeQmÒ Æ W È_performMiniaturize:€!Ô ù q  rZ[ ü 0€Ø€Ú€€Ò  2 3`€€Ù[AppDelegateXdelegateÔ ù q  rZe tg€Ø€Ş€€ÜØ w x ¨ y z { |  · ~ ªj €  ‚ ƒ€€İ€€€€[Use Bonjour_changeRendezvousUse:Ô ù q  rZs tu€Ø€ã€€àØ w x ¨ y z { |  · ~ ªx €z ‚ ƒ€€á€€â€€l P r e f e r e n c e s &Q,_showPreferences:Ô ù q  rZ‚ t„€Ø€è€€åØ w x ¨ y z { |  } ~ ª‡ €‰ ‚ ƒ€€æ€€ç€€o O p e n   C o n n e c t i o n &Qo_showConnectionDialog:Ô ù q  rg‘ üZ€Ü€ê€€Ø_mRendezvousMenuItemÔ ù q  r'— üZ€G€ì€€Ø_mInfoVersionNumberÔ ù q  rZ tŸ€Ø€ñ€€îØ w x ¨ y z { |  } ~ ã¢ €¤ ‚ ƒ€€ï€€ğ€€o C o n n e c t i o n   P r o f i l e s &Qp_showProfileManager:Ô ù q  rZ¬ t®€Ø€÷€€óØ w x ¨ y z { | ° ~ ª± €³ ‚ ƒ€ô€õ€€ö€€Ó y  …· ‡¹3.4_Chicken of the VNC HelpQ?YshowHelp:Ô ù q  rZ¿ tÁ€Ø€ü€€ùØ w x ¨ y z { |  } ~ ªÄ €Æ ‚ ƒ€€ú€€û€€o L i s t e n   f o r   S e r v e r &Ql_showListenerDialog:Ó q  rÍ tÏ€€şØ w x ¨ y z { | Ñ ~ ªÒ €  ‚ ƒ€ÿ €€€€Ó y  …Ø ‡Ú+.,\Send "Pause"_sendPauseKeyCode:Ó q  rŞ tà€Ø w x ¨ y z { | Ñ ~ ªã €  ‚ ƒ€ÿ€€€€\Send "Break"_sendBreakKeyCode:Ó q  rë tí	€Ø w x ¨ y z { | Ñ ~ ªğ €  ‚ ƒ€ÿ€€€€\Send "Print"_sendPrintKeyCode:Ó q  rø tú€Ø w x ¨ y z { | Ñ ~ ªı €  ‚ ƒ€ÿ€€€€^Send "Execute"_sendExecuteKeyCode:Ó q  r t€Ø w x ¨ y z { | Ñ ~
+-- €  ‚ ƒ€ÿ€€€€_Send "Ctrl-Alt-Del"_sendCtrlAltDel:Ó q  r t€Ø w x ¨ y z { | Ñ ~ €  ‚ ƒ€ÿ€€€€_Send "Cmd-Option-Escape"^sendCmdOptEsc:Ó q  r t!€Ø w x ¨ y z { | Ñ ~ ª$ €  ‚ ƒ€ÿ€€€€]Send "Insert"_sendInsertKeyCode:Ó q  r, t.€Ø w x ¨ y z { | Ñ ~ ª1 €  ‚ ƒ€ÿ€€€€]Send "Delete"_sendDeleteKeyCode:Ô ù q  rZ: t<€Ø"€Ø w x ¨ y z { |  } ~ ª? €A ‚ ƒ€ €!€€o N e w   C o n n e c t i o n &Qn_showNewConnectionDialog:Ò > H–¯Mà î }ßO,Ÿ+°„UíXY)[ ú] uÁuaLc²®Ògh!( Ğ*	p0rg'uïxyz.< ·Ñ µÂ „…ZúÏ. à=-ÿ ¦r&€™€-€À€€²/€x€î€j€ô€å567€T8€19€
+--€ù€à-€Ó'€¤€ó€®:;€N€6€#€[€l(€Ë@€Ü€GK€”€·NAS€€ÿ]€F€©€Ÿ&X€€Ø€ş€‚€(€Ï€ÆG€š€Å€}€¼€€€8`ZConnectionÒ > ™ oª<„Á„ u ¦Ÿcp€å€ù€”&€
+--€€î'(€oÚ w x ¨ y z¦ { | § } ~ ª  €8  ‚ ƒ8\NSIsDisabled]NSIsSeparator€€€	€€€	Ú w x ¨ y z¦ { | § } ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨º y z { | » } ~ ªÑ¾ €  ‚ ƒÃYNSSubmenuXNSAction€€ÿ)€€€€*\Special Keys^submenuAction:Ò > Ç o©a!.Ïàíú-€ş€oÚ w x ¨ y z¦ { | §Ñ ~ ª  €8  ‚ ƒ8€ÿ€€	€€€	Ò 7 8Ü w¢ w ;Ô y ¾  …Şß ‡á02.1Ò Æ ã ÈXServices€!Ò > æ o €o__NSServicesMenuTHelpÒ > ë o¡®€ó€oÚ w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨ y z¦ { | § ~ ª  €8  ‚ ƒ8€Æ€€	€€€	Ú w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨ y z¦ { | §  ~ ª  €8  ‚ ƒ8€Ÿ€€	€€€	Ú w x ¨ y z¦ { | §  ~ ª  €8  ‚ ƒ8€Ÿ€€	€€€	Ú w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨º y z { | »  ~ ª' €  ‚ ƒ,€Ÿ€š<€€€€=VSpeechÒ > / o¢Ò€®€™€oÚ w x ¨º y z { | »y ~ ª ·6 €  ‚ ƒ;A€B€€€€CÔ y ¾  …=> ‡@Q_.RÒ > B o¬rUugg Ğ à îY µ€5€à€ÜFG:€#€(€-7€€oÚ w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨º y z { | » · ~ ªO\ €  ‚ ƒa€/H€€€€I\_NSAppleMenuÚ w x ¨º y z { | »y ~ ª }f €  ‚ ƒkA€L€€€€MÚ w x ¨º y z { | »y ~ ª°o €  ‚ ƒtA€ôO€€€€P]OSX_RFBViewerÒ > w o¥ruz…x@KSXN€oÚ w x ¨º y z { | »y ~ ª  €  ‚ ƒ†A€ŸT€€€€UTEditÒ Æ ‡ È€!Ò > ‹ oª[²ïÂÿß]h€€À8€¤€·€©€¼€²9;€oÚ w x ¨º y z { | »y ~ ªš €  ‚ ƒŸA€ÆY€€€€ZVWindowÒ Æ   È€!Ò > ¤ o¦XL0=€Å6€Ó€Ë]€Ï€oÚ w x ¨ y z¦ { | § ~ ª  €8  ‚ ƒ8€Æ€€	€€€	^_NSWindowsMenu[_NSMainMenuÒ 7 8¸¢ ;Ò > º–¯MÑ · u  }x } ·ÑÑ ·  0  } } ·Ñ } ° · ÑÑ ú ·+ }y ·y } y 0yÑ }rp · · z }y  0ÑÑ ·… ·h  } ·€š€ÿ€€ŸK€ŸG€6€€6N€€€ÿ€ÿ€Æ€€6€Ÿ€€Ÿ€€€€ÿ€Æ€€Ÿ€ô€š€€Ÿ€ÿ€ÿ€6€1€€6€j€€ÆA€€6A€€ŸA€A€ÿ€@(€Æ€€€ŸS€A€Ÿ€€ÿ€ÿ€6€€ÆX€;€Æ€6€Ÿ€€€6`Ò > 
+--–¯Y úg î àr ¦	 0O Ğy uZ ·+u„ur µ7€1:€-€(€€€l€/€#AG€
+--€Ø€€jK€åF€à@€`Ò > &–¯'()*+,-./0123456789:;<=>?defghijklmnopqrstuvwxyz{|`TInfo[NSMenuItem7[NSMenuItem6[NSMenuItem5[NSMenuItem4]NSMenuItem211[NSMenuItem2\File's OwnerXMainMenu[NSMenuItem3[NSMenuItem1^NSMenuItem2111VNSBox1[NSMenuItem9[NSMenuItem8Ò > Q– `Ò > T– `Ò > W–¯v( [ kÂ b f Ğ n Z*p ú	„à Q T]0r… î h K NZ ug S g'ï a Mu OOÁ jß }u 0úa à [Ïx.,L i= J m \ d `Ò G²y XŸ®c U cz H ^ V Y+ W ].° ¦-„g ·ÿ< L Ph l R eUí I _XÑ&Yr)! µ€N€ŸF8€©€6€ë€ı€#€™€Ê€[(€1€l&€€­9€Ë@X€-€'€€€Ø€
+--€Ü€¨€G€·€é€0K€”€“€À/€ù€²€€à€-€(€Î€şN€‚€x€Ó
+--€Ï€"€Ò€ò€Æ€ä€®€	€šG€¤A€¿€î€ó'€±€íS€€Û€¶€Ä€j€»€×€ô€Å€€}€å:€€¼€,€˜;€£€ø5€€ß6€ÿ]€87€€T€`Ò > Ğ–¯vÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷øùúûüışÿ 	
+-- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEF‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö`åbÀ!ç`ºcÆ8ã°è¶$'4d2i¼ptW¥Q&»ä"_s4m®¿=l¸¹h9±zÇ1½/oÄ:­3^¦e+¬û(a<Z)7*XÂ‚0;V5jf Åq#Ã%¯Õ¾·n]5³²6áagæÁkÒ > ¾ o €oÒ > Á– `Ò > Ä– `Ò 7 8ÇÈ¢È ;^NSIBObjectData   # , 1 : L Q V d f`f±Ãßñü2?RYguƒ©·ÁÈËÎÑÔ×Úİàâåçêíğòô÷ù )2=BQZmv‚„”¡§°	!#%')+-/13579;=?ACFILORUX[]jr{}¥³»ÅĞİßäæèêìîû
+--=>KZ\^`hzƒŠ±¾ÀÂÄ×àåğ				-	<	I	K	M	O	p	„	†	‹			‘	“	•	À	Í	Ú	Ü	Ş	à
+-+Ó  ØÈ ÛÊã€&Ò 7 8Š‹£‹Œ ;^NSMutableArrayWNSArrayZ{565, 196}Ò 7 8 ô£ ô õ ;_{{0, 0}, {1280, 778}}]{246.944, 28}_{3.40282e+38, 3.40282e+38}UaboutÒ 7 8•–¢– ;_NSWindowTemplate_makeKeyAndOrderFront:Ó  f g hš›€€¤€§Ø  l m n o p q r s uŸ w x y€€¥€¦€€€4_Quit Chicken of the VNCQqZterminate:Ó  f g h¨©€€©€­Ø  l m n o p q r s¬ u­ w x y°€€«€¬€€€ªÓ  l | }³´€ò€ó€ô\Close WindowQw]performClose:Ó  f g hº»€€¯€±Ø  l m n o p q r s¾¿ w x y€€°   €6€€€4[Hide Others_hideOtherApplications:Ó  f g hÈÉ€€³€µØ  l m n o p q r sÌ u v w x y z€€´€€€€\Send "Pause"_sendPauseKeyCode:Ó  f g hÕÖ€€·€ºØ  l m n o p q r sÙ u v w x yİ€€¹€€€€¸Ó  l | }àá€ò€ğ€ñ]Stop Speaking]stopSpeaking:Ó  f g hæç€€¼€¾Ø  l m n o p q r sê u v w x y)€€½€€€€:_Bring All to Front_arrangeInFront:Ó  f g hóô€€À€ÃØ  l m n o p q r s÷9ø w x y)€€Á€Â€€€:_Fullscreen ModeQ~_toggleFullscreenMode:Ó  f g h€€Å€ÇØ  l m n o p q r s u v w x y)€€Æ€€€€:WRefresh_manuallyUpdateFrameBuffer:Ó  f g h€€É€ÌØ  l m n o p q r s u w x y€€Ê€Ë€€€.TRedoQZUredo:Ó  f g h€€Î€ĞØ  l m n o p q r s  u v w x y z€€Ï€€€€]Send "Insert"_sendInsertKeyCode:Ó  f g h)*€€Ò€ÔØ  l m n o p q r s- u v w x y€€Ó€€€€.VDeleteWdelete:Ó  f g h67€€Ö€ÙØ  l m n o p q r s: u; w x y€€×€Ø€€€.SCutQxTcut:Ó  f g hDE€€Û€İØ  l m n o p q r sH u v w x yİ€€Ü€€€€¸^Start Speaking^startSpeaking:Ó  f g hQR€€ß€âØ  l m n o p q r sU uV w x y€€à€á€€€.TCopyQcUcopy:Ó  f g h_`€€ä€æØ  l m n o p q r sc u v w x y z€€å€€€€]Send "Delete"_sendDeleteKeyCode:Ó  f g hlm€€è€êØ  l m n o p q r sp u v w x y€€é€€€€4XShow All_unhideAllApplications:Ó  f g hyz€€ì€îØ  l m n o p q r s} u v w x y z€€í€€€€^Send "Execute"_sendExecuteKeyCode:Ò  >…†*¯CP)İ œ±°¯yl’)~•q— ªš› üBæ!ÈÕDó6¦º°ª«¬¨ i¯4Q]³©­_®¸¹º»¼š¾¿ÀÁÂ ¬ zÉ€H€Ò€¸€€•€ª€‹€ì€û€è€.€:€Y€S€4€€ö€-€C€¼€9€W€³€·€Û€À€Ö€Î€¯€€ú€f€õ€©€
+-+€?€ß€L€_€s€ä€‚€¤"	%(€€É€3€l€Å€VSpeechÒ  > FÍ€š¢DÕ€Û€·Ò 7 8Ñ r¢ r ;ZConnectionÒ  > FÕ€š£¨¬š€©€õ€öÚ  l mÚ nÛ o p q r s v u ¯ v ¯ w x y°]NSIsSeparator\NSIsDisabled€€	€	€€€ªÚ å l m n o p q ræ s z ~ u v w x y°îYNSSubmenuXNSAction€€€÷€€€€ª€ø\Special Keys^submenuAction:Ò  > Fó€š©4Pª_Èq iy€?€H€ú€Î€ä€³€S€
+-+€ìÚ  l mÚ nÛ o p q r s v u ¯ v ¯ w x y z€€	€	€€€Ô  l Ì | }	
+-+€ò€ü€ÿ€şÒ YNS.string€ıXServicesÒ 7 8£ ;_NSMutableStringXNSStringÒ  > F€š __NSServicesMenuÒ €ıTEditÒ  > F€šª ü³6QB)]’»€-€É€Ö€ß€C€Ò€LÚ  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€.Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€.Ú å l m n o p q ræ sİà u v w x yA€€¸€ğ€€€€.Ò D€ıVWindowÒ  > FG€š¦óÉ!Àæ€À€9€Å	€¼Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y)€€	€	€€€:Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y)€€	€	€€€:^_NSWindowsMenuÒ  2 3 4€€Ú å l m n o p q ræ sg u v w x yl€€û€€€€4_Chicken Of the VNCÒ  > Fp€š©¸—¼ºl¿š€W€3€¯€è€¤Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€4Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€4Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€4\_NSAppleMenuÚ å l m n o p q ræ s°³ u v w x y¹€€ª€ó€€€Ô  l Ì | }¡¢£€ò'Ú å l m n o p q ræ s)§ u v w x y¹¬€€:€€€Ú å l m n o p q ræ s u v w x y¹µ€€4€€€]OSX_RFBViewerÒ  > F¹€š¥¯›º¦¾"Ú å l m n o p q ræ sÂ u v w x y¹Ç€€. €€€!Ú å l m n o p q ræ sÁË u v w x y¹Ğ€%#€€€$THelpÓ  l | }ËÕ€ò#&Ò  > FØ€š [_NSMainMenuÔ ¤  ¥ § + µİ ®€ €œ)_{{2, 2}, {435, 1}}Ò 7 8àŒ¢Œ ;Ò  >…ã*¯C z» ª ª› ª z—º¦   z¯~°¹)) zİİ)¹ z ª z ª°° z¹ z ª ª z ª ¹¹)¾®  ª)š)€€.€€€€€4€.€€€€4€Y€ª€.€.€:€:€4€€¸€¸€:€.€€4€€€€ª€ª€€€.€.€.€€€€€4€€.€4€4€4€:"€‚€€.€4€€:€ö€:Ò  >…)*¯DP ) œİ±°¯l’~)y•q— ªš› üBæ!ÈÕDó6¦°º«ª¬¯¨ iQ4©­]³_®º¹¸» ¼¾šÀÁ¿Â¬É z€H€€Ò€€¸€•€ª€‹€è€.€û€Y€:€ì€S€4€€ö€-€C€¼€9€W€³€·€Û€À€Ö€Î€€¯€f€ú€õ€©€
+-+€ß€?€_€s€L€ä€‚€"€¤	%(€É€l€3€Å€Ò  >…p*¯Dqrstuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦ ¡¨©ª«¬­¡¯°±²³´./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abc€defghi€]jklmno_Menu Item (Send "Ctrl-Alt-Del")\File's Owner_Menu Item (Delete)_Static Text (2.0)]Menu (Speech)_DStatic Text ((support@geekspiff.com)
+-+(helmut.maierhofer@chello.at)
+-+)_Menu (Connection)_vStatic Text (released under the GNU Public License
+-+source code and support available at http://cotvnc.sourceforge.net)_Menu Item (Show All)[Menu (Edit)[Separator-6_Menu (Services)TInfo]Menu (Window)_Menu Item (Send "Execute")[Application_Menu Item (Send "Break")_Menu Item (Services)_Menu (Chicken Of the VNC)\Content View_Menu Item (Special Keys)_Menu Item (Connection)_Menu Item (Undo)_Menu Item (Paste)_Menu Item (Bring All to Front)_Menu Item (Minimize)o% M e n u   I t e m   ( A b o u t   C h i c k e n   o f   t h e   V N C & )_Menu Item (Send "Pause")_Menu Item (Stop Speaking)_Menu Item (Start Speaking)_Menu Item (Fullscreen Mode)_Menu Item (Cut)_Menu Item (Window)_Menu Item (Send "Insert")_Static Text (Version)_Menu Item (Hide Others)_RStatic Text (Administered by Jason Harris
+-+based on VNCViewer by Helmut Maierhofer)[Separator-8YSeparator_Menu Item (Chicken Of the VNC)_Menu Item (Close Window)_Menu Item (Send "Print")_Menu Item (Copy)_$Menu Item (Send "Cmd-Option-Escape")_ Static Text (Chicken of the VNC)_Image View (NSApplicationIcon)_Menu Item (Select All)[Separator-7_Menu Item (Send "Delete")_Horizontal Line_Menu Item (Edit)XMainMenu[Separator-3_Menu Item (Speech)[Separator-4_Menu Item (Help)_#Menu Item (Quit Chicken of the VNC)[Separator-1[Menu (Help)[Separator-5_Menu Item (Redo)_ZStatic Text (Copyright 1998-2000 by Helmut Maierhofer
+-+Copyright 2002-2006 by Jason Harris)_#Menu Item (Hide Chicken of the VNC)_Menu Item (Refresh)[Separator-2_Menu (Special Keys)Ò  >…ù* Ò  >…ü* Ò  >…ÿ*¯aP) œ H O [¯ cy’)~ Y ^ L— T ª Xš› W!ÕD Z Só6¦ \°ª«¬¯4]³© Mº¹»  aš¾¿ÀÁÂ¬ zÉ İ ]± V° Jl I•q b üBæ NÈ U d Qº¨ i KQ­_ R®¸ _¼ P `€H€Ò€€	€G€Ä€‹€ç€ì€û€.€:€Y€»€Ñ€8€4€£€€¶€ö€²€9€W€·€Û€¿€V€À€Ö€Î€È€€ú€f€õ€?€L€_€>€€Ş€¤"	%(€l€Å€€€¸€Í€•€®€ª€,€è€€S€ã€-€C€¼€B€³€¨€ë€P€¯€©€
+-+€2€ß€s€ä€R€‚€Õ€K€É€3€ÚÒ  >…c*¯adefghijklmnopqrstuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄtuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔ¾ ä¼¿8q¸m3è9*:efnç#°4º1g7t02Á+V¹åûd³áÀW)kza6‚æ4²5ÃÇp=$i`ÿÿÿÿÿÿÿı¶Ä!/&±½Xh·o"ãÂ»Õ%j(c'Ò  > F'€š Ò  >…** Ò  >…-* Ò 7 8/0¢0 ;^NSIBObjectData   " ' 1 : ? D R T f"mt{‰›·ÅÑİëö .ASmw„†‰‹‘“–˜›¡¤¦¨«®±´½ÉËÍÛäíøı(1<>?HO\bkmª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎĞÒÔÖØÚÜŞàâäñú)1EP^hu|~€…‡Œ’Ÿ«­¯±¾¿ÌÛİßáéû	)+-/BKP[ox—¦·ÅÇÉËÍÖØÚæ				$	-	7	C	E	G	I	K	N	O	Q	f	q	}			ƒ	…		¾	Ê	Ş	é	ó
++-Ó  ØÈ ÛÊã€&Ò 7 8Š‹£‹Œ ;^NSMutableArrayWNSArrayZ{565, 196}Ò 7 8 ô£ ô õ ;_{{0, 0}, {1280, 778}}]{246.944, 28}_{3.40282e+38, 3.40282e+38}UaboutÒ 7 8•–¢– ;_NSWindowTemplate_makeKeyAndOrderFront:Ó  f g hš›€€¤€§Ø  l m n o p q r s uŸ w x y€€¥€¦€€€4_Quit Chicken of the VNCQqZterminate:Ó  f g h¨©€€©€­Ø  l m n o p q r s¬ u­ w x y°€€«€¬€€€ªÓ  l | }³´€ò€ó€ô\Close WindowQw]performClose:Ó  f g hº»€€¯€±Ø  l m n o p q r s¾¿ w x y€€°   €6€€€4[Hide Others_hideOtherApplications:Ó  f g hÈÉ€€³€µØ  l m n o p q r sÌ u v w x y z€€´€€€€\Send "Pause"_sendPauseKeyCode:Ó  f g hÕÖ€€·€ºØ  l m n o p q r sÙ u v w x yİ€€¹€€€€¸Ó  l | }àá€ò€ğ€ñ]Stop Speaking]stopSpeaking:Ó  f g hæç€€¼€¾Ø  l m n o p q r sê u v w x y)€€½€€€€:_Bring All to Front_arrangeInFront:Ó  f g hóô€€À€ÃØ  l m n o p q r s÷9ø w x y)€€Á€Â€€€:_Fullscreen ModeQ~_toggleFullscreenMode:Ó  f g h€€Å€ÇØ  l m n o p q r s u v w x y)€€Æ€€€€:WRefresh_manuallyUpdateFrameBuffer:Ó  f g h€€É€ÌØ  l m n o p q r s u w x y€€Ê€Ë€€€.TRedoQZUredo:Ó  f g h€€Î€ĞØ  l m n o p q r s  u v w x y z€€Ï€€€€]Send "Insert"_sendInsertKeyCode:Ó  f g h)*€€Ò€ÔØ  l m n o p q r s- u v w x y€€Ó€€€€.VDeleteWdelete:Ó  f g h67€€Ö€ÙØ  l m n o p q r s: u; w x y€€×€Ø€€€.SCutQxTcut:Ó  f g hDE€€Û€İØ  l m n o p q r sH u v w x yİ€€Ü€€€€¸^Start Speaking^startSpeaking:Ó  f g hQR€€ß€âØ  l m n o p q r sU uV w x y€€à€á€€€.TCopyQcUcopy:Ó  f g h_`€€ä€æØ  l m n o p q r sc u v w x y z€€å€€€€]Send "Delete"_sendDeleteKeyCode:Ó  f g hlm€€è€êØ  l m n o p q r sp u v w x y€€é€€€€4XShow All_unhideAllApplications:Ó  f g hyz€€ì€îØ  l m n o p q r s} u v w x y z€€í€€€€^Send "Execute"_sendExecuteKeyCode:Ò  >…†*¯CP)İ œ±°¯yl’)~•q— ªš› üBæ!ÈÕDó6¦º°ª«¬¨ i¯4Q]³©­_®¸¹º»¼š¾¿ÀÁÂ ¬ zÉ€H€Ò€¸€€•€ª€‹€ì€û€è€.€:€Y€S€4€€ö€-€C€¼€9€W€³€·€Û€À€Ö€Î€¯€€ú€f€õ€©€
++-€?€ß€L€_€s€ä€‚€¤"	%(€€É€3€l€Å€VSpeechÒ  > FÍ€š¢DÕ€Û€·Ò 7 8Ñ r¢ r ;ZConnectionÒ  > FÕ€š£¨¬š€©€õ€öÚ  l mÚ nÛ o p q r s v u ¯ v ¯ w x y°]NSIsSeparator\NSIsDisabled€€	€	€€€ªÚ å l m n o p q ræ s z ~ u v w x y°îYNSSubmenuXNSAction€€€÷€€€€ª€ø\Special Keys^submenuAction:Ò  > Fó€š©4Pª_Èq iy€?€H€ú€Î€ä€³€S€
++-€ìÚ  l mÚ nÛ o p q r s v u ¯ v ¯ w x y z€€	€	€€€Ô  l Ì | }	
++-€ò€ü€ÿ€şÒ YNS.string€ıXServicesÒ 7 8£ ;_NSMutableStringXNSStringÒ  > F€š __NSServicesMenuÒ €ıTEditÒ  > F€šª ü³6QB)]’»€-€É€Ö€ß€C€Ò€LÚ  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€.Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€.Ú å l m n o p q ræ sİà u v w x yA€€¸€ğ€€€€.Ò D€ıVWindowÒ  > FG€š¦óÉ!Àæ€À€9€Å	€¼Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y)€€	€	€€€:Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y)€€	€	€€€:^_NSWindowsMenuÒ  2 3 4€€Ú å l m n o p q ræ sg u v w x yl€€û€€€€4_Chicken Of the VNCÒ  > Fp€š©¸—¼ºl¿š€W€3€¯€è€¤Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€4Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€4Ú  l mÚ nÛ o p q r s v u ¯ v ¯ w x y€€	€	€€€4\_NSAppleMenuÚ å l m n o p q ræ s°³ u v w x y¹€€ª€ó€€€Ô  l Ì | }¡¢£€ò'Ú å l m n o p q ræ s)§ u v w x y¹¬€€:€€€Ú å l m n o p q ræ s u v w x y¹µ€€4€€€]OSX_RFBViewerÒ  > F¹€š¥¯›º¦¾"Ú å l m n o p q ræ sÂ u v w x y¹Ç€€. €€€!Ú å l m n o p q ræ sÁË u v w x y¹Ğ€%#€€€$THelpÓ  l | }ËÕ€ò#&Ò  > FØ€š [_NSMainMenuÔ ¤  ¥ § + µİ ®€ €œ)_{{2, 2}, {435, 1}}Ò 7 8àŒ¢Œ ;Ò  >…ã*¯C z» ª ª› ª z—º¦   z¯~°¹)) zİİ)¹ z ª z ª°° z¹ z ª ª z ª ¹¹)¾®  ª)š)€€.€€€€€4€.€€€€4€Y€ª€.€.€:€:€4€€¸€¸€:€.€€4€€€€ª€ª€€€.€.€.€€€€€4€€.€4€4€4€:"€‚€€.€4€€:€ö€:Ò  >…)*¯DP ) œİ±°¯l’~)y•q— ªš› üBæ!ÈÕDó6¦°º«ª¬¯¨ iQ4©­]³_®º¹¸» ¼¾šÀÁ¿Â¬É z€H€€Ò€€¸€•€ª€‹€è€.€û€Y€:€ì€S€4€€ö€-€C€¼€9€W€³€·€Û€À€Ö€Î€€¯€f€ú€õ€©€
++-€ß€?€_€s€L€ä€‚€"€¤	%(€É€l€3€Å€Ò  >…p*¯Dqrstuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦ ¡¨©ª«¬­¡¯°±²³´./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abc€defghi€]jklmno_Menu Item (Send "Ctrl-Alt-Del")\File's Owner_Menu Item (Delete)_Static Text (2.0)]Menu (Speech)_DStatic Text ((support@geekspiff.com)
++-(helmut.maierhofer@chello.at)
++-)_Menu (Connection)_vStatic Text (released under the GNU Public License
++-source code and support available at http://cotvnc.sourceforge.net)_Menu Item (Show All)[Menu (Edit)[Separator-6_Menu (Services)TInfo]Menu (Window)_Menu Item (Send "Execute")[Application_Menu Item (Send "Break")_Menu Item (Services)_Menu (Chicken Of the VNC)\Content View_Menu Item (Special Keys)_Menu Item (Connection)_Menu Item (Undo)_Menu Item (Paste)_Menu Item (Bring All to Front)_Menu Item (Minimize)o% M e n u   I t e m   ( A b o u t   C h i c k e n   o f   t h e   V N C & )_Menu Item (Send "Pause")_Menu Item (Stop Speaking)_Menu Item (Start Speaking)_Menu Item (Fullscreen Mode)_Menu Item (Cut)_Menu Item (Window)_Menu Item (Send "Insert")_Static Text (Version)_Menu Item (Hide Others)_RStatic Text (Administered by Jason Harris
++-based on VNCViewer by Helmut Maierhofer)[Separator-8YSeparator_Menu Item (Chicken Of the VNC)_Menu Item (Close Window)_Menu Item (Send "Print")_Menu Item (Copy)_$Menu Item (Send "Cmd-Option-Escape")_ Static Text (Chicken of the VNC)_Image View (NSApplicationIcon)_Menu Item (Select All)[Separator-7_Menu Item (Send "Delete")_Horizontal Line_Menu Item (Edit)XMainMenu[Separator-3_Menu Item (Speech)[Separator-4_Menu Item (Help)_#Menu Item (Quit Chicken of the VNC)[Separator-1[Menu (Help)[Separator-5_Menu Item (Redo)_ZStatic Text (Copyright 1998-2000 by Helmut Maierhofer
++-Copyright 2002-2006 by Jason Harris)_#Menu Item (Hide Chicken of the VNC)_Menu Item (Refresh)[Separator-2_Menu (Special Keys)Ò  >…ù* Ò  >…ü* Ò  >…ÿ*¯aP) œ H O [¯ cy’)~ Y ^ L— T ª Xš› W!ÕD Z Só6¦ \°ª«¬¯4]³© Mº¹»  aš¾¿ÀÁÂ¬ zÉ İ ]± V° Jl I•q b üBæ NÈ U d Qº¨ i KQ­_ R®¸ _¼ P `€H€Ò€€	€G€Ä€‹€ç€ì€û€.€:€Y€»€Ñ€8€4€£€€¶€ö€²€9€W€·€Û€¿€V€À€Ö€Î€È€€ú€f€õ€?€L€_€>€€Ş€¤"	%(€l€Å€€€¸€Í€•€®€ª€,€è€€S€ã€-€C€¼€B€³€¨€ë€P€¯€©€
++-€2€ß€s€ä€R€‚€Õ€K€É€3€ÚÒ  >…c*¯adefghijklmnopqrstuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄtuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔ¾ ä¼¿8q¸m3è9*:efnç#°4º1g7t02Á+V¹åûd³áÀW)kza6‚æ4²5ÃÇp=$i`ÿÿÿÿÿÿÿı¶Ä!/&±½Xh·o"ãÂ»Õ%j(c'Ò  > F'€š Ò  >…** Ò  >…-* Ò 7 8/0¢0 ;^NSIBObjectData   " ' 1 : ? D R T f"mt{‰›·ÅÑİëö .ASmw„†‰‹‘“–˜›¡¤¦¨«®±´½ÉËÍÛäíøı(1<>?HO\bkmª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎĞÒÔÖØÚÜŞàâäñú)1EP^hu|~€…‡Œ’Ÿ«­¯±¾¿ÌÛİßáéû	)+-/BKP[ox—¦·ÅÇÉËÍÖØÚæ				$	-	7	C	E	G	I	K	N	O	Q	f	q	}			ƒ	…		¾	Ê	Ş	é	ó
+++Ól\ ©nb€C_{{1, 1}, {565, 196}}_{{0, 0}, {1280, 832}}]{246.944, 28}_{3.40282e+38, 3.40282e+38}UaboutÒ 7 8hi¢i ;_NSWindowTemplate_initialFirstResponderÒ 7 8lm£m ¢ ;_NSNibOutletConnectorÔ ù q  r úp tr€1€’€€× w x y z { |  · ~u €  ‚ ƒ€€‘€€€€o A b o u t   C h i c k e n   o f   t h e   V N C &_makeKeyAndOrderFront:Ó q  r} t€—€€”Ø w x ¨ y z { |  } ~ ª‚ €„ ‚ ƒ€€•€€–€€\Close WindowQw]performClose:Ó q  r‹ t€œ€€™Ø w x ¨ y z { |  ~ ª €  ‚ ƒ€š€›€€€€Ó y  …– ‡˜>.?]Stop Speaking]stopSpeaking:Ó q  rœ t€¢€€Ø w x ¨ y z { |   ~ ª¡ €£ ‚ ƒ€Ÿ€ €€¡€€Ó y  …§ ‡©V.WTUndoQzÒ Æ ­ ÈUundo:€!Ó q  r° t²€§€€¤Ø w x ¨ y z { |   ~ ªµ €· ‚ ƒ€Ÿ€¥€€¦€€SCutQxÒ Æ ½ ÈTcut:€!Ó q  rÀ tÂ€¬€€©Ø w x ¨ y z { |   ~ ªÅ €Ç ‚ ƒ€Ÿ€ª€€«€€UPasteQvÒ Æ Í ÈVpaste:€!Ó q  rĞ tÒ€°€€®Ø w x ¨ y z { |  ~ ªÕ €  ‚ ƒ€š€¯€€€€^Start Speaking^startSpeaking:Ó q  rİ tß€µ€€²Ø w x ¨ y z { |   ~ ªâ €ä ‚ ƒ€Ÿ€³€€´€€ZSelect AllQaÒ Æ ê ÈZselectAll:€!Ó q  rí tï€º€€·Ø w x ¨ y z { |   ~ ªò €ô ‚ ƒ€Ÿ€¸€€¹€€TCopyQcÒ Æ ú ÈUcopy:€!Ó q  rı tÿ€¾€€¼Ø w x ¨ y z { |   ~ ª €  ‚ ƒ€Ÿ€½€€€€VDeleteWdelete:Ó q  r
+++ t€Ã€€ÀØ w x ¨ y z { |   ~ ª € ‚ ƒ€Ÿ€Á€€Â€€TRedoQZÒ Æ  ÈUredo:€!Ó q  r t€É€€ÅØ w x ¨ y z { |  ~  €" ‚ ƒ€Æ   €Ç€€È€€Ô y ¾  …&' ‡)[^.\_Fullscreen ModeQ~_toggleFullscreenMode:Ó q  r. t0€Í€€ËØ w x ¨ y z { |  ~ ª3 €  ‚ ƒ€Æ€Ì€€€€WRefresh_manuallyUpdateFrameBuffer:Ó q  r; t=€Ñ€€ÏØ w x ¨ y z { |  ~ ª@ €  ‚ ƒ€Æ€Ğ€€€€_Bring All to FrontÒ Æ G È_arrangeInFront:€!Ó q  rJ tL€Ö€€ÓØ w x ¨ y z { |  ~ ªO €Q ‚ ƒ€Æ€Ô€€Õ€€XMinimizeQmÒ Æ W È_performMiniaturize:€!Ô ù q  rZ[ ü 0€Ø€Ú€€Ò  2 3`€€Ù[AppDelegateXdelegateÔ ù q  rZe tg€Ø€Ş€€ÜØ w x ¨ y z { |  · ~ ªj €  ‚ ƒ€€İ€€€€[Use Bonjour_changeRendezvousUse:Ô ù q  rZs tu€Ø€ã€€àØ w x ¨ y z { |  · ~ ªx €z ‚ ƒ€€á€€â€€l P r e f e r e n c e s &Q,_showPreferences:Ô ù q  rZ‚ t„€Ø€è€€åØ w x ¨ y z { |  } ~ ª‡ €‰ ‚ ƒ€€æ€€ç€€o O p e n   C o n n e c t i o n &Qo_showConnectionDialog:Ô ù q  rg‘ üZ€Ü€ê€€Ø_mRendezvousMenuItemÔ ù q  r'— üZ€G€ì€€Ø_mInfoVersionNumberÔ ù q  rZ tŸ€Ø€ñ€€îØ w x ¨ y z { |  } ~ ã¢ €¤ ‚ ƒ€€ï€€ğ€€o C o n n e c t i o n   P r o f i l e s &Qp_showProfileManager:Ô ù q  rZ¬ t®€Ø€÷€€óØ w x ¨ y z { | ° ~ ª± €³ ‚ ƒ€ô€õ€€ö€€Ó y  …· ‡¹3.4_Chicken of the VNC HelpQ?YshowHelp:Ô ù q  rZ¿ tÁ€Ø€ü€€ùØ w x ¨ y z { |  } ~ ªÄ €Æ ‚ ƒ€€ú€€û€€o L i s t e n   f o r   S e r v e r &Ql_showListenerDialog:Ó q  rÍ tÏ€€şØ w x ¨ y z { | Ñ ~ ªÒ €  ‚ ƒ€ÿ €€€€Ó y  …Ø ‡Ú+.,\Send "Pause"_sendPauseKeyCode:Ó q  rŞ tà€Ø w x ¨ y z { | Ñ ~ ªã €  ‚ ƒ€ÿ€€€€\Send "Break"_sendBreakKeyCode:Ó q  rë tí	€Ø w x ¨ y z { | Ñ ~ ªğ €  ‚ ƒ€ÿ€€€€\Send "Print"_sendPrintKeyCode:Ó q  rø tú€Ø w x ¨ y z { | Ñ ~ ªı €  ‚ ƒ€ÿ€€€€^Send "Execute"_sendExecuteKeyCode:Ó q  r t€Ø w x ¨ y z { | Ñ ~
+++ €  ‚ ƒ€ÿ€€€€_Send "Ctrl-Alt-Del"_sendCtrlAltDel:Ó q  r t€Ø w x ¨ y z { | Ñ ~ €  ‚ ƒ€ÿ€€€€_Send "Cmd-Option-Escape"^sendCmdOptEsc:Ó q  r t!€Ø w x ¨ y z { | Ñ ~ ª$ €  ‚ ƒ€ÿ€€€€]Send "Insert"_sendInsertKeyCode:Ó q  r, t.€Ø w x ¨ y z { | Ñ ~ ª1 €  ‚ ƒ€ÿ€€€€]Send "Delete"_sendDeleteKeyCode:Ô ù q  rZ: t<€Ø"€Ø w x ¨ y z { |  } ~ ª? €A ‚ ƒ€ €!€€o N e w   C o n n e c t i o n &Qn_showNewConnectionDialog:Ò > H–¯Mà î }ßO,Ÿ+°„UíXY)[ ú] uÁuaLc²®Ògh!( Ğ*	p0rg'uïxyz.< ·Ñ µÂ „…ZúÏ. à=-ÿ ¦r&€™€-€À€€²/€x€î€j€ô€å567€T8€19€
+++€ù€à-€Ó'€¤€ó€®:;€N€6€#€[€l(€Ë@€Ü€GK€”€·NAS€€ÿ]€F€©€Ÿ&X€€Ø€ş€‚€(€Ï€ÆG€š€Å€}€¼€€€8`ZConnectionÒ > ™ oª<„Á„ u ¦Ÿcp€å€ù€”&€
+++€€î'(€oÚ w x ¨ y z¦ { | § } ~ ª  €8  ‚ ƒ8\NSIsDisabled]NSIsSeparator€€€	€€€	Ú w x ¨ y z¦ { | § } ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨º y z { | » } ~ ªÑ¾ €  ‚ ƒÃYNSSubmenuXNSAction€€ÿ)€€€€*\Special Keys^submenuAction:Ò > Ç o©a!.Ïàíú-€ş€oÚ w x ¨ y z¦ { | §Ñ ~ ª  €8  ‚ ƒ8€ÿ€€	€€€	Ò 7 8Ü w¢ w ;Ô y ¾  …Şß ‡á02.1Ò Æ ã ÈXServices€!Ò > æ o €o__NSServicesMenuTHelpÒ > ë o¡®€ó€oÚ w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨ y z¦ { | § ~ ª  €8  ‚ ƒ8€Æ€€	€€€	Ú w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨ y z¦ { | §  ~ ª  €8  ‚ ƒ8€Ÿ€€	€€€	Ú w x ¨ y z¦ { | §  ~ ª  €8  ‚ ƒ8€Ÿ€€	€€€	Ú w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨º y z { | »  ~ ª' €  ‚ ƒ,€Ÿ€š<€€€€=VSpeechÒ > / o¢Ò€®€™€oÚ w x ¨º y z { | »y ~ ª ·6 €  ‚ ƒ;A€B€€€€CÔ y ¾  …=> ‡@Q_.RÒ > B o¬rUugg Ğ à îY µ€5€à€ÜFG:€#€(€-7€€oÚ w x ¨ y z¦ { | § · ~ ª  €8  ‚ ƒ8€€€	€€€	Ú w x ¨º y z { | » · ~ ªO\ €  ‚ ƒa€/H€€€€I\_NSAppleMenuÚ w x ¨º y z { | »y ~ ª }f €  ‚ ƒkA€L€€€€MÚ w x ¨º y z { | »y ~ ª°o €  ‚ ƒtA€ôO€€€€P]OSX_RFBViewerÒ > w o¥ruz…x@KSXN€oÚ w x ¨º y z { | »y ~ ª  €  ‚ ƒ†A€ŸT€€€€UTEditÒ Æ ‡ È€!Ò > ‹ oª[²ïÂÿß]h€€À8€¤€·€©€¼€²9;€oÚ w x ¨º y z { | »y ~ ªš €  ‚ ƒŸA€ÆY€€€€ZVWindowÒ Æ   È€!Ò > ¤ o¦XL0=€Å6€Ó€Ë]€Ï€oÚ w x ¨ y z¦ { | § ~ ª  €8  ‚ ƒ8€Æ€€	€€€	^_NSWindowsMenu[_NSMainMenuÒ 7 8¸¢ ;Ò > º–¯MÑ · u  }x } ·ÑÑ ·  0  } } ·Ñ } ° · ÑÑ ú ·+ }y ·y } y 0yÑ }rp · · z }y  0ÑÑ ·… ·h  } ·€š€ÿ€€ŸK€ŸG€6€€6N€€€ÿ€ÿ€Æ€€6€Ÿ€€Ÿ€€€€ÿ€Æ€€Ÿ€ô€š€€Ÿ€ÿ€ÿ€6€1€€6€j€€ÆA€€6A€€ŸA€A€ÿ€@(€Æ€€€ŸS€A€Ÿ€€ÿ€ÿ€6€€ÆX€;€Æ€6€Ÿ€€€6`Ò > 
+++–¯Y úg î àr ¦	 0O Ğy uZ ·+u„ur µ7€1:€-€(€€€l€/€#AG€
+++€Ø€€jK€åF€à@€`Ò > &–¯'()*+,-./0123456789:;<=>?defghijklmnopqrstuvwxyz{|`TInfo[NSMenuItem7[NSMenuItem6[NSMenuItem5[NSMenuItem4]NSMenuItem211[NSMenuItem2\File's OwnerXMainMenu[NSMenuItem3[NSMenuItem1^NSMenuItem2111VNSBox1[NSMenuItem9[NSMenuItem8Ò > Q– `Ò > T– `Ò > W–¯v( [ kÂ b f Ğ n Z*p ú	„à Q T]0r… î h K NZ ug S g'ï a Mu OOÁ jß }u 0úa à [Ïx.,L i= J m \ d `Ò G²y XŸ®c U cz H ^ V Y+ W ].° ¦-„g ·ÿ< L Ph l R eUí I _XÑ&Yr)! µ€N€ŸF8€©€6€ë€ı€#€™€Ê€[(€1€l&€€­9€Ë@X€-€'€€€Ø€
+++€Ü€¨€G€·€é€0K€”€“€À/€ù€²€€à€-€(€Î€şN€‚€x€Ó
+++€Ï€"€Ò€ò€Æ€ä€®€	€šG€¤A€¿€î€ó'€±€íS€€Û€¶€Ä€j€»€×€ô€Å€€}€å:€€¼€,€˜;€£€ø5€€ß6€ÿ]€87€€T€`Ò > Ğ–¯vÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷øùúûüışÿ 	
+++ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEF‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö`åbÀ!ç`ºcÆ8ã°è¶$'4d2i¼ptW¥Q&»ä"_s4m®¿=l¸¹h9±zÇ1½/oÄ:­3^¦e+¬û(a<Z)7*XÂ‚0;V5jf Åq#Ã%¯Õ¾·n]5³²6áagæÁkÒ > ¾ o €oÒ > Á– `Ò > Ä– `Ò 7 8ÇÈ¢È ;^NSIBObjectData   # , 1 : L Q V d f`f±Ãßñü2?RYguƒ©·ÁÈËÎÑÔ×Úİàâåçêíğòô÷ù )2=BQZmv‚„”¡§°	!#%')+-/13579;=?ACFILORUX[]jr{}¥³»ÅĞİßäæèêìîû
+++=>KZ\^`hzƒŠ±¾ÀÂÄ×àåğ				-	<	I	K	M	O	p	„	†	‹			‘	“	•	À	Í	Ú	Ü	Ş	à
+  
+--
+--
+--
+--	
+--
+--
+--
+-+
+-+
+-+
+-+!
+-+#
++-
++-
++-
++-!
++-#
+++
+++
+++
+++	
+++
+++
+++
+  %
+--(
+-+'
+-+)
++-'
++-)
+++(
+  +
+--.
+-+-
++--
+++.
+  1
+--K
+--M
+--V
+--`
+--k
+--m
+--v
+--}
+--
+--˜
+--¥
+--§
+--©
+--«
+--Ì
+--Î
+--Ğ
+--Ò
+--Ô
+--Ö
+--Ø
+-+B
+-+I
+-+P
+-+Y
+-+[
+-+d
+-+f
+-+h
+-+r
+-+{
+-+€
+-+‡
+-+œ
+-+¤
+-+±
+-+½
+-+Ë
+-+Í
+-+Ï
+-+Ñ
+-+Ó
+-+Õ
+-+Ü
++-B
++-I
++-P
++-Y
++-[
++-d
++-f
++-h
++-r
++-{
++-€
++-‡
++-œ
++-¤
++-±
++-½
++-Ë
++-Í
++-Ï
++-Ñ
++-Ó
++-Õ
++-Ü
+++K
+++M
+++V
+++`
+++k
+++m
+++v
+++}
+++
+++˜
+++¥
+++§
+++©
+++«
+++Ì
+++Î
+++Ğ
+++Ò
+++Ô
+++Ö
+++Ø
+  ò
+--ô
+--ı9;@BDFHJVo|~€‚£¥§©«­¯¸Ñâğòôöø-AS]ky†“ª´ÀÖØÚÜŞàâäæèíïñó)16GRdlnprt}’”–˜šœ ¢¤ÁÍ×àçéëíîñóõ0DPZesŒ’”–˜Ÿ´ÅÌÕÚÜŞàïøı!-:HJLNPRYo|„‡‰’—¤ª¸º¼ÅÎàíö&-9VXZ\]_ayšœ ¢¤¦ª»ÀÂÄÎÛçé
+--*KMOQSUW\£´¹»½Êêì	-NPRTVXZ_®ÃÅÇÉËØåñó$/13568:<=FUWY[]_aceµÕö+G^‡š¢¤¥§¬±¾ÀÂÄØáêö#P]o{…“Ÿ¡£¥§©ª¬µ¸º¼ÍÏÑÓÕêóú
+--!8?\^`bdfj{€‚„‡”¡¯±ºÃÉæèêìíïñ
+--+-/1357¢¯±ÎĞÒÔÕ×Ùğ%24QSUWXZ\u–˜šœ ¢Ûèê'DJSXkƒŒ“ª»½¿ÁÃàâäæèêì!9FHJLmoqsuwy†ˆ–£¥§©ÊÌÎĞÒÔÖãæéìú<>@BDFHUX[^centvƒ…‡‰ª¬®°²´¶º¼ÅÊÌÙÛİß 
+--$&3579Z\^`bdfu„‘“•—¸º¼¾ÀÂÄÏÑÚåçôöøú!#%',.7=?LNPRsuwy{}†›Ÿ¡ÂÄÆÈÊÌÎÓÕŞäæóõ÷ù!#%')+<?BEHZ\tƒ…‡¨ª¬®°²´¼Ùæèêì.7IKXZ\^ƒ…‡‰‹”–Ÿµ·ÈÊÌÎĞÙÛİéò    	  , . 0 2 4 6 8 D [ l n p r t • — ™ ›  Ÿ ¡ º ¼ Ï à â ä æ è!	!!!!!!!8!:!R!c!e!g!i!k!!’!”!–!˜!š!¯!À!Â!Ä!Æ!È!é!ë!í!ï!ñ!ó!õ" """8"I"K"M"O"Q"r"t"v"x"z"|"~"‹""‘"”"®"°"º"Ë"Í"Ï"Ñ"Ó"ô"ö"ø"ú"ü"ş# #'#)#?#L#O#Q#S#t#v#y#{#}####‘#”#—#¤#¸#Å#È#Ê#Í#î#ğ#ó#õ#÷#ù#û$$$)$,$.$1$R$T$W$Y$[$]$_$l$€$$$’$•$¶$¸$»$½$¿$Á$Ã$Ò$è$õ$ø$ú$ı%% %#%%%'%)%+%A%S%`%c%e%h%‰%‹%%%’%”%–%±%À%Í%Ğ%Ò%Õ%ö%ø%û%ı%ÿ&&&&&&3&6&8&;&\&^&a&c&e&g&i&w&Œ&&Ÿ&¢&¤&§&È&Ê&Í&Ï&Ò&Ô&Ö&÷&ù'''º'¼'¿'Á'Ã'Å'Ç'Ê'Ì'Î'Ğ'Ò'Ô'×'Ú'İ'à'ã'å'è'ê'í'ï'ñ'ó'ö'ø'û'ı'ÿ((((
+--((((((((((!(#(&(((*(-(0(3(6(9(;(=(@(B(E(G(I(L(O(Q(S(V(X(Z(\(^(`(c(e(g(i(k(m(o(q(t((ˆ(( (¢(¤(¦(©(«(­(¯(²(µ(·(à(í(û(ı(ÿ))))))	)2)4)6)8)9);)=)?)@)i)s)|)~)€)ƒ)…)‡)‰)‹))›)ª)³)Æ)É)Ì)Ï)Ò)Õ)×)Ú)İ)à)â**********"*'*8*;*>*A*D*M*V*X*a*b*d*v*{*„*‡*‰*‹*´*¶*¸*º*»*½*¿*Á*Â*ë*í*ï*ñ*ò*ô*ö*ø*ù+"+$+&+(+)+++-+/+0+Y+[+]+_+`+b+d+f+g++’+”+–+—+™+›+++Ç+É+Ë+Í+Î+Ğ+Ò+Ô+Õ+ş, ,,,,	,,,,, ,%,',),+,T,W,Y,\,^,`,b,d,g,x,{,~,,„,,¦,¨,«,­,¯,²,µ,¸,º,¼,¾,Á,Ã,Å,î,ğ,ò,ô,õ,÷,ù,û,ü-%-'-*---/-1-3-5-8-E-n-q-s-v-x-z-|-~--ª-­-¯-²-´-¶-¸-º-½-Ë-Ô-ß-â-å-è-ë-î-ğ....!.#.%.'.).,.1.:.<.E.Z.\.^.a.c.e.g.i.k.n.q.s.œ.Ÿ.¡.¤.¦.¨.ª.¬.¯.¶.¿.Á.Ê.×.Ù.Ü.Ş.à.ã.å.ç//////////-/9/B/G/P/í/ï/ñ/ó/õ/ø/ú/ı/ÿ00000
+--00000000000 0"0$0&0(0*0,0.00020406080:0<0>0@0B0E0G0I0L0N0P0S0U0X0Z0\0_0b0d0f0h0j0m0o0r0t0v0x0z0|0~0€0ƒ0…0ˆ0Š0Œ000’0”0—0 0Õ0Ø0Ú0İ0ß0á0ã0æ0è0ê0ì0ï0ñ0ô0÷0ù0ü0ş1 1111
+--111111R1U1X1[1^1a1d1g1j1m1p1s1v1y1|11‚1…1ˆ1‹11‘1”1—1š11 1¥1±1½1É1Õ1ã1ï1ü2222,232?2K2T2U2X2a2b2e2n3]3_3a3d3g3j3l3n3p3r3t3w3y3{3}3€3‚3„3‡3Š3Œ33‘3“3–3™3›33 3¢3¤3¦3¨3ª3¬3¯3±3³3µ3·3º3¼3¾3À3Ã3Å3È3Ê3Ì3Î3Ğ3Ó3Ö3Ø3Ú3Ü3ß3á3ã3å3è3ê3ì3ï3ñ3ó3õ3÷3ù3û3ı4 4444	44444444444!4#4&4(4*4,4.404345474:4<4>4A4D4F4H4K4N4Q4S4U4X4[4]4`4b4e4g4i4l4n4q4z5i5l5o5r5u5x5{5~55„5‡5Š555“5–5™5œ5Ÿ5¢5¥5¨5«5®5±5´5·5º5½5À5Ã5Æ5É5Ì5Ï5Ò5Õ5Ø5Û5Ş5á5ä5ç5ê5í5ğ5ó5ö5ù5ü5ÿ66666666666 6#6&6)6,6/6265686;6>6A6D6G6J6M6P6S6V6Y6\6_6b6e6h6k6n6q6t6w6z6}6€6ƒ6†6‰6Œ66’6•6˜6›66¡6¤6§6ª6­6°6³6¶6¹6¼6¿6Â6Å6È6Ë6Î6Ğ6Ó6Ö6Ù6Ü6ß6á6ä6ç6ê6í6ğ6ó6õ6ø6ú6ı7 777	77777777!7$7'7)7,7/7274777:7=7?7B7E7H7K7N7Q7T7V7Y7\7_7b7e7h7k7n7q7t7w7z7}7€7ƒ7†7‰7Œ77‘7”7—7š7œ7Ÿ7¢7¥7¨7«7®7±7´7·7º7½7À7Ã7Æ7É7Ì7Ï7Ò7Õ7×7Ú7İ7à7ã7æ7é7ì7ï7ò7õ7ø7û7ş8888
+--88888888 8)8*8,8586898B8C8F8O8T            É              8c
++-ÿ	)+7@I[hq|ˆ’™¥ºÃÊáîğòô!.036;=CPRTVwy{}ƒ”–™œŸ¹»ÁÎĞÒÔõ÷ùûıÿ&(>KMOQrtv{}ƒ­º¼¾Àáãåçéëíóõü	02468:<Rdqsuw˜šœ ¢¤¯±¼ÍÏÑÓÕŞëíïñ+?PRTVXuwy{}¶ëø)3ANXj~ˆ”–˜šœ£¥§©«­¯Êåíòûı "?ACEGHJd…‡‰‹‘¦·¹ÂÄÓàæèêø 9Z_acegik²ÃÅÎĞİßÿ "$%'@acegikprÁÖØÚÜŞëøú+6BDFHIKMNPY[jlnprtvx”°äü:Zq’š¢ªµº¼¾ÃÄÑÓÕ×ëôû'T^jx…¡£¥§©ª¬®ÅÌéëíïñó÷
++-%24BKTZwy{}€‚›¼¾ÀÂÄÆÈ3@B_aceghj¢¤¦¨ª¬®¶ÃÅâäæèêëí')+-/13ly{„‹š¢­¶½Õã '?LNPRsuwy{}™›¦³µ·¹ÚÜŞàâäæóõ÷ù#%')JLNSUWY[g€‘“´¶¸º¼¾ÀÍáîğòô!.024BP]_ac„†ˆŠŒ¥·ÄÆÈÊëíïñóõ÷	#0246WY[]_ackˆ•—™›¼¾ÀÂÄÆÈÍÏÕâäæè	#8EGIKlnprtvx‡”–˜š»½¿ÁÃÅÇËÍÒßáãå
++-!0=?ACdfhjlnpuw}ŠŒ±³µ·¹»½Ëàíïñó         ) B O Q S U v x z | ~ € ‚ ‘ § ° ³!<!>!@!B!D!F!H!J!L!N!P!R!U!W!Y!\!^!a!c!e!g!j!l!n!p!r!t!v!x!z!|!~!!ƒ!…!‡!‰!‹!!!‘!”!–!˜!š!!Ÿ!¡!£!¥!¨!«!®!±!´!¶!¹!¼!¿!Â!Å!Ç!É!Ë!Í!Ï!Ñ!Ô!Û!ä!æ!ë!í!ï!ø!ı""""""" "I"W"d"f"h"i"k"l"n"p"r"›"¥"®"°"²"´"¶"¸"º"¼"¾"Ë"Ú"ã"å"ø"ú"ü"ş# #####
++-#3#5#7#8#:#;#=#?#A#R#T#V#X#Z#c#m#o#x##ˆ#š#£#¬#®#¯#Á#Ê#Ì#Ñ#Ú#Ü#ñ#ó#õ#ø#ú#ü#ş$ $$$$1$3$5$6$8$9$;$=$?$h$j$l$m$o$p$r$t$v$Ÿ$¡$£$¥$§$©$«$­$°$¹$»$Â$Ë$Í$Ú$Ü$ß$á$ã$æ$è%%%%%%%%%%H%J%L%M%O%P%R%T%V%e%n%p%r%›%%Ÿ%¢%¤%¦%¨%ª%­%Â%Ë%Í%à%â%å%è%ë%í%ï%ñ%ô%ö&&!&#&$&&&'&)&+&-&V&X&Z&[&]&^&`&b&d&&&‘&’&”&•&—&™&›&¨&Ñ&Ó&Õ&×&Ù&Û&İ&à&ã&ô&ö&ù&ü&ÿ'('*','/'1'3'5'8';'d'f'h'k'm'o'q't'w'…'''›''¡'¤'§'ª'Ó'Õ'×'Ú'Ü'Ş'à'ã'æ(((((((( (#(((5(7(:(=(F(H(I(U(f(h(j(m(‚(‹((™(œ)%)'))),).)0)3)5)7):)<)?)A)D)F)H)J)L)O)Q)S)V)X)Z)\)^)`)b)d)f)h)j)m)o)q)s)u)w)y){)})€)‚)„)†)ˆ)Š)Œ)))’)”)—)™)›)) )¢)¤)§)©)«)­)¯)±)³)µ)·)À)Ã*N*P*R*T*V*X*Z*\*^*`*b*e*g*i*k*m*p*r*u*w*y*{*~*€*‚*„*†*ˆ*Š*Œ***’*•*—*™*›**Ÿ*¡*¤*¦*¨*ª*¬*®*°*²*µ*·*¹*¼*¿*Â*Å*Ç*Ê*Í*Ï*Ò*Õ*Ø*Û*İ*ß*á*ã*æ*è*ñ*ô++‚+…+ˆ+‹++‘+”+—+š++ +£+¦+©+¬+¯+²+µ+¸+»+¾+Á+Ä+Ç+Ê+Í+Ğ+Ó+Ö+Ù+Ü+ß+â+å+è+ë+î+ñ+ô+÷+ú+ı, ,,,	,,,,,,,,!,#,&,),,,/,2,5,7,:,=,@,C,F,I,k,x,,¡,¯,ö-
++--ƒ-š-¦-²-Ä-É-×-ô. ..2.N.[.v..¢.¶.×.î/;/V/r//­/¿/Ô/ğ00"0w0ƒ00®0É0ä0÷11A1b1{1‡1£1µ1È1Ñ1İ1ò1ş2272C2O2[2n2Ë2ñ333)3235363?3B3C3L3O4444444 4"4$4&4(4*4-4/414345474:4<4>4@4B4D4G4I4K4M4O4Q4S4U4W4Y4\4^4`4b4d4f4h4k4m4o4r4t4v4y4|444ƒ4…4ˆ4‹44‘4”4–4˜4š44Ÿ4¡4£4¥4§4©4«4­4¯4²4´4¶4¸4º4¼4¾4À4Â4Ä4Æ4È4Ê4Ì4Î4Ğ4Ò4Ô4Ö4Ø4Û4İ4à4â4ä4æ4è4ñ4ô5¹5¼5¿5Â5Å5È5Ë5Î5Ñ5Ô5×5Ú5İ5à5ã5æ5é5ì5ï5ò5õ5ø5û5ş6666
++-66666666"6%6(6+6.6164676:6=6@6C6F6I6L6O6R6U6X6[6^6a6d6g6j6m6p6s6v6y6|66‚6…6ˆ6‹66‘6”6—6š66 6£6¦6©6¬6¯6²6µ6¸6»6¾6Á6Ä6Ç6Ê6Í6Ğ6Ó6Ö6Ù6Ü6ß6â6ä6ç6ê6í6ğ6ó6ö6ù6ü6ÿ7777
++-77777777 7#7&7)7,7/7275787;7>7A7D7G7J7L7O7R7U7X7[7]7`7c7e7h7k7n7q7t7w7z7}7€7‚7…7ˆ7‹77‘7”7—7™7œ7Ÿ7¢7«7®7±7´7·7º7½7À7Ã7Æ7É7Ì7Ï7Ò7Õ7Ø7Ú7İ7à7ã7æ7é7ì7ï7ò7õ7ø8888888888'8,            1              8;
+ \ No newline at end of file
+-+ÿ	)+7@I[hq|ˆ’™¥ºÃÊáîğòô!.036;=CPRTVwy{}ƒ”–™œŸ¹»ÁÎĞÒÔõ÷ùûıÿ&(>KMOQrtv{}ƒ­º¼¾Àáãåçéëíóõü	02468:<Rdqsuw˜šœ ¢¤¯±¼ÍÏÑÓÕŞëíïñ+?PRTVXuwy{}¶ëø)3ANXj~ˆ”–˜šœ£¥§©«­¯Êåíòûı "?ACEGHJd…‡‰‹‘¦·¹ÂÄÓàæèêø 9Z_acegik²ÃÅÎĞİßÿ "$%'@acegikprÁÖØÚÜŞëøú+6BDFHIKMNPY[jlnprtvx”°äü:Zq’š¢ªµº¼¾ÃÄÑÓÕ×ëôû'T^jx…¡£¥§©ª¬®ÅÌéëíïñó÷
+-+%24BKTZwy{}€‚›¼¾ÀÂÄÆÈ3@B_aceghj¢¤¦¨ª¬®¶ÃÅâäæèêëí')+-/13ly{„‹š¢­¶½Õã '?LNPRsuwy{}™›¦³µ·¹ÚÜŞàâäæóõ÷ù#%')JLNSUWY[g€‘“´¶¸º¼¾ÀÍáîğòô!.024BP]_ac„†ˆŠŒ¥·ÄÆÈÊëíïñóõ÷	#0246WY[]_ackˆ•—™›¼¾ÀÂÄÆÈÍÏÕâäæè	#8EGIKlnprtvx‡”–˜š»½¿ÁÃÅÇËÍÒßáãå
+-+!0=?ACdfhjlnpuw}ŠŒ±³µ·¹»½Ëàíïñó         ) B O Q S U v x z | ~ € ‚ ‘ § ° ³!<!>!@!B!D!F!H!J!L!N!P!R!U!W!Y!\!^!a!c!e!g!j!l!n!p!r!t!v!x!z!|!~!!ƒ!…!‡!‰!‹!!!‘!”!–!˜!š!!Ÿ!¡!£!¥!¨!«!®!±!´!¶!¹!¼!¿!Â!Å!Ç!É!Ë!Í!Ï!Ñ!Ô!Û!ä!æ!ë!í!ï!ø!ı""""""" "I"W"d"f"h"i"k"l"n"p"r"›"¥"®"°"²"´"¶"¸"º"¼"¾"Ë"Ú"ã"å"ø"ú"ü"ş# #####
+-+#3#5#7#8#:#;#=#?#A#R#T#V#X#Z#c#m#o#x##ˆ#š#£#¬#®#¯#Á#Ê#Ì#Ñ#Ú#Ü#ñ#ó#õ#ø#ú#ü#ş$ $$$$1$3$5$6$8$9$;$=$?$h$j$l$m$o$p$r$t$v$Ÿ$¡$£$¥$§$©$«$­$°$¹$»$Â$Ë$Í$Ú$Ü$ß$á$ã$æ$è%%%%%%%%%%H%J%L%M%O%P%R%T%V%e%n%p%r%›%%Ÿ%¢%¤%¦%¨%ª%­%Â%Ë%Í%à%â%å%è%ë%í%ï%ñ%ô%ö&&!&#&$&&&'&)&+&-&V&X&Z&[&]&^&`&b&d&&&‘&’&”&•&—&™&›&¨&Ñ&Ó&Õ&×&Ù&Û&İ&à&ã&ô&ö&ù&ü&ÿ'('*','/'1'3'5'8';'d'f'h'k'm'o'q't'w'…'''›''¡'¤'§'ª'Ó'Õ'×'Ú'Ü'Ş'à'ã'æ(((((((( (#(((5(7(:(=(F(H(I(U(f(h(j(m(‚(‹((™(œ)%)'))),).)0)3)5)7):)<)?)A)D)F)H)J)L)O)Q)S)V)X)Z)\)^)`)b)d)f)h)j)m)o)q)s)u)w)y){)})€)‚)„)†)ˆ)Š)Œ)))’)”)—)™)›)) )¢)¤)§)©)«)­)¯)±)³)µ)·)À)Ã*N*P*R*T*V*X*Z*\*^*`*b*e*g*i*k*m*p*r*u*w*y*{*~*€*‚*„*†*ˆ*Š*Œ***’*•*—*™*›**Ÿ*¡*¤*¦*¨*ª*¬*®*°*²*µ*·*¹*¼*¿*Â*Å*Ç*Ê*Í*Ï*Ò*Õ*Ø*Û*İ*ß*á*ã*æ*è*ñ*ô++‚+…+ˆ+‹++‘+”+—+š++ +£+¦+©+¬+¯+²+µ+¸+»+¾+Á+Ä+Ç+Ê+Í+Ğ+Ó+Ö+Ù+Ü+ß+â+å+è+ë+î+ñ+ô+÷+ú+ı, ,,,	,,,,,,,,!,#,&,),,,/,2,5,7,:,=,@,C,F,I,k,x,,¡,¯,ö-
+-+-ƒ-š-¦-²-Ä-É-×-ô. ..2.N.[.v..¢.¶.×.î/;/V/r//­/¿/Ô/ğ00"0w0ƒ00®0É0ä0÷11A1b1{1‡1£1µ1È1Ñ1İ1ò1ş2272C2O2[2n2Ë2ñ333)3235363?3B3C3L3O4444444 4"4$4&4(4*4-4/414345474:4<4>4@4B4D4G4I4K4M4O4Q4S4U4W4Y4\4^4`4b4d4f4h4k4m4o4r4t4v4y4|444ƒ4…4ˆ4‹44‘4”4–4˜4š44Ÿ4¡4£4¥4§4©4«4­4¯4²4´4¶4¸4º4¼4¾4À4Â4Ä4Æ4È4Ê4Ì4Î4Ğ4Ò4Ô4Ö4Ø4Û4İ4à4â4ä4æ4è4ñ4ô5¹5¼5¿5Â5Å5È5Ë5Î5Ñ5Ô5×5Ú5İ5à5ã5æ5é5ì5ï5ò5õ5ø5û5ş6666
+-+66666666"6%6(6+6.6164676:6=6@6C6F6I6L6O6R6U6X6[6^6a6d6g6j6m6p6s6v6y6|66‚6…6ˆ6‹66‘6”6—6š66 6£6¦6©6¬6¯6²6µ6¸6»6¾6Á6Ä6Ç6Ê6Í6Ğ6Ó6Ö6Ù6Ü6ß6â6ä6ç6ê6í6ğ6ó6ö6ù6ü6ÿ7777
+-+77777777 7#7&7)7,7/7275787;7>7A7D7G7J7L7O7R7U7X7[7]7`7c7e7h7k7n7q7t7w7z7}7€7‚7…7ˆ7‹77‘7”7—7™7œ7Ÿ7¢7«7®7±7´7·7º7½7À7Ã7Æ7É7Ì7Ï7Ò7Õ7Ø7Ú7İ7à7ã7æ7é7ì7ï7ò7õ7ø8888888888'8,            1              8;
+++ô
+++ı9;@BDFHJVo|~€‚£¥§©«­¯¸Ñâğòôöø-AS]ky†“ª´ÀÖØÚÜŞàâäæèíïñó)16GRdlnprt}’”–˜šœ ¢¤ÁÍ×àçéëíîñóõ0DPZesŒ’”–˜Ÿ´ÅÌÕÚÜŞàïøı!-:HJLNPRYo|„‡‰’—¤ª¸º¼ÅÎàíö&-9VXZ\]_ayšœ ¢¤¦ª»ÀÂÄÎÛçé
+++*KMOQSUW\£´¹»½Êêì	-NPRTVXZ_®ÃÅÇÉËØåñó$/13568:<=FUWY[]_aceµÕö+G^‡š¢¤¥§¬±¾ÀÂÄØáêö#P]o{…“Ÿ¡£¥§©ª¬µ¸º¼ÍÏÑÓÕêóú
+++!8?\^`bdfj{€‚„‡”¡¯±ºÃÉæèêìíïñ
++++-/1357¢¯±ÎĞÒÔÕ×Ùğ%24QSUWXZ\u–˜šœ ¢Ûèê'DJSXkƒŒ“ª»½¿ÁÃàâäæèêì!9FHJLmoqsuwy†ˆ–£¥§©ÊÌÎĞÒÔÖãæéìú<>@BDFHUX[^centvƒ…‡‰ª¬®°²´¶º¼ÅÊÌÙÛİß 
+++$&3579Z\^`bdfu„‘“•—¸º¼¾ÀÂÄÏÑÚåçôöøú!#%',.7=?LNPRsuwy{}†›Ÿ¡ÂÄÆÈÊÌÎÓÕŞäæóõ÷ù!#%')+<?BEHZ\tƒ…‡¨ª¬®°²´¼Ùæèêì.7IKXZ\^ƒ…‡‰‹”–Ÿµ·ÈÊÌÎĞÙÛİéò    	  , . 0 2 4 6 8 D [ l n p r t • — ™ ›  Ÿ ¡ º ¼ Ï à â ä æ è!	!!!!!!!8!:!R!c!e!g!i!k!!’!”!–!˜!š!¯!À!Â!Ä!Æ!È!é!ë!í!ï!ñ!ó!õ" """8"I"K"M"O"Q"r"t"v"x"z"|"~"‹""‘"”"®"°"º"Ë"Í"Ï"Ñ"Ó"ô"ö"ø"ú"ü"ş# #'#)#?#L#O#Q#S#t#v#y#{#}####‘#”#—#¤#¸#Å#È#Ê#Í#î#ğ#ó#õ#÷#ù#û$$$)$,$.$1$R$T$W$Y$[$]$_$l$€$$$’$•$¶$¸$»$½$¿$Á$Ã$Ò$è$õ$ø$ú$ı%% %#%%%'%)%+%A%S%`%c%e%h%‰%‹%%%’%”%–%±%À%Í%Ğ%Ò%Õ%ö%ø%û%ı%ÿ&&&&&&3&6&8&;&\&^&a&c&e&g&i&w&Œ&&Ÿ&¢&¤&§&È&Ê&Í&Ï&Ò&Ô&Ö&÷&ù'''º'¼'¿'Á'Ã'Å'Ç'Ê'Ì'Î'Ğ'Ò'Ô'×'Ú'İ'à'ã'å'è'ê'í'ï'ñ'ó'ö'ø'û'ı'ÿ((((
+++((((((((((!(#(&(((*(-(0(3(6(9(;(=(@(B(E(G(I(L(O(Q(S(V(X(Z(\(^(`(c(e(g(i(k(m(o(q(t((ˆ(( (¢(¤(¦(©(«(­(¯(²(µ(·(à(í(û(ı(ÿ))))))	)2)4)6)8)9);)=)?)@)i)s)|)~)€)ƒ)…)‡)‰)‹))›)ª)³)Æ)É)Ì)Ï)Ò)Õ)×)Ú)İ)à)â**********"*'*8*;*>*A*D*M*V*X*a*b*d*v*{*„*‡*‰*‹*´*¶*¸*º*»*½*¿*Á*Â*ë*í*ï*ñ*ò*ô*ö*ø*ù+"+$+&+(+)+++-+/+0+Y+[+]+_+`+b+d+f+g++’+”+–+—+™+›+++Ç+É+Ë+Í+Î+Ğ+Ò+Ô+Õ+ş, ,,,,	,,,,, ,%,',),+,T,W,Y,\,^,`,b,d,g,x,{,~,,„,,¦,¨,«,­,¯,²,µ,¸,º,¼,¾,Á,Ã,Å,î,ğ,ò,ô,õ,÷,ù,û,ü-%-'-*---/-1-3-5-8-E-n-q-s-v-x-z-|-~--ª-­-¯-²-´-¶-¸-º-½-Ë-Ô-ß-â-å-è-ë-î-ğ....!.#.%.'.).,.1.:.<.E.Z.\.^.a.c.e.g.i.k.n.q.s.œ.Ÿ.¡.¤.¦.¨.ª.¬.¯.¶.¿.Á.Ê.×.Ù.Ü.Ş.à.ã.å.ç//////////-/9/B/G/P/í/ï/ñ/ó/õ/ø/ú/ı/ÿ00000
+++00000000000 0"0$0&0(0*0,0.00020406080:0<0>0@0B0E0G0I0L0N0P0S0U0X0Z0\0_0b0d0f0h0j0m0o0r0t0v0x0z0|0~0€0ƒ0…0ˆ0Š0Œ000’0”0—0 0Õ0Ø0Ú0İ0ß0á0ã0æ0è0ê0ì0ï0ñ0ô0÷0ù0ü0ş1 1111
+++111111R1U1X1[1^1a1d1g1j1m1p1s1v1y1|11‚1…1ˆ1‹11‘1”1—1š11 1¥1±1½1É1Õ1ã1ï1ü2222,232?2K2T2U2X2a2b2e2n3]3_3a3d3g3j3l3n3p3r3t3w3y3{3}3€3‚3„3‡3Š3Œ33‘3“3–3™3›33 3¢3¤3¦3¨3ª3¬3¯3±3³3µ3·3º3¼3¾3À3Ã3Å3È3Ê3Ì3Î3Ğ3Ó3Ö3Ø3Ú3Ü3ß3á3ã3å3è3ê3ì3ï3ñ3ó3õ3÷3ù3û3ı4 4444	44444444444!4#4&4(4*4,4.404345474:4<4>4A4D4F4H4K4N4Q4S4U4X4[4]4`4b4e4g4i4l4n4q4z5i5l5o5r5u5x5{5~55„5‡5Š555“5–5™5œ5Ÿ5¢5¥5¨5«5®5±5´5·5º5½5À5Ã5Æ5É5Ì5Ï5Ò5Õ5Ø5Û5Ş5á5ä5ç5ê5í5ğ5ó5ö5ù5ü5ÿ66666666666 6#6&6)6,6/6265686;6>6A6D6G6J6M6P6S6V6Y6\6_6b6e6h6k6n6q6t6w6z6}6€6ƒ6†6‰6Œ66’6•6˜6›66¡6¤6§6ª6­6°6³6¶6¹6¼6¿6Â6Å6È6Ë6Î6Ğ6Ó6Ö6Ù6Ü6ß6á6ä6ç6ê6í6ğ6ó6õ6ø6ú6ı7 777	77777777!7$7'7)7,7/7274777:7=7?7B7E7H7K7N7Q7T7V7Y7\7_7b7e7h7k7n7q7t7w7z7}7€7ƒ7†7‰7Œ77‘7”7—7š7œ7Ÿ7¢7¥7¨7«7®7±7´7·7º7½7À7Ã7Æ7É7Ì7Ï7Ò7Õ7×7Ú7İ7à7ã7æ7é7ì7ï7ò7õ7ø7û7ş8888
+++88888888 8)8*8,8586898B8C8F8O8T            É              8c
+ \ No newline at end of file
+-Only in ./Resources/English.lproj/OSX_RFBViewer.nib: objects.nib
+-diff -aurr ./Source/ListenerController.m ../cotvnc-gitso/Source/ListenerController.m
+---- ./Source/ListenerController.m	2006-01-17 12:20:14.000000000 -0700
+-+++ ../cotvnc-gitso/Source/ListenerController.m	2008-11-07 22:40:05.000000000 -0700
+-@@ -86,7 +86,8 @@
++Only in ../cotvnc/Resources/English.lproj/OSX_RFBViewer.nib: objects.nib
++diff -aurr ./Source/ListenerController.m ../cotvnc/Source/ListenerController.m
++--- ./Source/ListenerController.m	2008-11-07 22:40:05.000000000 -0700
+++++ ../cotvnc/Source/ListenerController.m	2006-01-17 12:20:14.000000000 -0700
++@@ -86,8 +86,7 @@
+      if (listeningSocket) {
+          [self stopListener];
+      }
+--    [self savePrefs];
+-+    //[self savePrefs];
+-+	
++-    //[self savePrefs];
++-	
+++    [self savePrefs];
+  	[super dealloc];
+  		
+  	[[NSNotificationCenter defaultCenter] removeObserver:self
+-@@ -104,7 +105,7 @@
++@@ -105,7 +104,7 @@
+                                                   name:ProfileListChangeMsg
+                                                 object:(id)[ProfileDataManager sharedInstance]];
+      
+--    [self updateUI];
+-+    //[self updateUI];
++-    //[self updateUI];
+++    [self updateUI];
+  }
+  
+  
+-@@ -198,7 +199,7 @@
++@@ -199,7 +198,7 @@
+          
+      [listeningSocket acceptConnectionInBackgroundAndNotify];
+      
+--    [self updateUI];
+-+    //[self updateUI];
++-    //[self updateUI];
+++    [self updateUI];
+      
+      return YES;
+  }
+-@@ -218,7 +219,7 @@
++@@ -219,7 +218,7 @@
+      [listeningSocket release];  listeningSocket = nil;
+      [listeningProfile release]; listeningProfile = nil;
+      
+--    [self updateUI];
+-+    //[self updateUI];
++-    //[self updateUI];
+++    [self updateUI];
+  }
+  
+  
+-@@ -286,7 +287,7 @@
++@@ -287,7 +286,7 @@
+  
+  - (void)updateProfileView:(id)notification
+  {
+--	[self loadProfileIntoView];
+-+	//[self loadProfileIntoView];
++-	//[self loadProfileIntoView];
+++	[self loadProfileIntoView];
+  }
+  
+  
+-diff -aurr ./Source/MyApp.m ../cotvnc-gitso/Source/MyApp.m
+---- ./Source/MyApp.m	2005-07-11 05:22:56.000000000 -0600
+-+++ ../cotvnc-gitso/Source/MyApp.m	2008-11-07 21:28:00.000000000 -0700
+-@@ -14,6 +14,7 @@
++diff -aurr ./Source/MyApp.m ../cotvnc/Source/MyApp.m
++--- ./Source/MyApp.m	2008-11-07 21:28:00.000000000 -0700
+++++ ../cotvnc/Source/MyApp.m	2005-07-11 05:22:56.000000000 -0600
++@@ -14,7 +14,6 @@
+  
+  @implementation MyApp
+  
+-+
++-
+  - (void)sendEvent:(NSEvent *)anEvent
+  {
+  	/*
+-diff -aurr ./Source/RFBConnection.m ../cotvnc-gitso/Source/RFBConnection.m
+---- ./Source/RFBConnection.m	2007-03-15 23:24:14.000000000 -0600
+-+++ ../cotvnc-gitso/Source/RFBConnection.m	2008-11-10 21:24:43.000000000 -0700
++diff -aurr ./Source/RFBConnection.m ../cotvnc/Source/RFBConnection.m
++--- ./Source/RFBConnection.m	2008-11-10 21:24:43.000000000 -0700
+++++ ../cotvnc/Source/RFBConnection.m	2007-03-15 23:24:14.000000000 -0600
+ @@ -337,7 +337,7 @@
+  		[_eventFilter synthesizeRemainingEvents];
+  		[_eventFilter sendAllPendingQueueEntriesNow];
+  
+--        if(aReason) {
+-+        if(false) {
++-        if(false) {
+++        if(aReason) {
+  			if ( _autoReconnect ) {
+                  NSLog(@"Automatically reconnecting to server.  The connection was closed because: \"%@\".", aReason);
+  				// Just auto-reconnect (by reinstantiating ourselves)
+-diff -aurr ./Source/RFBConnectionManager.m ../cotvnc-gitso/Source/RFBConnectionManager.m
+---- ./Source/RFBConnectionManager.m	2007-03-15 21:31:56.000000000 -0600
+-+++ ../cotvnc-gitso/Source/RFBConnectionManager.m	2008-11-07 22:42:17.000000000 -0700
+-@@ -21,6 +21,7 @@
++diff -aurr ./Source/RFBConnectionManager.m ../cotvnc/Source/RFBConnectionManager.m
++--- ./Source/RFBConnectionManager.m	2008-11-07 22:42:17.000000000 -0700
+++++ ../cotvnc/Source/RFBConnectionManager.m	2007-03-15 21:31:56.000000000 -0600
++@@ -21,7 +21,6 @@
+  #import "RFBConnection.h"
+  #import "PrefController.h"
+  #import "ProfileManager.h"
+-+#import "ListenerController.h"
++-#import "ListenerController.h"
+  #import "Profile.h"
+  #import "rfbproto.h"
+  #import "vncauth.h"
+-@@ -36,7 +37,7 @@
++@@ -37,7 +36,7 @@
+  	static id sInstance = nil;
+  	if ( ! sInstance )
+  	{
+--		sInstance = [[self alloc] initWithWindowNibName: @"ConnectionDialog"];
+-+		sInstance = [self alloc];
++-		sInstance = [self alloc];
+++		sInstance = [[self alloc] initWithWindowNibName: @"ConnectionDialog"];
+  		NSParameterAssert( sInstance != nil );
+  		
+  		[sInstance wakeup];
+-@@ -144,8 +145,23 @@
++@@ -145,23 +144,8 @@
+      for (i = 1; i < argCount; i++)
+  	{
+  		arg = [args objectAtIndex:i];
+--		
+--		if ([arg hasPrefix:@"-psn"])
+-+
+-+		if ([arg hasPrefix:@"--listen"])
+-+		{
+-+			NSLog(@"Called with --listen.");
+-+			
+-+			ListenerController* listener = [ListenerController sharedController];
+-+			ProfileManager* pm = [ProfileManager sharedManager];
+-+
+-+			int port = 5500;
+-+			profile = [pm profileNamed: @"Called with --listen."];
+-+			BOOL local = false;
+-+
+-+			[listener startListenerOnPort:port withProfile:profile localOnly:local];
+-+			
+-+			return YES;
+-+		} 
+-+		else if ([arg hasPrefix:@"-psn"])
++-
++-		if ([arg hasPrefix:@"--listen"])
++-		{
++-			NSLog(@"Called with --listen.");
++-			
++-			ListenerController* listener = [ListenerController sharedController];
++-			ProfileManager* pm = [ProfileManager sharedManager];
++-
++-			int port = 5500;
++-			profile = [pm profileNamed: @"Called with --listen."];
++-			BOOL local = false;
++-
++-			[listener startListenerOnPort:port withProfile:profile localOnly:local];
++-			
++-			return YES;
++-		} 
++-		else if ([arg hasPrefix:@"-psn"])
+++		
+++		if ([arg hasPrefix:@"-psn"])
+  		{
+  			// Called from the finder.  Do nothing.
+  			continue;
+-diff -aurr ./Source/VNCViewer_main.m ../cotvnc-gitso/Source/VNCViewer_main.m
+---- ./Source/VNCViewer_main.m	2003-01-17 04:55:52.000000000 -0700
+-+++ ../cotvnc-gitso/Source/VNCViewer_main.m	2008-11-07 21:24:00.000000000 -0700
+-@@ -14,5 +14,6 @@
++diff -aurr ./Source/VNCViewer_main.m ../cotvnc/Source/VNCViewer_main.m
++--- ./Source/VNCViewer_main.m	2008-11-07 21:24:00.000000000 -0700
+++++ ../cotvnc/Source/VNCViewer_main.m	2003-01-17 04:55:52.000000000 -0700
++@@ -14,6 +14,5 @@
+  	[NSAutoreleasePool setPoolCountHighWaterMark: 2000];
+  	[NSAutoreleasePool setPoolCountHighWaterResolution: 2000];
+  #endif
+-+
++-
+      return NSApplicationMain(argc, argv);
+  }
++Only in .: cotvnc-gitso.diff
